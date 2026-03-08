@@ -10,6 +10,7 @@ import lambZion from "@/assets/lamb-zion.png";
 import threeAngels from "@/assets/three-angels.png";
 import nebuchadnezzarStatue from "@/assets/nebuchadnezzar-statue.png";
 import newJerusalem from "@/assets/new-jerusalem.png";
+import investigativeJudgment from "@/assets/investigative-judgment.png";
 
 const topicImages = [
   { image: nebuchadnezzarStatue, color: "from-prophecy-gold/80", slug: "daniels-statue" },
@@ -17,7 +18,7 @@ const topicImages = [
   { image: lambZion, color: "from-prophecy-blue/80", slug: "lamb-seven-seals" },
   { image: threeAngels, color: "from-prophecy-gold/80", slug: "three-angels" },
   { image: sanctuary, color: "from-prophecy-purple/80", slug: "sanctuary" },
-  { image: revelationDragon, color: "from-prophecy-teal/80", slug: "investigative-judgment" },
+  { image: investigativeJudgment, color: "from-prophecy-teal/80", slug: "investigative-judgment" },
   { image: prophecyTimeline, color: "from-prophecy-coral/80", slug: "time-of-end" },
   { image: newJerusalem, color: "from-prophecy-gold/80", slug: "new-jerusalem" },
 ];
