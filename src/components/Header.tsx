@@ -33,9 +33,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           <motion.div whileHover={{ scale: 1.05 }} className="flex items-center gap-2">
-            <div className="w-12 h-12 rounded-full gradient-hero flex items-center justify-center">
-              <span className="text-2xl">📖</span>
-            </div>
+            <img src={logo} alt="Prophecy Kids Logo" className="w-12 h-12 rounded-full object-cover" />
             <div className="hidden sm:block">
               <h1 className="font-display text-xl font-bold text-foreground leading-none">
                 Prophecy Kids
