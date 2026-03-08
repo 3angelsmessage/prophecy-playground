@@ -58,11 +58,11 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="default" className="sm:h-14 sm:px-8 sm:py-4 sm:text-base bg-[hsl(0,100%,50%)] hover:bg-[hsl(0,100%,40%)]" onClick={() => document.getElementById('games')?.scrollIntoView({ behavior: 'smooth' })}>
-                <Play size={18} />
+              <Button variant="hero" size="sm" className="sm:h-11 sm:px-6 sm:text-sm bg-[hsl(0,100%,50%)] hover:bg-[hsl(0,100%,40%)]" onClick={() => document.getElementById('games')?.scrollIntoView({ behavior: 'smooth' })}>
+                <Play size={16} />
                 {t("hero.startPlaying")}
               </Button>
-              <Button variant="heroOutline" size="default" className="sm:h-14 sm:px-8 sm:py-4 sm:text-base" onClick={() => document.getElementById('learn')?.scrollIntoView({ behavior: 'smooth' })}>
+              <Button variant="heroOutline" size="sm" className="sm:h-11 sm:px-6 sm:text-sm" onClick={() => document.getElementById('learn')?.scrollIntoView({ behavior: 'smooth' })}>
                 {t("hero.learnFirst")}
               </Button>
             </div>
