@@ -26,13 +26,6 @@ const Hero = () => {
         ⭐
       </motion.div>
       <motion.div
-        animate={{ y: [0, 15, 0] }}
-        transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-48 left-20 text-4xl hidden lg:block"
-      >
-        🦁
-      </motion.div>
-      <motion.div
         animate={{ y: [0, -10, 0], rotate: [0, 10, 0] }}
         transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
         className="absolute bottom-48 left-32 text-3xl hidden lg:block"
