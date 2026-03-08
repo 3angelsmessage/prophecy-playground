@@ -51,6 +51,13 @@ const topics = [
     image: threeAngels,
     color: "from-prophecy-gold/80",
   },
+  {
+    title: "Nebuchadnezzar's Statue",
+    description:
+      "Explore the dream statue with its golden head (Babylon), silver chest (Medo-Persia), bronze belly (Greece), iron legs (Rome), and the stone that becomes God's eternal kingdom!",
+    image: nebuchadnezzarStatue,
+    color: "from-prophecy-purple/80",
+  },
 ];
 
 const ProphecyTopics = () => {
