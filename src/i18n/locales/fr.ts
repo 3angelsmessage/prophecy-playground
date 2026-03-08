@@ -261,6 +261,22 @@ const fr = {
     successDesc: "Merci de nous avoir contactés. Nous vous répondrons bientôt !",
   },
 
+  // Parents section
+  parents: {
+    badge: "👨‍👩‍👧‍👦 Pour les Parents",
+    title: "Un Lieu de",
+    titleHighlight: "Confiance",
+    subtitle: "Nous savons combien il est important de fournir un contenu sûr et significatif à vos enfants. Prophecy Kids est conçu pour les enfants et les parents, enseignant la prophétie biblique adventiste de manière amusante.",
+    guideBtn: "Guide des Parents",
+    learnMoreBtn: "En Savoir Plus",
+    features: [
+      { title: "Environnement Sûr", description: "Contenu 100% sans publicité et sûr pour les enfants. Pas d'achats intégrés ni de liens externes." },
+      { title: "Apprentissage Basé sur la Foi", description: "Leçons bibliques adaptées à l'âge qui nourrissent la croissance spirituelle et le caractère." },
+      { title: "Temps en Famille", description: "Guides de discussion et activités parfaites pour les dévotions familiales." },
+      { title: "Suivi des Progrès", description: "Suivez le parcours d'apprentissage de votre enfant à travers les sujets et jeux de prophétie." },
+    ],
+  },
+
   // Language
   language: {
     en: "English",
