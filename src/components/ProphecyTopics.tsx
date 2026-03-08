@@ -5,6 +5,7 @@ import revelationDragon from "@/assets/revelation-dragon.png";
 import sanctuary from "@/assets/sanctuary.png";
 import prophecyTimeline from "@/assets/prophecy-timeline.png";
 import lambZion from "@/assets/lamb-zion.png";
+import threeAngels from "@/assets/three-angels.png";
 
 const topics = [
   {
@@ -41,6 +42,13 @@ const topics = [
       "Meet the Lamb on Mount Zion and learn about the 144,000 special followers of Jesus!",
     image: lambZion,
     color: "from-prophecy-blue/80",
+  },
+  {
+    title: "Three Angels' Messages",
+    description:
+      "Discover the three powerful messages from heaven found in Revelation 14 that prepare the world for Jesus' return!",
+    image: threeAngels,
+    color: "from-prophecy-gold/80",
   },
 ];
 
