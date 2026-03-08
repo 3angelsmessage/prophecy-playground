@@ -6,6 +6,7 @@ import sanctuary from "@/assets/sanctuary.png";
 import prophecyTimeline from "@/assets/prophecy-timeline.png";
 import lambZion from "@/assets/lamb-zion.png";
 import threeAngels from "@/assets/three-angels.png";
+import nebuchadnezzarStatue from "@/assets/nebuchadnezzar-statue.png";
 
 const topics = [
   {
