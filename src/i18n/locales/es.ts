@@ -11,6 +11,7 @@ const es = {
 
   // Hero
   hero: {
+    badge: "Profecía Bíblica ASD para Niños",
     title1: "¡Descubre",
     titleHighlight: "Increíbles",
     title2: "Profecías Bíblicas!",
@@ -19,6 +20,7 @@ const es = {
     learnFirst: "Aprender",
     statGames: "Juegos divertidos",
     statQuizzes: "Quizzes",
+    statTopics: "Temas Proféticos",
     statFree: "¡Gratis!",
   },
 
