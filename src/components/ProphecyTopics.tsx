@@ -24,6 +24,7 @@ const topicImages = [
 
 const ProphecyTopics = () => {
   const { t } = useTranslation();
+  const { lang = "en" } = useParams();
   const rawItems = t("topics.items", { returnObjects: true });
   const items = Array.isArray(rawItems) ? rawItems as Array<{ title: string; description: string; book: string }> : [];
 
