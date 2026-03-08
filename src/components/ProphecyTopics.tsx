@@ -6,6 +6,7 @@ import sanctuary from "@/assets/sanctuary.png";
 import prophecyTimeline from "@/assets/prophecy-timeline.png";
 import lambZion from "@/assets/lamb-zion.png";
 import threeAngels from "@/assets/three-angels.png";
+import nebuchadnezzarStatue from "@/assets/nebuchadnezzar-statue.png";
 
 const topics = [
   {
@@ -49,6 +50,13 @@ const topics = [
       "Discover the three powerful messages from heaven found in Revelation 14 that prepare the world for Jesus' return!",
     image: threeAngels,
     color: "from-prophecy-gold/80",
+  },
+  {
+    title: "Nebuchadnezzar's Statue",
+    description:
+      "Explore the dream statue with its golden head (Babylon), silver chest (Medo-Persia), bronze belly (Greece), iron legs (Rome), and the stone that becomes God's eternal kingdom!",
+    image: nebuchadnezzarStatue,
+    color: "from-prophecy-purple/80",
   },
 ];
 
