@@ -43,6 +43,13 @@ const topics = [
     image: lambZion,
     color: "from-prophecy-blue/80",
   },
+  {
+    title: "Three Angels' Messages",
+    description:
+      "Discover the three powerful messages from heaven found in Revelation 14 that prepare the world for Jesus' return!",
+    image: threeAngels,
+    color: "from-prophecy-gold/80",
+  },
 ];
 
 const ProphecyTopics = () => {
