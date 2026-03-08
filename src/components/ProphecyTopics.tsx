@@ -8,6 +8,7 @@ import prophecyTimeline from "@/assets/prophecy-timeline.png";
 import lambZion from "@/assets/lamb-zion.png";
 import threeAngels from "@/assets/three-angels.png";
 import nebuchadnezzarStatue from "@/assets/nebuchadnezzar-statue.png";
+import newJerusalem from "@/assets/new-jerusalem.png";
 
 const topicImages = [
   { image: nebuchadnezzarStatue, color: "from-prophecy-gold/80" },
