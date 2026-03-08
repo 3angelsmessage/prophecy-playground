@@ -72,6 +72,11 @@ const es = {
         description: "¡Nuestro hermoso hogar eterno con calles de oro!",
         book: "Apocalipsis 21-22",
       },
+      {
+        title: "Ellen White",
+        description: "¡Descubre la vida y el don profético de la mensajera de Dios para el tiempo del fin!",
+        book: "Espíritu de Profecía",
+      },
     ],
   },
 
