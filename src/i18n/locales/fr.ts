@@ -11,6 +11,7 @@ const fr = {
 
   // Hero
   hero: {
+    badge: "Prophétie Biblique SDA pour Enfants",
     title1: "Découvrez les",
     titleHighlight: "Incroyables",
     title2: "Prophéties Bibliques !",
@@ -19,6 +20,7 @@ const fr = {
     learnFirst: "Apprendre",
     statGames: "Jeux amusants",
     statQuizzes: "Quiz",
+    statTopics: "Sujets Prophétiques",
     statFree: "Gratuit !",
   },
 
