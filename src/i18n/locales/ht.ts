@@ -72,6 +72,11 @@ const ht = {
         description: "Bèl kay etènèl nou an ak ri ki fèt an lò!",
         book: "Revelasyon 21-22",
       },
+      {
+        title: "Ellen White",
+        description: "Dekouvri lavi ak don pwofetik mesaje Bondye pou tan lafen an!",
+        book: "Lespri Pwofesi",
+      },
     ],
   },
 
