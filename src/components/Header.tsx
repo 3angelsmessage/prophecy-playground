@@ -63,7 +63,7 @@ const Header = () => {
 
           <div className="hidden md:flex items-center gap-3">
             <LanguageSwitcher />
-            <Button variant="hero" size="lg">
+            <Button variant="hero" size="lg" onClick={() => document.getElementById('learn')?.scrollIntoView({ behavior: 'smooth' })}>
               {t("nav.startLearning")}
             </Button>
           </div>
@@ -98,7 +98,7 @@ const Header = () => {
                   {link.name}
                 </a>
               ))}
-              <Button variant="hero" className="w-full mt-4">
+              <Button variant="hero" className="w-full mt-4" onClick={() => { setIsOpen(false); document.getElementById('learn')?.scrollIntoView({ behavior: 'smooth' }); }}>
                 {t("nav.startLearning")}
               </Button>
             </motion.nav>
