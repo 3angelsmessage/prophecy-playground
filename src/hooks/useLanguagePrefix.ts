@@ -9,7 +9,7 @@ export const useLanguagePrefix = () => {
   useEffect(() => {
     const validLangs = ["en", "fr", "es", "ht"];
     const validLang = validLangs.includes(lang || "") ? lang! : "en";
-    if (i18n.language !== validLang) {
+    if (i18n.language !== validLang && typeof i18n.changeLanguage === 'function') {
       i18n.changeLanguage(validLang);
     }
   }, [lang, i18n]);
