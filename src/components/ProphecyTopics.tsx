@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { useParams } from "react-router-dom";
 import TopicCard from "./TopicCard";
 import danielBeasts from "@/assets/daniel-beasts.png";
 import revelationDragon from "@/assets/revelation-dragon.png";
@@ -11,18 +12,19 @@ import nebuchadnezzarStatue from "@/assets/nebuchadnezzar-statue.png";
 import newJerusalem from "@/assets/new-jerusalem.png";
 
 const topicImages = [
-  { image: nebuchadnezzarStatue, color: "from-prophecy-gold/80" },
-  { image: danielBeasts, color: "from-prophecy-coral/80" },
-  { image: lambZion, color: "from-prophecy-blue/80" },
-  { image: threeAngels, color: "from-prophecy-gold/80" },
-  { image: sanctuary, color: "from-prophecy-purple/80" },
-  { image: revelationDragon, color: "from-prophecy-teal/80" },
-  { image: prophecyTimeline, color: "from-prophecy-coral/80" },
-  { image: newJerusalem, color: "from-prophecy-gold/80" },
+  { image: nebuchadnezzarStatue, color: "from-prophecy-gold/80", slug: "daniels-statue" },
+  { image: danielBeasts, color: "from-prophecy-coral/80", slug: "four-beasts" },
+  { image: lambZion, color: "from-prophecy-blue/80", slug: "lamb-seven-seals" },
+  { image: threeAngels, color: "from-prophecy-gold/80", slug: "three-angels" },
+  { image: sanctuary, color: "from-prophecy-purple/80", slug: "sanctuary" },
+  { image: revelationDragon, color: "from-prophecy-teal/80", slug: "investigative-judgment" },
+  { image: prophecyTimeline, color: "from-prophecy-coral/80", slug: "time-of-end" },
+  { image: newJerusalem, color: "from-prophecy-gold/80", slug: "new-jerusalem" },
 ];
 
 const ProphecyTopics = () => {
   const { t } = useTranslation();
+  const { lang = "en" } = useParams();
   const rawItems = t("topics.items", { returnObjects: true });
   const items = Array.isArray(rawItems) ? rawItems as Array<{ title: string; description: string; book: string }> : [];
 
@@ -59,6 +61,8 @@ const ProphecyTopics = () => {
                 description={item.description}
                 image={meta.image}
                 color={meta.color}
+                slug={meta.slug}
+                lang={lang}
                 delay={index * 0.1}
               />
             );
