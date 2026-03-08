@@ -621,6 +621,15 @@ const TopicPage = () => {
       
       <section className={`pt-24 pb-16 bg-gradient-to-br ${topic.heroColor} relative overflow-hidden`}>
         <div className="absolute inset-0 bg-black/20" />
+        {topicHeroImages[topicId as string] && (
+          <div className="absolute inset-0 z-0">
+            <img
+              src={topicHeroImages[topicId as string]}
+              alt={topic.title}
+              className="w-full h-full object-cover opacity-25"
+            />
+          </div>
+        )}
         <div className="container mx-auto px-4 relative z-10">
           <Link to={`${prefix}/#topics`} className="inline-flex items-center gap-2 text-white/80 hover:text-white mb-6 transition-colors">
             <ArrowLeft className="w-4 h-4" />
