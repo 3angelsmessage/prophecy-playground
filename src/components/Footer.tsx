@@ -3,6 +3,7 @@ import { Heart, BookOpen, Mail, Star } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { useLanguagePrefix } from "@/hooks/useLanguagePrefix";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const { t } = useTranslation();
