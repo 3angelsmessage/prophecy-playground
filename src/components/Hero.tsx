@@ -1,9 +1,12 @@
 import { motion } from "framer-motion";
 import { Play, Sparkles } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
 import heroLion from "@/assets/hero-lion.png";
 
 const Hero = () => {
+  const { t } = useTranslation();
+
   return (
     <section
       id="home"
@@ -53,28 +56,27 @@ const Hero = () => {
               className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary font-semibold mb-6"
             >
               <Sparkles size={16} />
-              SDA Bible Prophecy for Kids
+              {t("hero.badge", "SDA Bible Prophecy for Kids")}
             </motion.div>
 
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold text-foreground leading-tight mb-6">
-              Discover the{" "}
-              <span className="text-gradient">Secrets</span> of{" "}
+              {t("hero.title1")}{" "}
+              <span className="text-gradient">{t("hero.titleHighlight")}</span>{" "}
               <br className="hidden sm:block" />
-              Bible Prophecy!
+              {t("hero.title2")}
             </h1>
 
             <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-lg mx-auto lg:mx-0">
-              Learn about Daniel and Revelation through fun games, exciting
-              quizzes, and amazing stories from God's Word!
+              {t("hero.subtitle")}
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button variant="hero" size="xl">
                 <Play size={20} />
-                Start Adventure
+                {t("hero.startPlaying")}
               </Button>
               <Button variant="heroOutline" size="xl">
-                Watch Video
+                {t("hero.learnFirst")}
               </Button>
             </div>
 
@@ -86,9 +88,9 @@ const Hero = () => {
               className="flex gap-8 mt-12 justify-center lg:justify-start"
             >
               {[
-                { number: "50+", label: "Games" },
-                { number: "100+", label: "Quizzes" },
-                { number: "7", label: "Prophecy Topics" },
+                { number: "50+", label: t("hero.statGames") },
+                { number: "100+", label: t("hero.statQuizzes") },
+                { number: "7", label: t("hero.statTopics", "Prophecy Topics") },
               ].map((stat) => (
                 <div key={stat.label} className="text-center">
                   <p className="font-display text-3xl font-bold text-primary">
