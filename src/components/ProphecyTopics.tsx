@@ -18,7 +18,7 @@ const topicImages = [
   { image: sanctuary, color: "from-prophecy-purple/80" },
   { image: revelationDragon, color: "from-prophecy-teal/80" },
   { image: prophecyTimeline, color: "from-prophecy-coral/80" },
-  { image: lambZion, color: "from-prophecy-blue/80" },
+  { image: newJerusalem, color: "from-prophecy-gold/80" },
 ];
 
 const ProphecyTopics = () => {
