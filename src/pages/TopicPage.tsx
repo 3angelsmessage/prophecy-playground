@@ -29,6 +29,26 @@ const topicsContentEn: Record<string, any> = {
       },
       { title: "The Stone Kingdom", content: "The stone that destroyed the statue represents God's eternal kingdom! Just like the prophecy said, these kingdoms rose and fell exactly as predicted. This shows us that God knows the future and His Word is true!", icon: "⛰️" }
     ],
+    scripture: {
+      reference: "Daniel 2:1-18 (NKJV)",
+      text: `1 Now in the second year of Nebuchadnezzar's reign, Nebuchadnezzar had dreams; and his spirit was so troubled that his sleep left him. 2 Then the king gave the command to call the magicians, the astrologers, the sorcerers, and the Chaldeans to tell the king his dreams. So they came and stood before the king. 3 And the king said to them, "I have had a dream, and my spirit is anxious to know the dream."
+
+4 Then the Chaldeans spoke to the king in Aramaic, "O king, live forever! Tell your servants the dream, and we will give the interpretation."
+
+5 The king answered and said to the Chaldeans, "My decision is firm: if you do not make known the dream to me, and its interpretation, you shall be cut in pieces, and your houses shall be made an ash heap. 6 However, if you tell the dream and its interpretation, you shall receive from me gifts, rewards, and great honor. Therefore tell me the dream and its interpretation."
+
+7 They answered again and said, "Let the king tell his servants the dream, and we will give its interpretation."
+
+8 The king answered and said, "I know for certain that you would gain time, because you see that my decision is firm: 9 if you do not make known the dream to me, there is only one decree for you! For you have agreed to speak lying and corrupt words before me till the time has changed. Therefore tell me the dream, and I shall know that you can give me its interpretation."
+
+10 The Chaldeans answered the king, and said, "There is not a man on earth who can tell the king's matter; therefore no king, lord, or ruler has ever asked such things of any magician, astrologer, or Chaldean. 11 It is a difficult thing that the king requests, and there is no other who can tell it to the king except the gods, whose dwelling is not with flesh."
+
+12 For this reason the king was angry and very furious, and gave the command to destroy all the wise men of Babylon. 13 So the decree went out, and they began killing the wise men; and they sought Daniel and his companions, to kill them.
+
+14 Then with counsel and wisdom Daniel answered Arioch, the captain of the king's guard, who had gone out to kill the wise men of Babylon; 15 he answered and said to Arioch the king's captain, "Why is the decree from the king so urgent?" Then Arioch made the decision known to Daniel.
+
+16 So Daniel went in and asked the king to give him time, that he might tell the king the interpretation. 17 Then Daniel went to his house, and made the decision known to Hananiah, Mishael, and Azariah, his companions, 18 that they might seek mercies from the God of heaven concerning this secret, so that Daniel and his companions might not perish with the rest of the wise men of Babylon.`
+    },
     funFact: "Every single kingdom in this prophecy has come and gone exactly as God said - and we're now living in the time of the divided nations (the feet of iron and clay)!",
     keyVerse: "In the days of those kings, the God of heaven will set up a kingdom that will never be destroyed. - Daniel 2:44"
   },
@@ -638,6 +658,24 @@ const TopicPage = () => {
           </div>
         </div>
       </section>
+
+      {topic.scripture && (
+        <section className="py-16 bg-secondary/5">
+          <div className="container mx-auto px-4">
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="max-w-3xl mx-auto bg-card rounded-3xl p-6 md:p-8 shadow-card border border-secondary/20">
+              <div className="flex items-center gap-3 mb-6">
+                <BookOpen className="w-6 h-6 text-secondary" />
+                <h3 className="text-xl font-display font-bold">{topic.scripture.reference}</h3>
+              </div>
+              <blockquote className="text-muted-foreground leading-relaxed whitespace-pre-line italic text-sm md:text-base">
+                {topic.scripture.text}
+              </blockquote>
+            </motion.div>
+          </div>
+        </section>
+      )}
 
       <section className="py-12 bg-primary/5">
         <div className="container mx-auto px-4">
