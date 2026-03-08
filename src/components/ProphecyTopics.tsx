@@ -61,6 +61,8 @@ const ProphecyTopics = () => {
                 description={item.description}
                 image={meta.image}
                 color={meta.color}
+                slug={meta.slug}
+                lang={lang}
                 delay={index * 0.1}
               />
             );
