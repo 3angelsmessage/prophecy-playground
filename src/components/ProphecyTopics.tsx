@@ -5,6 +5,7 @@ import revelationDragon from "@/assets/revelation-dragon.png";
 import sanctuary from "@/assets/sanctuary.png";
 import prophecyTimeline from "@/assets/prophecy-timeline.png";
 import lambZion from "@/assets/lamb-zion.png";
+import threeAngels from "@/assets/three-angels.png";
 
 const topics = [
   {
