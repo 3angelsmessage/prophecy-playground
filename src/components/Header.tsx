@@ -1,17 +1,26 @@
 import { useState } from "react";
-import { motion } from "framer-motion";
-import { Menu, X, BookOpen, Gamepad2, Trophy, Home } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Menu, X, BookOpen, Gamepad2, Trophy, Home, Play, HelpCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { t } = useTranslation();
 
   const navLinks = [
-    { name: "Home", icon: Home, href: "#home" },
-    { name: "Learn", icon: BookOpen, href: "#learn" },
-    { name: "Games", icon: Gamepad2, href: "#games" },
-    { name: "Quizzes", icon: Trophy, href: "#quizzes" },
+    { name: t("nav.home"), icon: Home, href: "#home" },
+    { name: t("nav.learn"), icon: BookOpen, href: "#learn" },
+    { name: t("nav.videos"), icon: Play, href: "#videos" },
+    { name: t("nav.games"), icon: Gamepad2, href: "#games" },
+    { name: t("nav.quiz"), icon: Trophy, href: "#quizzes" },
   ];
+
+  const handleNavClick = (href: string) => {
+    setIsOpen(false);
+    document.getElementById(href.replace('#', ''))?.scrollIntoView({ behavior: 'smooth' });
+  };
 
   return (
     <motion.header
@@ -22,11 +31,7 @@ const Header = () => {
     >
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            className="flex items-center gap-2"
-          >
+          <motion.div whileHover={{ scale: 1.05 }} className="flex items-center gap-2">
             <div className="w-12 h-12 rounded-full gradient-hero flex items-center justify-center">
               <span className="text-2xl">📖</span>
             </div>
@@ -40,12 +45,12 @@ const Header = () => {
             </div>
           </motion.div>
 
-          {/* Desktop Navigation */}
           <nav className="hidden md:flex items-center gap-1">
             {navLinks.map((link) => (
               <motion.a
                 key={link.name}
                 href={link.href}
+                onClick={(e) => { e.preventDefault(); handleNavClick(link.href); }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="flex items-center gap-2 px-4 py-2 rounded-full text-muted-foreground hover:text-foreground hover:bg-muted transition-all font-semibold"
@@ -56,46 +61,49 @@ const Header = () => {
             ))}
           </nav>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
+          <div className="hidden md:flex items-center gap-3">
+            <LanguageSwitcher />
             <Button variant="hero" size="lg">
-              Start Learning! 🚀
+              {t("nav.startLearning")}
             </Button>
           </div>
 
-          {/* Mobile Menu Toggle */}
-          <button
-            className="md:hidden p-2 rounded-lg bg-muted"
-            onClick={() => setIsOpen(!isOpen)}
-          >
-            {isOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
+          <div className="md:hidden flex items-center gap-2">
+            <LanguageSwitcher />
+            <button
+              className="p-2 rounded-lg bg-muted"
+              onClick={() => setIsOpen(!isOpen)}
+            >
+              {isOpen ? <X size={24} /> : <Menu size={24} />}
+            </button>
+          </div>
         </div>
 
-        {/* Mobile Navigation */}
-        {isOpen && (
-          <motion.nav
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden mt-4 pb-4 space-y-2"
-          >
-            {navLinks.map((link) => (
-              <a
-                key={link.name}
-                href={link.href}
-                className="flex items-center gap-3 px-4 py-3 rounded-xl bg-muted text-foreground font-semibold"
-                onClick={() => setIsOpen(false)}
-              >
-                <link.icon size={20} />
-                {link.name}
-              </a>
-            ))}
-            <Button variant="hero" className="w-full mt-4">
-              Start Learning! 🚀
-            </Button>
-          </motion.nav>
-        )}
+        <AnimatePresence>
+          {isOpen && (
+            <motion.nav
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "auto" }}
+              exit={{ opacity: 0, height: 0 }}
+              className="md:hidden mt-4 pb-4 space-y-2"
+            >
+              {navLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.href}
+                  className="flex items-center gap-3 px-4 py-3 rounded-xl bg-muted text-foreground font-semibold"
+                  onClick={(e) => { e.preventDefault(); handleNavClick(link.href); }}
+                >
+                  <link.icon size={20} />
+                  {link.name}
+                </a>
+              ))}
+              <Button variant="hero" className="w-full mt-4">
+                {t("nav.startLearning")}
+              </Button>
+            </motion.nav>
+          )}
+        </AnimatePresence>
       </div>
     </motion.header>
   );
