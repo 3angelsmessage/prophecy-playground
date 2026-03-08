@@ -11,6 +11,7 @@ const en = {
 
   // Hero
   hero: {
+    badge: "SDA Bible Prophecy for Kids",
     title1: "Discover",
     titleHighlight: "Amazing",
     title2: "Bible Prophecies!",
@@ -19,6 +20,7 @@ const en = {
     learnFirst: "Learn First",
     statGames: "Fun Games",
     statQuizzes: "Quizzes",
+    statTopics: "Prophecy Topics",
     statFree: "Free!",
   },
 
@@ -257,6 +259,22 @@ const en = {
     errorDesc: "Please fill in all required fields.",
     successTitle: "Message sent!",
     successDesc: "Thank you for reaching out. We'll get back to you soon!",
+  },
+
+  // Parents section
+  parents: {
+    badge: "👨‍👩‍👧‍👦 For Parents",
+    title: "A Place You Can",
+    titleHighlight: "Trust",
+    subtitle: "We know how important it is to provide safe, meaningful content for your children. Prophecy Kids is designed with both kids and parents in mind, teaching SDA Bible prophecy in fun, engaging ways.",
+    guideBtn: "Parent's Guide",
+    learnMoreBtn: "Learn More",
+    features: [
+      { title: "Safe Environment", description: "100% ad-free and kid-safe content. No in-app purchases or external links." },
+      { title: "Faith-Based Learning", description: "Age-appropriate Bible lessons that nurture spiritual growth and character." },
+      { title: "Family Time", description: "Discussion guides and activities perfect for family devotions together." },
+      { title: "Progress Tracking", description: "Track your child's learning journey through prophecy topics and games." },
+    ],
   },
 
   // Language

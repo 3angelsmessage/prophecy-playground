@@ -11,6 +11,7 @@ const ht = {
 
   // Hero
   hero: {
+    badge: "Pwofesi Bib ASD pou Timoun",
     title1: "Dekouvri",
     titleHighlight: "Etònan",
     title2: "Pwofesi Bib la!",
@@ -19,6 +20,7 @@ const ht = {
     learnFirst: "Aprann Dabò",
     statGames: "Jwèt Amizan",
     statQuizzes: "Quiz",
+    statTopics: "Sijè Pwofesi",
     statFree: "Gratis!",
   },
 
@@ -257,6 +259,22 @@ const ht = {
     errorDesc: "Tanpri ranpli tout chan obligatwa yo.",
     successTitle: "Mesaj voye!",
     successDesc: "Mèsi paske ou kontakte nou. N ap reponn ou byento!",
+  },
+
+  // Parents section
+  parents: {
+    badge: "👨‍👩‍👧‍👦 Pou Paran",
+    title: "Yon Kote Ou Ka",
+    titleHighlight: "Fè Konfyans",
+    subtitle: "Nou konnen jan li enpòtan pou bay pitit ou yon kontni ki an sekirite ak ki gen sans. Prophecy Kids fèt pou timoun ak paran, li anseye pwofesi biblik adventis nan fason ki amizan.",
+    guideBtn: "Gid Paran",
+    learnMoreBtn: "Aprann Plis",
+    features: [
+      { title: "Anviwonman An Sekirite", description: "Kontni 100% san piblisite ak ki an sekirite pou timoun. Pa gen acha nan aplikasyon oswa lyen ekstèn." },
+      { title: "Aprantisaj Baze sou Lafwa", description: "Leson biblik apwopriye pou laj ki nouri kwasans espirityèl ak karaktè." },
+      { title: "Tan an Fanmi", description: "Gid diskisyon ak aktivite ki pafè pou devosyon fanmi ansanm." },
+      { title: "Swivi Pwogrè", description: "Swiv vwayaj aprantisaj pitit ou atravè sijè ak jwèt pwofesi." },
+    ],
   },
 
   // Language

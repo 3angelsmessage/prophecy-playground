@@ -11,6 +11,7 @@ const es = {
 
   // Hero
   hero: {
+    badge: "Profecía Bíblica ASD para Niños",
     title1: "¡Descubre",
     titleHighlight: "Increíbles",
     title2: "Profecías Bíblicas!",
@@ -19,6 +20,7 @@ const es = {
     learnFirst: "Aprender",
     statGames: "Juegos divertidos",
     statQuizzes: "Quizzes",
+    statTopics: "Temas Proféticos",
     statFree: "¡Gratis!",
   },
 
@@ -257,6 +259,22 @@ const es = {
     errorDesc: "Por favor completa todos los campos obligatorios.",
     successTitle: "¡Mensaje enviado!",
     successDesc: "Gracias por escribirnos. ¡Te responderemos pronto!",
+  },
+
+  // Parents section
+  parents: {
+    badge: "👨‍👩‍👧‍👦 Para Padres",
+    title: "Un Lugar de",
+    titleHighlight: "Confianza",
+    subtitle: "Sabemos lo importante que es proporcionar contenido seguro y significativo para tus hijos. Prophecy Kids está diseñado para niños y padres, enseñando profecía bíblica adventista de manera divertida.",
+    guideBtn: "Guía para Padres",
+    learnMoreBtn: "Saber Más",
+    features: [
+      { title: "Entorno Seguro", description: "Contenido 100% sin anuncios y seguro para niños. Sin compras dentro de la app ni enlaces externos." },
+      { title: "Aprendizaje Basado en la Fe", description: "Lecciones bíblicas apropiadas para la edad que nutren el crecimiento espiritual y el carácter." },
+      { title: "Tiempo en Familia", description: "Guías de discusión y actividades perfectas para devocionales familiares." },
+      { title: "Seguimiento del Progreso", description: "Sigue el recorrido de aprendizaje de tu hijo a través de temas y juegos de profecía." },
+    ],
   },
 
   // Language
