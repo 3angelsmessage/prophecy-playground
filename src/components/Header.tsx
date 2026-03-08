@@ -98,7 +98,7 @@ const Header = () => {
                   {link.name}
                 </a>
               ))}
-              <Button variant="hero" className="w-full mt-4">
+              <Button variant="hero" className="w-full mt-4" onClick={() => { setIsOpen(false); document.getElementById('learn')?.scrollIntoView({ behavior: 'smooth' }); }}>
                 {t("nav.startLearning")}
               </Button>
             </motion.nav>
