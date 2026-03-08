@@ -20,7 +20,7 @@ import ellenWhite from "@/assets/ellen-white.png";
 const topicHeroImages: Record<string, string> = {
   "daniels-statue": nebuchadnezzarStatue,
   "four-beasts": danielBeasts,
-  "lamb-seven-seals": lambZion,
+  "seven-seals": lambZion,
   "three-angels": threeAngels,
   "sanctuary": sanctuary,
   "investigative-judgment": investigativeJudgment,
