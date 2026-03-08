@@ -17,7 +17,7 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
         // Custom variants for Prophecy Kids
         hero: "bg-[hsl(0,100%,50%)] text-white shadow-lg hover:bg-[hsl(0,100%,40%)] hover:shadow-xl hover:scale-105 rounded-full font-bold",
-        heroOutline: "border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground rounded-full font-bold",
+        heroOutline: "border-2 border-[hsl(120,100%,45%)] text-[hsl(120,100%,45%)] hover:bg-[hsl(120,100%,45%)] hover:text-white rounded-full font-bold",
         game: "bg-gradient-to-r from-secondary to-prophecy-teal text-secondary-foreground shadow-md hover:shadow-lg hover:scale-105 rounded-xl font-bold",
       },
       size: {
