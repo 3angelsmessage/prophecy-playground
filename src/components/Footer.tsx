@@ -16,9 +16,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-12 h-12 rounded-full gradient-hero flex items-center justify-center">
-                <span className="text-2xl">📖</span>
-              </div>
+              <img src={logo} alt="Prophecy Kids Logo" className="w-12 h-12 rounded-full object-cover" />
               <div>
                 <h3 className="font-display text-xl font-bold">{t("footer.brand")}</h3>
                 <p className="text-sm opacity-70">Learn Bible Prophecy</p>
