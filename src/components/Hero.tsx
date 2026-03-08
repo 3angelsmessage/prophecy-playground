@@ -13,14 +13,13 @@ const Hero = () => {
       className="relative min-h-screen pt-24 pb-16 overflow-hidden"
     >
       {/* Background image */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 flex items-center justify-center">
         <img
           src={heroLion}
           alt=""
-          className="w-full h-full object-cover opacity-10"
+          className="max-w-2xl w-full object-contain opacity-[0.07]"
         />
       </div>
-      <div className="absolute inset-0 bg-background/40 z-[1]" />
       <div className="absolute top-20 left-10 w-32 h-32 bg-primary/20 rounded-full blur-3xl z-[1]" />
       <div className="absolute bottom-40 right-10 w-48 h-48 bg-secondary/20 rounded-full blur-3xl z-[1]" />
       
