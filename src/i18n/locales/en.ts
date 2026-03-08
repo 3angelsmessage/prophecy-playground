@@ -72,6 +72,11 @@ const en = {
         description: "Our beautiful forever home with streets of gold!",
         book: "Revelation 21-22",
       },
+      {
+        title: "Ellen White",
+        description: "Discover the life and prophetic gift of God's end-time messenger!",
+        book: "Spirit of Prophecy",
+      },
     ],
   },
 
