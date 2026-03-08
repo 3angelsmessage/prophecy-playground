@@ -11,6 +11,7 @@ const ht = {
 
   // Hero
   hero: {
+    badge: "Pwofesi Bib ASD pou Timoun",
     title1: "Dekouvri",
     titleHighlight: "Etònan",
     title2: "Pwofesi Bib la!",
@@ -19,6 +20,7 @@ const ht = {
     learnFirst: "Aprann Dabò",
     statGames: "Jwèt Amizan",
     statQuizzes: "Quiz",
+    statTopics: "Sijè Pwofesi",
     statFree: "Gratis!",
   },
 
