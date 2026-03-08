@@ -59,7 +59,7 @@ const Hero = () => {
               {t("hero.badge", "SDA Bible Prophecy for Kids")}
             </motion.div>
 
-            <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
+            <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-black leading-tight mb-6">
               <span className="text-[hsl(120,100%,45%)]">{t("hero.title1")}</span>{" "}
               <span className="text-[hsl(0,100%,50%)]">{t("hero.titleHighlight")}</span>{" "}
               <br className="hidden sm:block" />
