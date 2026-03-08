@@ -6,6 +6,28 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useTranslation } from "react-i18next";
 import { useLanguagePrefix } from "@/hooks/useLanguagePrefix";
+import danielBeasts from "@/assets/daniel-beasts.png";
+import revelationDragon from "@/assets/revelation-dragon.png";
+import sanctuary from "@/assets/sanctuary.png";
+import prophecyTimeline from "@/assets/prophecy-timeline.png";
+import lambZion from "@/assets/lamb-zion.png";
+import threeAngels from "@/assets/three-angels.png";
+import nebuchadnezzarStatue from "@/assets/nebuchadnezzar-statue.png";
+import newJerusalem from "@/assets/new-jerusalem.png";
+import investigativeJudgment from "@/assets/investigative-judgment.png";
+import ellenWhite from "@/assets/ellen-white.png";
+
+const topicHeroImages: Record<string, string> = {
+  "daniels-statue": nebuchadnezzarStatue,
+  "four-beasts": danielBeasts,
+  "lamb-seven-seals": lambZion,
+  "three-angels": threeAngels,
+  "sanctuary": sanctuary,
+  "investigative-judgment": investigativeJudgment,
+  "time-of-end": prophecyTimeline,
+  "new-jerusalem": newJerusalem,
+  "ellen-white": ellenWhite,
+};
 
 // English content
 const topicsContentEn: Record<string, any> = {
@@ -599,6 +621,15 @@ const TopicPage = () => {
       
       <section className={`pt-24 pb-16 bg-gradient-to-br ${topic.heroColor} relative overflow-hidden`}>
         <div className="absolute inset-0 bg-black/20" />
+        {topicHeroImages[topicId as string] && (
+          <div className="absolute inset-0 z-0">
+            <img
+              src={topicHeroImages[topicId as string]}
+              alt={topic.title}
+              className="w-full h-full object-cover opacity-25"
+            />
+          </div>
+        )}
         <div className="container mx-auto px-4 relative z-10">
           <Link to={`${prefix}/#topics`} className="inline-flex items-center gap-2 text-white/80 hover:text-white mb-6 transition-colors">
             <ArrowLeft className="w-4 h-4" />
