@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { useParams } from "react-router-dom";
 import TopicCard from "./TopicCard";
 import danielBeasts from "@/assets/daniel-beasts.png";
 import revelationDragon from "@/assets/revelation-dragon.png";
