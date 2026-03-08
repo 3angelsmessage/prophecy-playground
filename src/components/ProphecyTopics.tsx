@@ -8,6 +8,7 @@ import prophecyTimeline from "@/assets/prophecy-timeline.png";
 import lambZion from "@/assets/lamb-zion.png";
 import threeAngels from "@/assets/three-angels.png";
 import nebuchadnezzarStatue from "@/assets/nebuchadnezzar-statue.png";
+import newJerusalem from "@/assets/new-jerusalem.png";
 
 const topicImages = [
   { image: nebuchadnezzarStatue, color: "from-prophecy-gold/80" },
@@ -17,7 +18,7 @@ const topicImages = [
   { image: sanctuary, color: "from-prophecy-purple/80" },
   { image: revelationDragon, color: "from-prophecy-teal/80" },
   { image: prophecyTimeline, color: "from-prophecy-coral/80" },
-  { image: lambZion, color: "from-prophecy-blue/80" },
+  { image: newJerusalem, color: "from-prophecy-gold/80" },
 ];
 
 const ProphecyTopics = () => {
