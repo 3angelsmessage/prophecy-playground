@@ -4,6 +4,7 @@ import { Menu, X, BookOpen, Gamepad2, Trophy, Home, Play, HelpCircle } from "luc
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
