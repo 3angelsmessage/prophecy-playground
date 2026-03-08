@@ -26,21 +26,6 @@ const Hero = () => {
       <div className="absolute top-20 left-10 w-32 h-32 bg-primary/20 rounded-full blur-3xl z-[1]" />
       <div className="absolute bottom-40 right-10 w-48 h-48 bg-secondary/20 rounded-full blur-3xl z-[1]" />
       
-      {/* Floating elements */}
-      <motion.div
-        animate={{ y: [0, -15, 0] }}
-        transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-32 right-20 text-5xl hidden lg:block z-[2]"
-      >
-        ⭐
-      </motion.div>
-      <motion.div
-        animate={{ y: [0, -10, 0], rotate: [0, 10, 0] }}
-        transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute bottom-48 left-32 text-3xl hidden lg:block z-[2]"
-      >
-        📜
-      </motion.div>
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="flex flex-col items-center gap-8">
