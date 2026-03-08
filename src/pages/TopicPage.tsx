@@ -659,6 +659,24 @@ const TopicPage = () => {
         </div>
       </section>
 
+      {topic.scripture && (
+        <section className="py-16 bg-secondary/5">
+          <div className="container mx-auto px-4">
+            <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="max-w-3xl mx-auto bg-card rounded-3xl p-6 md:p-8 shadow-card border border-secondary/20">
+              <div className="flex items-center gap-3 mb-6">
+                <BookOpen className="w-6 h-6 text-secondary" />
+                <h3 className="text-xl font-display font-bold">{topic.scripture.reference}</h3>
+              </div>
+              <blockquote className="text-muted-foreground leading-relaxed whitespace-pre-line italic text-sm md:text-base">
+                {topic.scripture.text}
+              </blockquote>
+            </motion.div>
+          </div>
+        </section>
+      )}
+
       <section className="py-12 bg-primary/5">
         <div className="container mx-auto px-4">
           <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }}
