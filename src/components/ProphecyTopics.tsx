@@ -11,14 +11,14 @@ import nebuchadnezzarStatue from "@/assets/nebuchadnezzar-statue.png";
 import newJerusalem from "@/assets/new-jerusalem.png";
 
 const topicImages = [
-  { image: nebuchadnezzarStatue, color: "from-prophecy-gold/80" },
-  { image: danielBeasts, color: "from-prophecy-coral/80" },
-  { image: lambZion, color: "from-prophecy-blue/80" },
-  { image: threeAngels, color: "from-prophecy-gold/80" },
-  { image: sanctuary, color: "from-prophecy-purple/80" },
-  { image: revelationDragon, color: "from-prophecy-teal/80" },
-  { image: prophecyTimeline, color: "from-prophecy-coral/80" },
-  { image: newJerusalem, color: "from-prophecy-gold/80" },
+  { image: nebuchadnezzarStatue, color: "from-prophecy-gold/80", slug: "daniels-statue" },
+  { image: danielBeasts, color: "from-prophecy-coral/80", slug: "four-beasts" },
+  { image: lambZion, color: "from-prophecy-blue/80", slug: "lamb-seven-seals" },
+  { image: threeAngels, color: "from-prophecy-gold/80", slug: "three-angels" },
+  { image: sanctuary, color: "from-prophecy-purple/80", slug: "sanctuary" },
+  { image: revelationDragon, color: "from-prophecy-teal/80", slug: "investigative-judgment" },
+  { image: prophecyTimeline, color: "from-prophecy-coral/80", slug: "time-of-end" },
+  { image: newJerusalem, color: "from-prophecy-gold/80", slug: "new-jerusalem" },
 ];
 
 const ProphecyTopics = () => {
