@@ -75,7 +75,7 @@ const Hero = () => {
                 <Play size={20} />
                 {t("hero.startPlaying")}
               </Button>
-              <Button variant="heroOutline" size="xl">
+              <Button variant="heroOutline" size="xl" onClick={() => document.getElementById('learn')?.scrollIntoView({ behavior: 'smooth' })}>
                 {t("hero.learnFirst")}
               </Button>
             </div>
