@@ -6,6 +6,28 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { useTranslation } from "react-i18next";
 import { useLanguagePrefix } from "@/hooks/useLanguagePrefix";
+import danielBeasts from "@/assets/daniel-beasts.png";
+import revelationDragon from "@/assets/revelation-dragon.png";
+import sanctuary from "@/assets/sanctuary.png";
+import prophecyTimeline from "@/assets/prophecy-timeline.png";
+import lambZion from "@/assets/lamb-zion.png";
+import threeAngels from "@/assets/three-angels.png";
+import nebuchadnezzarStatue from "@/assets/nebuchadnezzar-statue.png";
+import newJerusalem from "@/assets/new-jerusalem.png";
+import investigativeJudgment from "@/assets/investigative-judgment.png";
+import ellenWhite from "@/assets/ellen-white.png";
+
+const topicHeroImages: Record<string, string> = {
+  "daniels-statue": nebuchadnezzarStatue,
+  "four-beasts": danielBeasts,
+  "lamb-seven-seals": lambZion,
+  "three-angels": threeAngels,
+  "sanctuary": sanctuary,
+  "investigative-judgment": investigativeJudgment,
+  "time-of-end": prophecyTimeline,
+  "new-jerusalem": newJerusalem,
+  "ellen-white": ellenWhite,
+};
 
 // English content
 const topicsContentEn: Record<string, any> = {
