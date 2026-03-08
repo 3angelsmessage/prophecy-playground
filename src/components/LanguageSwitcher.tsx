@@ -8,7 +8,9 @@ const languages = [
   { code: "fr", label: "FR" },
   { code: "es", label: "ES" },
   { code: "ht", label: "HT" },
-];
+] as const;
+
+const validLangs = languages.map((l) => l.code);
 
 const LanguageSwitcher = () => {
   const { i18n } = useTranslation();
@@ -18,7 +20,9 @@ const LanguageSwitcher = () => {
   const [open, setOpen] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
 
-  const currentLang = lang || i18n.language || "en";
+  const currentLang = validLangs.includes((lang || "") as (typeof validLangs)[number])
+    ? (lang as (typeof validLangs)[number])
+    : ((i18n.resolvedLanguage || i18n.language || "en").slice(0, 2) as (typeof validLangs)[number]);
 
   useEffect(() => {
     const handler = (e: MouseEvent) => {
@@ -29,10 +33,23 @@ const LanguageSwitcher = () => {
   }, []);
 
   const switchLanguage = (newLang: string) => {
+    if (newLang === currentLang) {
+      setOpen(false);
+      return;
+    }
+
+    const segments = location.pathname.split("/").filter(Boolean);
+    const restSegments = validLangs.includes((segments[0] || "") as (typeof validLangs)[number])
+      ? segments.slice(1)
+      : segments;
+    const newPath = `/${newLang}${restSegments.length ? `/${restSegments.join("/")}` : ""}`;
+
     i18n.changeLanguage(newLang);
-    const currentPath = location.pathname;
-    const pathWithoutLang = currentPath.replace(/^\/(en|fr|es|ht)/, "") || "/";
-    navigate(`/${newLang}${pathWithoutLang === "/" ? "" : pathWithoutLang}`);
+    navigate({
+      pathname: newPath,
+      search: location.search,
+      hash: location.hash,
+    });
     setOpen(false);
   };
 
