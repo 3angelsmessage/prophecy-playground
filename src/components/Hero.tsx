@@ -13,11 +13,14 @@ const Hero = () => {
       className="relative min-h-screen pt-24 pb-16 overflow-hidden"
     >
       {/* Background image */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
-        <img
+      <div className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none">
+        <motion.img
           src={heroLion}
           alt=""
-          className="absolute bottom-0 right-0 w-[60%] max-w-3xl object-contain opacity-15 translate-x-[10%] translate-y-[5%]"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 0.2, scale: 1.05 }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
+          className="w-[80%] max-w-4xl object-contain drop-shadow-[0_0_80px_hsl(var(--primary)/0.3)]"
         />
       </div>
       <div className="absolute top-20 left-10 w-32 h-32 bg-primary/20 rounded-full blur-3xl z-[1]" />
