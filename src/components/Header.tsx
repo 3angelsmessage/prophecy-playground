@@ -59,7 +59,7 @@ const Header = () => {
 
           <div className="hidden md:flex items-center gap-3">
             <LanguageSwitcher />
-            <Button variant="hero" size="xs" className="text-xs px-3 py-1 h-7" onClick={() => document.getElementById('learn')?.scrollIntoView({ behavior: 'smooth' })}>
+            <Button variant="hero" size="sm" className="text-xs px-3 py-1 h-7" onClick={() => document.getElementById('learn')?.scrollIntoView({ behavior: 'smooth' })}>
               {t("nav.startLearning")}
             </Button>
           </div>
