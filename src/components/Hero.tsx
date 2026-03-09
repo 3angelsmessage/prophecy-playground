@@ -58,7 +58,7 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="sm" className="sm:h-11 sm:px-6 sm:text-sm bg-[hsl(0,100%,50%)] hover:bg-[hsl(0,100%,40%)]" onClick={() => document.getElementById('games')?.scrollIntoView({ behavior: 'smooth' })}>
+              <Button variant="hero" size="sm" className="sm:h-11 sm:px-6 sm:text-sm" onClick={() => document.getElementById('games')?.scrollIntoView({ behavior: 'smooth' })}>
                 <Play size={16} />
                 {t("hero.startPlaying")}
               </Button>
