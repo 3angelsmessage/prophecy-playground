@@ -87,7 +87,7 @@ const Header = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="flex items-center gap-3 px-4 py-3 rounded-xl bg-muted text-foreground font-semibold"
+                  className="flex items-center gap-3 px-4 py-3 rounded-xl bg-muted text-[hsl(120,80%,30%)] font-semibold"
                   onClick={(e) => { e.preventDefault(); handleNavClick(link.href); }}
                 >
                   <link.icon size={20} />
