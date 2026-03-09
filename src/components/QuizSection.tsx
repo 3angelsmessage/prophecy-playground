@@ -107,8 +107,8 @@ const QuizSection = () => {
             {t("quiz.badge")}
           </span>
           <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            {t("quiz.title")}{" "}
-            <span className="text-gradient">{t("quiz.titleHighlight")}</span>
+            <span className="text-[hsl(120,100%,45%)]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>{t("quiz.title")}</span>{" "}
+            <span className="text-[hsl(330,80%,45%)]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>{t("quiz.titleHighlight")}</span>
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
             {t("quiz.subtitle")}
