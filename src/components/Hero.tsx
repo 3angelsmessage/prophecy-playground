@@ -83,7 +83,7 @@ const Hero = () => {
                   <p className="font-display text-3xl font-bold text-[hsl(120,100%,45%)]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7), -1px -1px 3px rgba(0,0,0,0.5)' }}>
                     {stat.number}
                   </p>
-                  <p className="text-sm text-muted-foreground font-medium">
+                  <p className="text-sm text-[hsl(330,80%,45%)] font-medium" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.5)' }}>
                     {stat.label}
                   </p>
                 </div>
