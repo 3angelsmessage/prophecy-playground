@@ -44,7 +44,7 @@ const TopicCard = ({ title, description, image, color, slug, lang, delay = 0 }: 
             <p className="text-muted-foreground text-sm leading-relaxed mb-4">
               {description}
             </p>
-            <div className="flex items-center gap-2 text-primary font-semibold">
+            <div className="flex items-center gap-2 text-[hsl(330,80%,45%)] font-semibold">
               <span>Explore</span>
               <ChevronRight
                 size={18}
