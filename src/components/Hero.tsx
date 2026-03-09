@@ -47,10 +47,10 @@ const Hero = () => {
             </motion.div>
 
             <h1 className="font-display text-4xl sm:text-5xl lg:text-7xl font-black leading-tight mb-6">
-              <span className="text-[hsl(120,100%,45%)]">{t("hero.title1")}</span>{" "}
-              <span className="text-[hsl(0,100%,50%)]">{t("hero.titleHighlight")}</span>{" "}
+              <span className="text-[hsl(120,100%,45%)]" style={{ WebkitTextStroke: '1.5px white', paintOrder: 'stroke fill' }}>{t("hero.title1")}</span>{" "}
+              <span className="text-[hsl(330,80%,45%)]">{t("hero.titleHighlight")}</span>{" "}
               <br className="hidden sm:block" />
-              <span className="text-[hsl(120,100%,45%)]">{t("hero.title2")}</span>
+              <span className="text-[hsl(120,100%,45%)]" style={{ WebkitTextStroke: '1.5px white', paintOrder: 'stroke fill' }}>{t("hero.title2")}</span>
             </h1>
 
             <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-lg mx-auto">
@@ -58,7 +58,7 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="sm" className="sm:h-11 sm:px-6 sm:text-sm bg-[hsl(0,100%,50%)] hover:bg-[hsl(0,100%,40%)]" onClick={() => document.getElementById('games')?.scrollIntoView({ behavior: 'smooth' })}>
+              <Button variant="hero" size="sm" className="sm:h-11 sm:px-6 sm:text-sm" onClick={() => document.getElementById('games')?.scrollIntoView({ behavior: 'smooth' })}>
                 <Play size={16} />
                 {t("hero.startPlaying")}
               </Button>
