@@ -38,7 +38,7 @@ const TopicCard = ({ title, description, image, color, slug, lang, delay = 0 }: 
 
           {/* Content */}
           <div className="p-5">
-            <h3 className="font-display text-xl font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+            <h3 className="font-display text-xl font-bold text-foreground mb-2 group-hover:text-[hsl(120,80%,30%)] transition-colors">
               {title}
             </h3>
             <p className="text-muted-foreground text-sm leading-relaxed mb-4">
