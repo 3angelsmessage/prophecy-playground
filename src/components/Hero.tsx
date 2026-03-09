@@ -47,10 +47,10 @@ const Hero = () => {
             </motion.div>
 
             <h1 className="font-display text-4xl sm:text-5xl lg:text-7xl font-black leading-tight mb-6">
-              <span className="text-[hsl(120,100%,45%)]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7), -1px -1px 3px rgba(0,0,0,0.5)' }}>{t("hero.title1")}</span>{" "}
+              <span className="text-[hsl(120,80%,30%)]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7), -1px -1px 3px rgba(0,0,0,0.5)' }}>{t("hero.title1")}</span>{" "}
               <span className="text-[hsl(330,80%,45%)]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7), -1px -1px 3px rgba(0,0,0,0.5)' }}>{t("hero.titleHighlight")}</span>{" "}
               <br className="hidden sm:block" />
-              <span className="text-[hsl(120,100%,45%)]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7), -1px -1px 3px rgba(0,0,0,0.5)' }}>{t("hero.title2")}</span>
+              <span className="text-[hsl(120,80%,30%)]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7), -1px -1px 3px rgba(0,0,0,0.5)' }}>{t("hero.title2")}</span>
             </h1>
 
             <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-lg mx-auto">
@@ -80,7 +80,7 @@ const Hero = () => {
                 { number: "7", label: t("hero.statTopics", "Prophecy Topics") },
               ].map((stat) => (
                 <div key={stat.label} className="text-center">
-                  <p className="font-display text-3xl font-bold text-[hsl(120,100%,45%)]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7), -1px -1px 3px rgba(0,0,0,0.5)' }}>
+                  <p className="font-display text-3xl font-bold text-[hsl(120,80%,30%)]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7), -1px -1px 3px rgba(0,0,0,0.5)' }}>
                     {stat.number}
                   </p>
                   <p className="text-sm text-[hsl(330,80%,45%)] font-medium" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.5)' }}>
