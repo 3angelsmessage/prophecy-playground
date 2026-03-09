@@ -677,6 +677,21 @@ const TopicPage = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto space-y-12">
+            {topicId === "time-of-end" && (
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="bg-card rounded-3xl p-6 md:p-8 shadow-card border border-border overflow-hidden"
+              >
+                <h3 className="text-xl font-display font-bold mb-4 text-center">📅 2300 Year Prophecy Timeline</h3>
+                <img 
+                  src={timelineImage} 
+                  alt="2300 year prophecy timeline from 457 BC to 1844 AD" 
+                  className="w-full h-auto rounded-xl"
+                />
+              </motion.div>
+            )}
             {topic.sections.map((section: any, index: number) => (
               <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }} transition={{ delay: index * 0.1 }}
