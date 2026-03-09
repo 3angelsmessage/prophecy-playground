@@ -94,7 +94,7 @@ const GamesSection = () => {
                     </span>
                   </div>
                   <div className="p-5">
-                    <h3 className="font-display text-lg font-bold text-foreground mb-2 group-hover:text-primary transition-colors">
+                    <h3 className="font-display text-lg font-bold text-foreground mb-2 group-hover:text-[hsl(330,80%,45%)] transition-colors">
                       {item.title}
                     </h3>
                     <p className="text-muted-foreground text-sm mb-4">{item.description}</p>
