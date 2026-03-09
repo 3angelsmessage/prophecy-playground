@@ -40,7 +40,7 @@ const Hero = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.2 }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 text-primary font-semibold mb-6"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[hsl(330,80%,45%)]/10 text-[hsl(330,80%,45%)] font-semibold mb-6"
             >
               <Sparkles size={16} />
               {t("hero.badge", "SDA Bible Prophecy for Kids")}
