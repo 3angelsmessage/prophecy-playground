@@ -36,7 +36,7 @@ const GameCard = ({
       viewport={{ once: true }}
       transition={{ duration: 0.4, delay }}
       whileHover={{ y: -5 }}
-      className="group bg-card rounded-2xl p-6 shadow-card hover:shadow-glow transition-all duration-300"
+      className="group group bg-card rounded-2xl p-6 shadow-card hover:shadow-glow transition-all duration-300"
     >
       {/* Header */}
       <div className="flex items-start justify-between mb-4">
@@ -57,7 +57,7 @@ const GameCard = ({
       <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">
         {category}
       </span>
-      <h3 className="font-display text-xl font-bold text-foreground mt-1 mb-3">
+      <h3 className="font-display text-xl font-bold text-foreground mt- group-hover:text-[hsl(330,80%,45%)] transition-colors1 mb-3">
         {title}
       </h3>
 
