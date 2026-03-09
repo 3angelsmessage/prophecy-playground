@@ -49,9 +49,9 @@ const Header = () => {
                 onClick={(e) => { e.preventDefault(); handleNavClick(link.href); }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="flex items-center gap-2 px-4 py-2 rounded-full text-muted-foreground hover:text-foreground hover:bg-muted transition-all font-semibold"
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs text-muted-foreground hover:text-foreground hover:bg-muted transition-all font-semibold"
               >
-                <link.icon size={18} />
+                <link.icon size={14} />
                 {link.name}
               </motion.a>
             ))}
