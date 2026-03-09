@@ -35,7 +35,7 @@ const Header = () => {
           <motion.div whileHover={{ scale: 1.05 }} className="flex items-center gap-2">
             <img src={logo} alt="Prophecy Kids Logo" className="w-12 h-12 rounded-full object-cover" />
             <div className="hidden sm:block">
-              <h1 className="font-display text-2xl font-extrabold leading-tight" style={{ color: 'hsl(120, 100%, 40%)', textShadow: '-1px -1px 0 goldenrod, 1px -1px 0 goldenrod, -1px 1px 0 goldenrod, 1px 1px 0 goldenrod' }}>
+              <h1 className="font-display text-lg font-extrabold leading-tight" style={{ color: 'hsl(120, 100%, 40%)', textShadow: '-1px -1px 0 goldenrod, 1px -1px 0 goldenrod, -1px 1px 0 goldenrod, 1px 1px 0 goldenrod' }}>
                 Prophecy<br />Kids
               </h1>
             </div>
