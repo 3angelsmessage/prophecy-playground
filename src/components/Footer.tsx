@@ -45,7 +45,7 @@ const Footer = () => {
           </motion.div>
         </div>
 
-        <div className="pt-8 border-t border-[hsl(120,100%,45%)]/20 flex flex-col md:flex-row items-center justify-between gap-4">
+        <div className="pt-8 border-t border-[hsl(120,80%,30%)]/20 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm opacity-80">
             {t("footer.copyright")} <Heart size={14} className="inline text-white" /> {t("footer.forStudents")}
           </p>
