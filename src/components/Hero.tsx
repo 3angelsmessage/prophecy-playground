@@ -47,10 +47,10 @@ const Hero = () => {
             </motion.div>
 
             <h1 className="font-display text-4xl sm:text-5xl lg:text-7xl font-black leading-tight mb-6">
-              <span className="text-[hsl(120,100%,45%)]" style={{ WebkitTextStroke: '3px white', paintOrder: 'stroke fill' }}>{t("hero.title1")}</span>{" "}
-              <span className="text-[hsl(330,80%,45%)]">{t("hero.titleHighlight")}</span>{" "}
+              <span className="text-[hsl(120,100%,45%)]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7), -1px -1px 3px rgba(0,0,0,0.5)' }}>{t("hero.title1")}</span>{" "}
+              <span className="text-[hsl(330,80%,45%)]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7), -1px -1px 3px rgba(0,0,0,0.5)' }}>{t("hero.titleHighlight")}</span>{" "}
               <br className="hidden sm:block" />
-              <span className="text-[hsl(120,100%,45%)]" style={{ WebkitTextStroke: '3px white', paintOrder: 'stroke fill' }}>{t("hero.title2")}</span>
+              <span className="text-[hsl(120,100%,45%)]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7), -1px -1px 3px rgba(0,0,0,0.5)' }}>{t("hero.title2")}</span>
             </h1>
 
             <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-lg mx-auto">
