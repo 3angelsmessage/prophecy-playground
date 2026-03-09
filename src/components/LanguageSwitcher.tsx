@@ -57,10 +57,10 @@ const LanguageSwitcher = () => {
     <div ref={ref} className="relative">
       <button
         onClick={() => setOpen(!open)}
-        className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors text-foreground text-sm font-semibold border border-border"
+        className="flex items-center gap-1 px-2 py-1 rounded-full bg-primary/10 hover:bg-primary/20 transition-colors text-foreground text-xs font-semibold border border-border"
         aria-label="Switch language"
       >
-        <Globe className="w-4 h-4" />
+        <Globe className="w-3 h-3" />
         {currentLang.toUpperCase()}
       </button>
       {open && (
