@@ -57,12 +57,12 @@ const Hero = () => {
               {t("hero.subtitle")}
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="sm" className="sm:h-11 sm:px-6 sm:text-sm" onClick={() => document.getElementById('games')?.scrollIntoView({ behavior: 'smooth' })}>
-                <Play size={16} />
+            <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
+              <Button variant="hero" size="sm" className="w-auto px-5 h-10 text-sm" onClick={() => document.getElementById('games')?.scrollIntoView({ behavior: 'smooth' })}>
+                <Play size={14} />
                 {t("hero.startPlaying")}
               </Button>
-              <Button variant="heroOutline" size="sm" className="sm:h-11 sm:px-6 sm:text-sm" onClick={() => document.getElementById('learn')?.scrollIntoView({ behavior: 'smooth' })}>
+              <Button variant="heroOutline" size="sm" className="w-auto px-5 h-10 text-sm" onClick={() => document.getElementById('learn')?.scrollIntoView({ behavior: 'smooth' })}>
                 {t("hero.learnFirst")}
               </Button>
             </div>
