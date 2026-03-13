@@ -12,6 +12,7 @@ import nebuchadnezzarStatue from "@/assets/nebuchadnezzar-statue.png";
 import newJerusalem from "@/assets/new-jerusalem.png";
 import investigativeJudgment from "@/assets/investigative-judgment.png";
 import ellenWhite from "@/assets/ellen-white.png";
+import sabbathDay from "@/assets/sabbath-day.png";
 
 const topicImages = [
   { image: nebuchadnezzarStatue, color: "from-prophecy-gold/80", slug: "daniels-statue" },
