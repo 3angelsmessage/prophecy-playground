@@ -23,6 +23,7 @@ const gameMeta = [
   { icon: Scroll, color: "from-prophecy-purple/80", difficulty: "medium", time: "7 min", slug: "revelation-10" },
   { icon: Target, color: "from-prophecy-gold/80", difficulty: "hard", time: "10 min", slug: "investigative-judgment" },
   { icon: Layers, color: "from-prophecy-coral/80", difficulty: "hard", time: "8 min", slug: "time-of-end" },
+  { icon: Scroll, color: "from-prophecy-gold/80", difficulty: "easy", time: "5 min", slug: "sabbath-day" },
 ];
 
 const vibrantBorders: Record<string, string> = {
