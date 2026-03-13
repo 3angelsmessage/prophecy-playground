@@ -24,6 +24,7 @@ const topicImages = [
   { image: prophecyTimeline, color: "from-prophecy-coral/80", slug: "time-of-end" },
   { image: newJerusalem, color: "from-prophecy-gold/80", slug: "new-jerusalem" },
   { image: ellenWhite, color: "from-prophecy-purple/80", slug: "ellen-white" },
+  { image: sabbathDay, color: "from-prophecy-gold/80", slug: "sabbath-day" },
 ];
 
 const ProphecyTopics = () => {
