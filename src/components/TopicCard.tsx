@@ -12,7 +12,28 @@ interface TopicCardProps {
   delay?: number;
 }
 
+const vibrantBorders: Record<string, string> = {
+  "from-prophecy-gold/80": "border-b-prophecy-gold",
+  "from-prophecy-coral/80": "border-b-prophecy-coral",
+  "from-prophecy-blue/80": "border-b-prophecy-blue",
+  "from-prophecy-purple/80": "border-b-prophecy-purple",
+  "from-prophecy-teal/80": "border-b-prophecy-teal",
+  "from-prophecy-green/80": "border-b-prophecy-green",
+};
+
+const vibrantBg: Record<string, string> = {
+  "from-prophecy-gold/80": "bg-prophecy-gold/10 hover:bg-prophecy-gold/20",
+  "from-prophecy-coral/80": "bg-prophecy-coral/10 hover:bg-prophecy-coral/20",
+  "from-prophecy-blue/80": "bg-prophecy-blue/10 hover:bg-prophecy-blue/20",
+  "from-prophecy-purple/80": "bg-prophecy-purple/10 hover:bg-prophecy-purple/20",
+  "from-prophecy-teal/80": "bg-prophecy-teal/10 hover:bg-prophecy-teal/20",
+  "from-prophecy-green/80": "bg-prophecy-green/10 hover:bg-prophecy-green/20",
+};
+
 const TopicCard = ({ title, description, image, color, slug, lang, delay = 0 }: TopicCardProps) => {
+  const borderClass = vibrantBorders[color] || "border-b-prophecy-gold";
+  const bgClass = vibrantBg[color] || "bg-prophecy-gold/10";
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 30 }}
@@ -23,7 +44,7 @@ const TopicCard = ({ title, description, image, color, slug, lang, delay = 0 }: 
       className="group cursor-pointer"
     >
       <Link to={`/${lang}/topics/${slug}`}>
-        <div className="relative bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-glow transition-all duration-300">
+        <div className={`relative rounded-2xl overflow-hidden shadow-card hover:shadow-glow transition-all duration-300 border-b-4 ${borderClass} ${bgClass}`}>
           {/* Image */}
           <div className="relative h-48 overflow-hidden">
             <img
@@ -38,7 +59,7 @@ const TopicCard = ({ title, description, image, color, slug, lang, delay = 0 }: 
 
           {/* Content */}
           <div className="p-5">
-            <h3 className="font-display text-xl font-bold text-foreground mb-2 group-hover:text-[hsl(120,80%,30%)] transition-colors">
+            <h3 className="font-display text-xl font-bold text-foreground mb-2 group-hover:text-[hsl(330,80%,45%)] transition-colors">
               {title}
             </h3>
             <p className="text-muted-foreground text-sm leading-relaxed mb-4">
