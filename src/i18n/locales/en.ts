@@ -135,6 +135,7 @@ const en = {
       { title: "Revelation 10: The Little Book", description: "Learn about the mighty angel and the sweet & bitter scroll!" },
       { title: "Investigative Judgment", description: "Learn about Jesus' work in the heavenly sanctuary since 1844!" },
       { title: "Time of the End", description: "Explore Daniel 12's prophecies about the last days!" },
+      { title: "The Sabbath Day", description: "\"Remember the Sabbath day, to keep it holy. Six days you shall labor and do all your work, but the seventh day is the Sabbath of the Lord your God. In it you shall do no work... For in six days the Lord made the heavens and the earth, the sea, and all that is in them, and rested the seventh day. Therefore the Lord blessed the Sabbath day and hallowed it.\" — Exodus 20:8-11" },
     ],
   },
 
