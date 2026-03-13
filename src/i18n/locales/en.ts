@@ -77,6 +77,11 @@ const en = {
         description: "Discover the life and prophetic gift of God's end-time messenger!",
         book: "Spirit of Prophecy",
       },
+      {
+        title: "The Sabbath Day",
+        description: "\"Remember the Sabbath day, to keep it holy. Six days you shall labor and do all your work, but the seventh day is the Sabbath of the Lord your God. In it you shall do no work... For in six days the Lord made the heavens and the earth, the sea, and all that is in them, and rested the seventh day. Therefore the Lord blessed the Sabbath day and hallowed it.\"",
+        book: "Exodus 20:8-11",
+      },
     ],
   },
 
