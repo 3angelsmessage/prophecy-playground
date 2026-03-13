@@ -107,8 +107,8 @@ const GamesSection = () => {
                 className="group cursor-pointer"
                 onClick={() => navigate(`${prefix}/games/${meta.slug}`)}
               >
-                <div className="bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-glow transition-all duration-300">
-                  <div className={`h-28 ${meta.gradient} relative flex items-center justify-center`}>
+                <div className={`rounded-2xl overflow-hidden shadow-card hover:shadow-glow transition-all duration-300 border-b-4 ${vibrantBorders[meta.color] || "border-b-prophecy-gold"} ${vibrantBg[meta.color] || "bg-prophecy-gold/10"}`}>
+                  <div className={`h-28 ${vibrantHeaderBg[meta.color] || "bg-prophecy-gold/30"} relative flex items-center justify-center`}>
                     <motion.div animate={{ rotate: [0, 10, -10, 0] }} transition={{ duration: 3, repeat: Infinity }}>
                       <meta.icon className="w-14 h-14 text-foreground opacity-60" />
                     </motion.div>
