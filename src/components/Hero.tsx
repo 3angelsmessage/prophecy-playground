@@ -27,14 +27,14 @@ const Hero = () => {
       <div className="absolute bottom-40 right-10 w-48 h-48 bg-secondary/20 rounded-full blur-3xl z-[1]" />
       
 
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="flex flex-col items-center gap-8">
-          {/* Text Content - Centered */}
+      <div className="container mx-auto px-4 relative z-10 flex flex-col items-center justify-between min-h-[calc(100vh-6rem)]">
+        {/* Text Content - Centered */}
+        <div className="flex-1 flex items-center">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="flex-1 text-center max-w-3xl"
+            className="text-center max-w-3xl"
           >
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -57,22 +57,12 @@ const Hero = () => {
               {t("hero.subtitle")}
             </p>
 
-            <div className="flex flex-col sm:flex-row gap-3 justify-center items-center">
-              <Button variant="hero" size="sm" className="w-auto px-5 h-10 text-sm" onClick={() => document.getElementById('games')?.scrollIntoView({ behavior: 'smooth' })}>
-                <Play size={14} />
-                {t("hero.startPlaying")}
-              </Button>
-              <Button variant="heroOutline" size="sm" className="w-auto px-5 h-10 text-sm" onClick={() => document.getElementById('learn')?.scrollIntoView({ behavior: 'smooth' })}>
-                {t("hero.learnFirst")}
-              </Button>
-            </div>
-
             {/* Stats */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
-              className="flex gap-8 mt-12 justify-center"
+              className="flex gap-8 justify-center"
             >
               {[
                 { number: "50+", label: t("hero.statGames") },
@@ -91,6 +81,22 @@ const Hero = () => {
             </motion.div>
           </motion.div>
         </div>
+
+        {/* Buttons - Bottom */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.4 }}
+          className="flex flex-col sm:flex-row gap-3 justify-center items-center pb-8"
+        >
+          <Button variant="hero" size="sm" className="w-auto px-5 h-10 text-sm" onClick={() => document.getElementById('games')?.scrollIntoView({ behavior: 'smooth' })}>
+            <Play size={14} />
+            {t("hero.startPlaying")}
+          </Button>
+          <Button variant="heroOutline" size="sm" className="w-auto px-5 h-10 text-sm" onClick={() => document.getElementById('learn')?.scrollIntoView({ behavior: 'smooth' })}>
+            {t("hero.learnFirst")}
+          </Button>
+        </motion.div>
       </div>
     </section>
   );
