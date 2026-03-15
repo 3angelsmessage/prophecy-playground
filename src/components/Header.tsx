@@ -49,7 +49,7 @@ const Header = () => {
                 onClick={(e) => { e.preventDefault(); handleNavClick(link.href); }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs text-[hsl(120,80%,30%)] hover:text-[hsl(120,80%,25%)] hover:bg-[hsl(120,80%,30%)]/10 transition-all font-semibold"
+                className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm text-[hsl(120,80%,30%)] hover:text-[hsl(120,80%,25%)] hover:bg-[hsl(120,80%,30%)]/10 transition-all font-extrabold"
               >
                 <link.icon size={14} />
                 {link.name}
