@@ -87,7 +87,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4 }}
-          className="flex flex-col sm:flex-row gap-3 justify-center items-center pb-8"
+          className="flex flex-col sm:flex-row gap-3 justify-center items-center pb-24"
         >
           <Button variant="hero" size="sm" className="w-auto px-5 h-10 text-sm" onClick={() => document.getElementById('games')?.scrollIntoView({ behavior: 'smooth' })}>
             <Play size={14} />
