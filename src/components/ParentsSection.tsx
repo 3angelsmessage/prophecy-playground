@@ -8,6 +8,7 @@ const featureIcons = [Shield, Heart, Users, BookOpen];
 
 const ParentsSection = () => {
   const { t } = useTranslation();
+  const [showGuide, setShowGuide] = useState(false);
   const rawItems = t("parents.features", { returnObjects: true });
   const features = Array.isArray(rawItems) ? rawItems as Array<{ title: string; description: string }> : [];
 
