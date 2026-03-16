@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Play, Sparkles } from "lucide-react";
+import { Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 import heroLion from "@/assets/hero-lion.png";
