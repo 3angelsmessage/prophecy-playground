@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import { Play, BookOpen } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
-const videoGradients = ["gradient-hero", "gradient-hero"];
+const videoGradients = ["gradient-hero", "gradient-hero", "gradient-hero"];
 
 const VideoSection = () => {
   const { t } = useTranslation();
@@ -33,6 +34,26 @@ const VideoSection = () => {
         </motion.div>
 
         <div className="max-w-4xl mx-auto space-y-8">
+          {/* Featured YouTube Video */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="bg-card rounded-2xl shadow-card border border-border overflow-hidden">
+              <AspectRatio ratio={16 / 9}>
+                <iframe
+                  src="https://www.youtube.com/embed/vHKkAfl0cec"
+                  title="Bible Prophecy Video"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full rounded-t-2xl"
+                />
+              </AspectRatio>
+            </div>
+          </motion.div>
+
           {items.map((lesson, index) => (
             <motion.div
               key={index}
