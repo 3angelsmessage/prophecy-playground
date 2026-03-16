@@ -18,7 +18,7 @@ const Hero = () => {
           src={heroLion}
           alt=""
           initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 0.2, scale: 1 }}
+          animate={{ opacity: 0.55, scale: 1 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
           className="w-full h-full object-cover drop-shadow-[0_0_80px_hsl(var(--primary)/0.3)]"
         />
