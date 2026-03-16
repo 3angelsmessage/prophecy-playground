@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Play, Sparkles } from "lucide-react";
+import { Play } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 import heroLion from "@/assets/hero-lion.png";
@@ -36,15 +36,6 @@ const Hero = () => {
             transition={{ duration: 0.6 }}
             className="text-center max-w-3xl"
           >
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2 }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[hsl(330,80%,45%)]/10 text-[hsl(330,80%,45%)] font-semibold mb-6"
-            >
-              <Sparkles size={16} />
-              {t("hero.badge", "SDA Bible Prophecy for Kids")}
-            </motion.div>
 
             <h1 className="font-display text-4xl sm:text-5xl lg:text-7xl font-black leading-tight mb-6">
               <span className="text-[hsl(120,80%,30%)]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7), -1px -1px 3px rgba(0,0,0,0.5)' }}>{t("hero.title1")}</span>{" "}
