@@ -200,6 +200,52 @@ const topicsContentEn: Record<string, any> = {
     funFact: "Daniel 12:4 predicted the explosion of knowledge and travel - in the last 100 years, we've gone from horses to rockets!",
     keyVerse: "Those who are wise will shine like the brightness of the heavens. - Daniel 12:3"
   },
+  "ellen-white": {
+    title: "Ellen G. White",
+    subtitle: "God's End-Time Messenger",
+    book: "Spirit of Prophecy",
+    emoji: "📖",
+    heroColor: "from-purple-500 to-violet-600",
+    intro: "Ellen Gould Harmon was born at Gorham, Maine, on November 26, 1827. Her parents, Robert and Eunice Harmon, were devoted members of the Methodist Episcopal Church. All eight of their children were converted and gathered into the fold of Christ.",
+    sections: [
+      {
+        title: "A Life-Changing Accident",
+        content: "At the age of nine, while crossing a common in Portland, Maine, a girl about thirteen years of age threw a stone that hit Ellen on the nose. She was stunned by the blow and fell senseless to the ground. She lay in a stupor for three weeks, and no one but her mother thought she would recover. When she awoke, she was reduced almost to a skeleton and had to lie in a special cradle for many weeks.",
+        icon: "💔"
+      },
+      {
+        title: "Turning to God",
+        content: "During her recovery, Ellen began to pray earnestly for forgiveness of her sins. She felt a peace of mind and loved everyone, desiring that all should have their sins forgiven and love Jesus as she did. Her nervous system was so affected that her hand trembled, and she could barely write or study. Her teachers eventually advised her to leave school.",
+        icon: "🙏"
+      },
+      {
+        title: "William Miller's Lectures",
+        content: "In March 1840, William Miller visited Portland, Maine, and gave lectures on the second coming of Christ. These produced a great sensation. Mr. Miller traced down the prophecies with exactness, dwelling on the prophetic periods and bringing many proofs. His solemn appeals held the crowds as if spellbound. Ellen attended these meetings with her friends.",
+        icon: "📢"
+      },
+      {
+        title: "A Scrap of Paper",
+        content: "Four years before Miller's lectures, on her way to school, Ellen had picked up a scrap of paper about a man in England preaching that the earth would be consumed in about thirty years. She was seized with terror and could scarcely sleep for several nights, praying continually to be ready when Jesus came.",
+        icon: "📄"
+      },
+      {
+        title: "Seeking the Saviour",
+        content: "When sinners were invited forward at special meetings, Ellen pressed through the crowd and took her place with the seekers. But she felt she could never become worthy to be called a child of God. A terrible sadness rested on her heart, and a lack of confidence prevented her from seeking advice from Christian friends.",
+        icon: "😢"
+      },
+      {
+        title: "Finding Peace at Camp Meeting",
+        content: "At the Methodist camp meeting at Buxton, Maine, Ellen was encouraged by a sermon from Esther 4:16: 'If I perish, I perish.' The speaker counseled those wavering between hope and fear to surrender to God and venture upon His mercy without delay. All that was required was to put forth the hand of faith and touch the scepter of His grace. These words comforted her and showed her the way to be saved.",
+        icon: "⛺"
+      }
+    ],
+    scripture: {
+      reference: "Esther 4:16 (NKJV)",
+      text: "\"Go, gather all the Jews who are present in Shushan, and fast for me; neither eat nor drink for three days, night or day. My maids and I will fast likewise. And so I will go to the king, which is against the law; and if I perish, I perish!\""
+    },
+    funFact: "Ellen White had a twin sister! They were crossing a common together when the accident happened that changed Ellen's life forever.",
+    keyVerse: "Jesus alone cleanses from sin; He only can forgive our transgressions. He has pledged Himself to listen to the petition and grant the prayer of those who come to Him in faith."
+  },
 };
 
 // French content
