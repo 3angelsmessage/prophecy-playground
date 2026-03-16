@@ -1,8 +1,9 @@
 import { motion } from "framer-motion";
 import { Play, BookOpen } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
 
-const videoGradients = ["gradient-hero", "gradient-hero"];
+const videoGradients = ["gradient-hero", "gradient-hero", "gradient-hero"];
 
 const VideoSection = () => {
   const { t } = useTranslation();
