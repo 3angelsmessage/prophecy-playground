@@ -30,13 +30,31 @@ const ParentsSection = () => {
               {t("parents.subtitle")}
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="lg">
+              <Button variant="hero" size="lg" onClick={() => setShowGuide(!showGuide)}>
                 {t("parents.guideBtn")}
               </Button>
               <Button variant="heroOutline" size="lg">
                 {t("parents.learnMoreBtn")}
               </Button>
             </div>
+
+            <AnimatePresence>
+              {showGuide && (
+                <motion.div
+                  initial={{ opacity: 0, height: 0 }}
+                  animate={{ opacity: 1, height: "auto" }}
+                  exit={{ opacity: 0, height: 0 }}
+                  transition={{ duration: 0.3 }}
+                  className="overflow-hidden"
+                >
+                  <div className="mt-6 p-6 bg-card rounded-2xl border border-border shadow-card">
+                    <p className="text-foreground leading-relaxed text-base">
+                      As parents we want to ensure our children have access to the truth, and God's word is where we can search and find real truth.
+                    </p>
+                  </div>
+                </motion.div>
+              )}
+            </AnimatePresence>
           </motion.div>
 
           <motion.div
