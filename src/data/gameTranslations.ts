@@ -501,8 +501,6 @@ const timelineEventsData = {
     { id: "medopersia", event: "Medo-Persia Conquista", year: "539 a.C.", emoji: "🐻", order: 1, description: "Ciro derrota a Babilonia" },
     { id: "greece", event: "Grecia Toma el Poder", year: "331 a.C.", emoji: "🐆", order: 2, description: "Alejandro Magno conquista" },
     { id: "rome", event: "Roma Domina el Mundo", year: "168 a.C.", emoji: "🦅", order: 3, description: "Roma se convierte en superpotencia" },
-    { id: "jesus", event: "Jesús Nace", year: "4 a.C.", emoji: "⭐", order: 4, description: "El Mesías viene a la tierra" },
-    { id: "cross", event: "Jesús Muere por Nosotros", year: "31 d.C.", emoji: "✝️", order: 5, description: "El Cordero de Dios es sacrificado" },
   ],
 };
 
