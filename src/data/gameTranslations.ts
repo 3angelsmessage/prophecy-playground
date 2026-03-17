@@ -495,8 +495,6 @@ const timelineEventsData = {
     { id: "medopersia", event: "La Médo-Perse Conquiert", year: "539 av. J.-C.", emoji: "🐻", order: 1, description: "Cyrus défait Babylone" },
     { id: "greece", event: "La Grèce Prend le Pouvoir", year: "331 av. J.-C.", emoji: "🐆", order: 2, description: "Alexandre le Grand conquiert" },
     { id: "rome", event: "Rome Domine le Monde", year: "168 av. J.-C.", emoji: "🦅", order: 3, description: "Rome devient la superpuissance" },
-    { id: "jesus", event: "Jésus Est Né", year: "4 av. J.-C.", emoji: "⭐", order: 4, description: "Le Messie vient sur terre" },
-    { id: "cross", event: "Jésus Meurt pour Nous", year: "31 ap. J.-C.", emoji: "✝️", order: 5, description: "L'Agneau de Dieu est sacrifié" },
   ],
   es: [
     { id: "babylon", event: "Babilonia Reina", year: "605 a.C.", emoji: "🦁", order: 0, description: "Daniel es llevado cautivo" },
