@@ -207,31 +207,32 @@ const ProphecyTimelineGame = () => {
   const timelineEvents = useMemo(() => getTimelineEvents(i18n.language), [i18n.language]);
   const [shuffledEvents] = useState(() => [...timelineEvents].sort(() => Math.random() - 0.5));
   const [placedEvents, setPlacedEvents] = useState<string[]>([]);
-  const [selectedEvent, setSelectedEvent] = useState<string | null>(null);
   const [score, setScore] = useState(0);
   const [showResult, setShowResult] = useState(false);
   const [wrongAttempt, setWrongAttempt] = useState<number | null>(null);
+  const [slidingEvent, setSlidingEvent] = useState<string | null>(null);
 
   const nextPosition = placedEvents.length;
 
-  const handleEventClick = (eventId: string) => { if (!placedEvents.includes(eventId)) setSelectedEvent(eventId); };
-
-  const handlePlaceClick = () => {
-    if (!selectedEvent) return;
-    const event = timelineEvents.find(e => e.id === selectedEvent);
+  const handleEventClick = (eventId: string) => {
+    if (placedEvents.includes(eventId) || slidingEvent) return;
+    const event = timelineEvents.find(e => e.id === eventId);
     if (!event) return;
     if (event.order === nextPosition) {
-      setPlacedEvents(prev => [...prev, selectedEvent]);
-      setScore(prev => prev + Math.round(100 / timelineEvents.length));
-      setSelectedEvent(null);
-      if (placedEvents.length + 1 === timelineEvents.length) setTimeout(() => setShowResult(true), 800);
+      setSlidingEvent(eventId);
+      setTimeout(() => {
+        setPlacedEvents(prev => [...prev, eventId]);
+        setScore(prev => prev + Math.round(100 / timelineEvents.length));
+        setSlidingEvent(null);
+        if (placedEvents.length + 1 === timelineEvents.length) setTimeout(() => setShowResult(true), 800);
+      }, 500);
     } else {
       setWrongAttempt(nextPosition);
       setTimeout(() => setWrongAttempt(null), 500);
     }
   };
 
-  const resetGame = () => { setPlacedEvents([]); setScore(0); setSelectedEvent(null); setShowResult(false); };
+  const resetGame = () => { setPlacedEvents([]); setScore(0); setShowResult(false); setSlidingEvent(null); };
 
   if (showResult) {
     return (
@@ -246,10 +247,45 @@ const ProphecyTimelineGame = () => {
   }
 
   return (
-    <div className="grid md:grid-cols-2 gap-8">
-      <div className="order-2 md:order-1">
+    <div className="space-y-8">
+      {/* Event choices */}
+      <div>
+        <h3 className="font-bold mb-4 text-center">{ui.chooseEvent}</h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <AnimatePresence>
+            {shuffledEvents.map((event) => {
+              const isPlaced = placedEvents.includes(event.id);
+              const isSliding = slidingEvent === event.id;
+              if (isPlaced || isSliding) return null;
+              return (
+                <motion.button
+                  key={event.id}
+                  layout
+                  exit={{ opacity: 0, y: 60, scale: 0.8, transition: { duration: 0.4, ease: "easeIn" } }}
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  onClick={() => handleEventClick(event.id)}
+                  className="w-full p-4 rounded-xl text-left transition-colors bg-card border-2 border-border hover:border-primary"
+                >
+                  <div className="flex items-center gap-3">
+                    <span className="text-2xl">{event.emoji}</span>
+                    <div className="flex-1"><span className="font-bold">{event.event}</span><p className="text-sm opacity-80">{event.description}</p></div>
+                  </div>
+                </motion.button>
+              );
+            })}
+          </AnimatePresence>
+        </div>
+        <div className="mt-4 text-center">
+          <p className="text-lg font-bold">{ui.score}: {score}/100</p>
+          <p className="text-xs text-muted-foreground mt-1">{ui.chronologicalOrder}</p>
+        </div>
+      </div>
+
+      {/* Timeline answer area */}
+      <div>
         <h3 className="font-bold mb-4 text-center">{ui.buildTimeline}</h3>
-        <div className="bg-muted/50 rounded-2xl p-4 min-h-[400px]">
+        <div className="bg-muted/50 rounded-2xl p-4 min-h-[200px]">
           <div className="relative">
             <div className="absolute left-6 top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-secondary to-accent rounded-full" />
             <div className="space-y-3">
@@ -259,8 +295,9 @@ const ProphecyTimelineGame = () => {
                 const isWrong = wrongAttempt === index;
                 return (
                   <motion.div key={event.id}
-                    initial={isPlaced ? { opacity: 0, x: -20 } : {}}
-                    animate={isPlaced ? { opacity: 1, x: 0 } : isWrong ? { x: [0, -10, 10, -10, 10, 0] } : {}}
+                    initial={isPlaced ? { opacity: 0, x: -50, y: -30 } : {}}
+                    animate={isPlaced ? { opacity: 1, x: 0, y: 0 } : isWrong ? { x: [0, -10, 10, -10, 10, 0] } : {}}
+                    transition={isPlaced ? { duration: 0.5, type: "spring", stiffness: 120, damping: 14 } : {}}
                     className="relative pl-14"
                   >
                     <div className={`absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 rounded-full border-4 transition-all ${isPlaced ? "bg-primary border-primary" : isNext ? "bg-background border-primary animate-pulse" : "bg-muted border-muted-foreground/30"}`} />
@@ -279,36 +316,6 @@ const ProphecyTimelineGame = () => {
               })}
             </div>
           </div>
-          {selectedEvent && (
-            <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} className="mt-6 text-center">
-              <Button onClick={handlePlaceClick} variant="hero" size="lg">{ui.placeOnTimeline}</Button>
-            </motion.div>
-          )}
-        </div>
-      </div>
-      <div className="order-1 md:order-2">
-        <h3 className="font-bold mb-4 text-center">{ui.chooseEvent}</h3>
-        <div className="space-y-3">
-          {shuffledEvents.map((event) => {
-            const isPlaced = placedEvents.includes(event.id);
-            const isSelected = selectedEvent === event.id;
-            return (
-              <motion.button key={event.id} whileHover={!isPlaced ? { scale: 1.02 } : {}} whileTap={!isPlaced ? { scale: 0.98 } : {}}
-                onClick={() => handleEventClick(event.id)} disabled={isPlaced}
-                className={`w-full p-4 rounded-xl text-left transition-all ${isPlaced ? "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400 opacity-60" : isSelected ? "bg-primary text-primary-foreground ring-2 ring-primary ring-offset-2" : "bg-card border-2 border-border hover:border-primary"}`}
-              >
-                <div className="flex items-center gap-3">
-                  <span className="text-2xl">{event.emoji}</span>
-                  <div className="flex-1"><span className="font-bold">{event.event}</span><p className="text-sm opacity-80">{event.description}</p></div>
-                  {isPlaced && <span className="text-lg">✓</span>}
-                </div>
-              </motion.button>
-            );
-          })}
-        </div>
-        <div className="mt-6 text-center">
-          <p className="text-lg font-bold">{ui.score}: {score}/100</p>
-          <p className="text-xs text-muted-foreground mt-1">{ui.chronologicalOrder}</p>
         </div>
       </div>
     </div>
