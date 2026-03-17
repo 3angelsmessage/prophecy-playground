@@ -274,6 +274,7 @@ const ht = {
     subtitle: "Nou konnen jan li enpòtan pou bay pitit ou yon kontni ki an sekirite ak ki gen sans. Prophecy Kids fèt pou timoun ak paran, li anseye pwofesi biblik adventis nan fason ki amizan.",
     guideBtn: "Gid Paran",
     learnMoreBtn: "Aprann Plis",
+    guideText: "Kòm paran, nou vle asire pitit nou yo gen aksè a verite a, epi Pawòl Bondye a se kote nou ka chèche epi jwenn vrè verite a.",
     features: [
       { title: "Anviwonman An Sekirite", description: "Kontni 100% san piblisite ak ki an sekirite pou timoun. Pa gen acha nan aplikasyon oswa lyen ekstèn." },
       { title: "Aprantisaj Baze sou Lafwa", description: "Leson biblik apwopriye pou laj ki nouri kwasans espirityèl ak karaktè." },

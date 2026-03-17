@@ -274,6 +274,7 @@ const es = {
     subtitle: "Sabemos lo importante que es proporcionar contenido seguro y significativo para tus hijos. Prophecy Kids está diseñado para niños y padres, enseñando profecía bíblica adventista de manera divertida.",
     guideBtn: "Guía para Padres",
     learnMoreBtn: "Saber Más",
+    guideText: "Como padres, queremos asegurarnos de que nuestros hijos tengan acceso a la verdad, y la Palabra de Dios es donde podemos buscar y encontrar la verdadera verdad.",
     features: [
       { title: "Entorno Seguro", description: "Contenido 100% sin anuncios y seguro para niños. Sin compras dentro de la app ni enlaces externos." },
       { title: "Aprendizaje Basado en la Fe", description: "Lecciones bíblicas apropiadas para la edad que nutren el crecimiento espiritual y el carácter." },

@@ -47,9 +47,9 @@ const ParentsSection = () => {
                   transition={{ duration: 0.3 }}
                   className="overflow-hidden"
                 >
-                  <div className="mt-6 p-6 bg-card rounded-2xl border border-border shadow-card">
-                    <p className="text-foreground leading-relaxed text-base">
-                      As parents we want to ensure our children have access to the truth, and God's word is where we can search and find real truth.
+                    <div className="mt-6 p-6 bg-card rounded-2xl border border-border shadow-card">
+                     <p className="text-foreground leading-relaxed text-base">
+                       {t("parents.guideText")}
                     </p>
                   </div>
                 </motion.div>

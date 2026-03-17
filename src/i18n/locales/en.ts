@@ -275,6 +275,7 @@ const en = {
     subtitle: "We know how important it is to provide safe, meaningful content for your children. Prophecy Kids is designed with both kids and parents in mind, teaching SDA Bible prophecy in fun, engaging ways.",
     guideBtn: "Parent's Guide",
     learnMoreBtn: "Learn More",
+    guideText: "As parents we want to ensure our children have access to the truth, and God's word is where we can search and find real truth.",
     features: [
       { title: "Safe Environment", description: "100% ad-free and kid-safe content. No in-app purchases or external links." },
       { title: "Faith-Based Learning", description: "Age-appropriate Bible lessons that nurture spiritual growth and character." },
