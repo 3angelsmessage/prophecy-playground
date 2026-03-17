@@ -489,24 +489,18 @@ const timelineEventsData = {
     { id: "medopersia", event: "Medo-Persia Conquers", year: "539 BC", emoji: "🐻", order: 1, description: "Cyrus defeats Babylon" },
     { id: "greece", event: "Greece Takes Over", year: "331 BC", emoji: "🐆", order: 2, description: "Alexander the Great conquers" },
     { id: "rome", event: "Rome Rules the World", year: "168 BC", emoji: "🦅", order: 3, description: "Rome becomes the superpower" },
-    { id: "jesus", event: "Jesus is Born", year: "4 BC", emoji: "⭐", order: 4, description: "The Messiah comes to earth" },
-    { id: "cross", event: "Jesus Dies for Us", year: "31 AD", emoji: "✝️", order: 5, description: "The Lamb of God is sacrificed" },
   ],
   fr: [
     { id: "babylon", event: "Babylone Règne", year: "605 av. J.-C.", emoji: "🦁", order: 0, description: "Daniel est emmené captif" },
     { id: "medopersia", event: "La Médo-Perse Conquiert", year: "539 av. J.-C.", emoji: "🐻", order: 1, description: "Cyrus défait Babylone" },
     { id: "greece", event: "La Grèce Prend le Pouvoir", year: "331 av. J.-C.", emoji: "🐆", order: 2, description: "Alexandre le Grand conquiert" },
     { id: "rome", event: "Rome Domine le Monde", year: "168 av. J.-C.", emoji: "🦅", order: 3, description: "Rome devient la superpuissance" },
-    { id: "jesus", event: "Jésus Est Né", year: "4 av. J.-C.", emoji: "⭐", order: 4, description: "Le Messie vient sur terre" },
-    { id: "cross", event: "Jésus Meurt pour Nous", year: "31 ap. J.-C.", emoji: "✝️", order: 5, description: "L'Agneau de Dieu est sacrifié" },
   ],
   es: [
     { id: "babylon", event: "Babilonia Reina", year: "605 a.C.", emoji: "🦁", order: 0, description: "Daniel es llevado cautivo" },
     { id: "medopersia", event: "Medo-Persia Conquista", year: "539 a.C.", emoji: "🐻", order: 1, description: "Ciro derrota a Babilonia" },
     { id: "greece", event: "Grecia Toma el Poder", year: "331 a.C.", emoji: "🐆", order: 2, description: "Alejandro Magno conquista" },
     { id: "rome", event: "Roma Domina el Mundo", year: "168 a.C.", emoji: "🦅", order: 3, description: "Roma se convierte en superpotencia" },
-    { id: "jesus", event: "Jesús Nace", year: "4 a.C.", emoji: "⭐", order: 4, description: "El Mesías viene a la tierra" },
-    { id: "cross", event: "Jesús Muere por Nosotros", year: "31 d.C.", emoji: "✝️", order: 5, description: "El Cordero de Dios es sacrificado" },
   ],
 };
 
