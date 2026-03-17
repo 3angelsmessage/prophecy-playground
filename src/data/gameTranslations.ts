@@ -489,18 +489,21 @@ const timelineEventsData = {
     { id: "medopersia", event: "Medo-Persia Conquers", year: "539 BC", emoji: "🐻", order: 1, description: "Cyrus defeats Babylon" },
     { id: "greece", event: "Greece Takes Over", year: "331 BC", emoji: "🐆", order: 2, description: "Alexander the Great conquers" },
     { id: "rome", event: "Rome Rules the World", year: "168 BC", emoji: "🦅", order: 3, description: "Rome becomes the superpower" },
+    { id: "gods-kingdom", event: "God Sets Up His Kingdom", year: "Future", emoji: "👑", order: 4, description: "God's eternal kingdom replaces all earthly kingdoms" },
   ],
   fr: [
     { id: "babylon", event: "Babylone Règne", year: "605 av. J.-C.", emoji: "🦁", order: 0, description: "Daniel est emmené captif" },
     { id: "medopersia", event: "La Médo-Perse Conquiert", year: "539 av. J.-C.", emoji: "🐻", order: 1, description: "Cyrus défait Babylone" },
     { id: "greece", event: "La Grèce Prend le Pouvoir", year: "331 av. J.-C.", emoji: "🐆", order: 2, description: "Alexandre le Grand conquiert" },
     { id: "rome", event: "Rome Domine le Monde", year: "168 av. J.-C.", emoji: "🦅", order: 3, description: "Rome devient la superpuissance" },
+    { id: "gods-kingdom", event: "Dieu Établit Son Royaume", year: "Futur", emoji: "👑", order: 4, description: "Le royaume éternel de Dieu remplace tous les royaumes terrestres" },
   ],
   es: [
     { id: "babylon", event: "Babilonia Reina", year: "605 a.C.", emoji: "🦁", order: 0, description: "Daniel es llevado cautivo" },
     { id: "medopersia", event: "Medo-Persia Conquista", year: "539 a.C.", emoji: "🐻", order: 1, description: "Ciro derrota a Babilonia" },
     { id: "greece", event: "Grecia Toma el Poder", year: "331 a.C.", emoji: "🐆", order: 2, description: "Alejandro Magno conquista" },
     { id: "rome", event: "Roma Domina el Mundo", year: "168 a.C.", emoji: "🦅", order: 3, description: "Roma se convierte en superpotencia" },
+    { id: "gods-kingdom", event: "Dios Establece Su Reino", year: "Futuro", emoji: "👑", order: 4, description: "El reino eterno de Dios reemplaza todos los reinos terrenales" },
   ],
 };
 
