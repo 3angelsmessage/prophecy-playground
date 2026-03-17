@@ -489,8 +489,6 @@ const timelineEventsData = {
     { id: "medopersia", event: "Medo-Persia Conquers", year: "539 BC", emoji: "🐻", order: 1, description: "Cyrus defeats Babylon" },
     { id: "greece", event: "Greece Takes Over", year: "331 BC", emoji: "🐆", order: 2, description: "Alexander the Great conquers" },
     { id: "rome", event: "Rome Rules the World", year: "168 BC", emoji: "🦅", order: 3, description: "Rome becomes the superpower" },
-    { id: "jesus", event: "Jesus is Born", year: "4 BC", emoji: "⭐", order: 4, description: "The Messiah comes to earth" },
-    { id: "cross", event: "Jesus Dies for Us", year: "31 AD", emoji: "✝️", order: 5, description: "The Lamb of God is sacrificed" },
   ],
   fr: [
     { id: "babylon", event: "Babylone Règne", year: "605 av. J.-C.", emoji: "🦁", order: 0, description: "Daniel est emmené captif" },
