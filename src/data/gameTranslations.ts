@@ -445,6 +445,12 @@ const gameUI = {
     endTimeScholar: "¡Erudito del Tiempo del Fin!",
     daniel12Description: "¡Daniel 12 nos muestra que el pueblo de Dios será liberado cuando Jesús regrese!",
     putDaniel12Order: "¡Pon los eventos de Daniel 12 en orden!",
+    buildSabbath: "📜 Construir la Historia del Sábado",
+    chooseSabbathEvent: "🕊️ Elegir un Evento",
+    placeSabbathEvent: "¡Colocar Evento! 📍",
+    sabbathExpert: "¡Erudito del Sábado!",
+    sabbathDescription: "¡El sábado es el regalo de Dios desde la Creación hasta la Eternidad — una señal de Su amor!",
+    putSabbathOrder: "¡Pon los eventos del sábado en orden bíblico!",
   },
 };
 
