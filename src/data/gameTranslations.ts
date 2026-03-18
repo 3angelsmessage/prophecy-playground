@@ -1022,6 +1022,10 @@ export function getTimeOfEndElements(lang: string) {
   return timeOfEndElementsData[lang as Lang] || timeOfEndElementsData.en;
 }
 
+export function getSabbathElements(lang: string) {
+  return sabbathElementsData[lang as Lang] || sabbathElementsData.en;
+}
+
 export function getGameContentMeta(lang: string) {
   return gameContentData[lang as Lang] || gameContentData.en;
 }
