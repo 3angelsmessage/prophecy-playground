@@ -17,9 +17,9 @@ const Hero = () => {
         <motion.img
           src={heroLion}
           alt=""
-          initial={{ opacity: 0, scale: 0.9 }}
+          initial={{ opacity: 0, scale: 0.3 }}
           animate={{ opacity: 0.55, scale: 1 }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
+          transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           className="w-full h-full object-cover drop-shadow-[0_0_80px_hsl(var(--primary)/0.3)]"
         />
       </div>
