@@ -1184,6 +1184,15 @@ const TimeOfEndGame = () => {
     hintText={ui.putDaniel12Order} gradientColors="from-orange-500 via-yellow-500 to-amber-500" />;
 };
 
+const SabbathDayGame = () => {
+  const { i18n } = useTranslation();
+  const ui = useGameUI();
+  const elements = useMemo(() => getSabbathElements(i18n.language), [i18n.language]);
+  return <GenericTimelineGame elements={elements} buildLabel={ui.buildSabbath} chooseLabel={ui.chooseSabbathEvent}
+    placeLabel={ui.placeSabbathEvent} masterTitle={ui.sabbathExpert} description={ui.sabbathDescription}
+    hintText={ui.putSabbathOrder} gradientColors="from-blue-500 via-indigo-500 to-purple-500" />;
+};
+
 // ==================== Game Page ====================
 const gameComponents: { [key: string]: React.ReactNode } = {
   "match-the-beasts": <MatchTheBeastsGame />,
@@ -1204,6 +1213,7 @@ const gameComponents: { [key: string]: React.ReactNode } = {
   "revelation-10": <Revelation10Game />,
   "investigative-judgment": <InvestigativeJudgmentGame />,
   "time-of-end": <TimeOfEndGame />,
+  "sabbath-day": <SabbathDayGame />,
 };
 
 const GamePage = () => {
