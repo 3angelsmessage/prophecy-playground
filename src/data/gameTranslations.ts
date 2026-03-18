@@ -877,6 +877,36 @@ const timeOfEndElementsData = {
   ],
 };
 
+const sabbathElementsData = {
+  en: [
+    { id: "creation", name: "God Creates the Sabbath", emoji: "🌅", description: "God rested on the 7th day and made it holy (Genesis 2:2-3)", order: 0 },
+    { id: "manna", name: "Manna & the Sabbath", emoji: "🍞", description: "God gave double manna on Friday — none fell on Sabbath (Exodus 16:26)", order: 1 },
+    { id: "sinai", name: "Written in Stone", emoji: "📜", description: "'Remember the Sabbath day to keep it holy' — 4th Commandment (Exodus 20:8)", order: 2 },
+    { id: "sign", name: "A Sign Forever", emoji: "✋", description: "The Sabbath is a sign between God and His people (Ezekiel 20:12)", order: 3 },
+    { id: "jesus", name: "Jesus Kept the Sabbath", emoji: "✝️", description: "Jesus went to the synagogue on Sabbath 'as His custom was' (Luke 4:16)", order: 4 },
+    { id: "disciples", name: "Disciples Rested", emoji: "🕊️", description: "After the cross, the disciples rested on Sabbath (Luke 23:56)", order: 5 },
+    { id: "newearth", name: "Sabbath in the New Earth", emoji: "🌍", description: "'From one Sabbath to another, all flesh shall worship' (Isaiah 66:23)", order: 6 },
+  ],
+  fr: [
+    { id: "creation", name: "Dieu Crée le Sabbat", emoji: "🌅", description: "Dieu se reposa le 7e jour et le sanctifia (Genèse 2:2-3)", order: 0 },
+    { id: "manna", name: "La Manne et le Sabbat", emoji: "🍞", description: "Dieu donna le double de manne le vendredi — aucune le sabbat (Exode 16:26)", order: 1 },
+    { id: "sinai", name: "Écrit dans la Pierre", emoji: "📜", description: "'Souviens-toi du jour du repos pour le sanctifier' — 4e Commandement (Exode 20:8)", order: 2 },
+    { id: "sign", name: "Un Signe Éternel", emoji: "✋", description: "Le sabbat est un signe entre Dieu et Son peuple (Ézéchiel 20:12)", order: 3 },
+    { id: "jesus", name: "Jésus a Gardé le Sabbat", emoji: "✝️", description: "Jésus alla à la synagogue le jour du sabbat 'selon sa coutume' (Luc 4:16)", order: 4 },
+    { id: "disciples", name: "Les Disciples se Reposèrent", emoji: "🕊️", description: "Après la croix, les disciples se reposèrent le jour du sabbat (Luc 23:56)", order: 5 },
+    { id: "newearth", name: "Le Sabbat sur la Nouvelle Terre", emoji: "🌍", description: "'D'un sabbat à l'autre, toute chair viendra adorer' (Ésaïe 66:23)", order: 6 },
+  ],
+  es: [
+    { id: "creation", name: "Dios Crea el Sábado", emoji: "🌅", description: "Dios reposó el 7° día y lo santificó (Génesis 2:2-3)", order: 0 },
+    { id: "manna", name: "El Maná y el Sábado", emoji: "🍞", description: "Dios dio doble maná el viernes — ninguno cayó en sábado (Éxodo 16:26)", order: 1 },
+    { id: "sinai", name: "Escrito en Piedra", emoji: "📜", description: "'Acuérdate del día de reposo para santificarlo' — 4° Mandamiento (Éxodo 20:8)", order: 2 },
+    { id: "sign", name: "Una Señal Eterna", emoji: "✋", description: "El sábado es una señal entre Dios y Su pueblo (Ezequiel 20:12)", order: 3 },
+    { id: "jesus", name: "Jesús Guardó el Sábado", emoji: "✝️", description: "Jesús fue a la sinagoga en sábado 'como era su costumbre' (Lucas 4:16)", order: 4 },
+    { id: "disciples", name: "Los Discípulos Descansaron", emoji: "🕊️", description: "Después de la cruz, los discípulos descansaron en sábado (Lucas 23:56)", order: 5 },
+    { id: "newearth", name: "El Sábado en la Tierra Nueva", emoji: "🌍", description: "'De sábado en sábado, toda carne vendrá a adorar' (Isaías 66:23)", order: 6 },
+  ],
+};
+
 const gameContentData = {
   en: {
     "match-the-beasts": { title: "Match the Beasts", description: "Match Daniel's beasts to the empires they represent!" },
@@ -897,6 +927,7 @@ const gameContentData = {
     "revelation-10": { title: "Revelation 10: The Little Book", description: "Learn about the mighty angel and the sweet & bitter scroll!" },
     "investigative-judgment": { title: "Investigative Judgment", description: "Learn about Jesus' work in the heavenly sanctuary since 1844!" },
     "time-of-end": { title: "Time of the End", description: "Explore Daniel 12's prophecies about the last days!" },
+    "sabbath-day": { title: "The Sabbath Day", description: "Trace the Sabbath through the Bible from Creation to the New Earth!" },
   },
   fr: {
     "match-the-beasts": { title: "Associer les Bêtes", description: "Associez les bêtes de Daniel aux empires qu'elles représentent !" },
@@ -917,6 +948,7 @@ const gameContentData = {
     "revelation-10": { title: "Apocalypse 10 : Le Petit Livre", description: "Découvrez l'ange puissant et le rouleau doux et amer !" },
     "investigative-judgment": { title: "Jugement Investigatif", description: "Découvrez l'œuvre de Jésus dans le sanctuaire céleste depuis 1844 !" },
     "time-of-end": { title: "Le Temps de la Fin", description: "Explorez les prophéties de Daniel 12 sur les derniers jours !" },
+    "sabbath-day": { title: "Le Jour du Sabbat", description: "Retracez le sabbat à travers la Bible, de la Création à la Nouvelle Terre !" },
   },
   es: {
     "match-the-beasts": { title: "Asociar las Bestias", description: "¡Asocia las bestias de Daniel con los imperios que representan!" },
@@ -937,6 +969,7 @@ const gameContentData = {
     "revelation-10": { title: "Apocalipsis 10: El Librito", description: "¡Aprende sobre el ángel poderoso y el rollo dulce y amargo!" },
     "investigative-judgment": { title: "Juicio Investigador", description: "¡Aprende sobre la obra de Jesús en el santuario celestial desde 1844!" },
     "time-of-end": { title: "El Tiempo del Fin", description: "¡Explora las profecías de Daniel 12 sobre los últimos días!" },
+    "sabbath-day": { title: "El Día de Reposo", description: "¡Traza el sábado a través de la Biblia desde la Creación hasta la Tierra Nueva!" },
   },
 };
 
