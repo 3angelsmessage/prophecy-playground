@@ -109,6 +109,12 @@ const gameUI = {
     endTimeScholar: "End-Time Scholar!",
     daniel12Description: "Daniel 12 shows us that God's people will be delivered when Jesus returns!",
     putDaniel12Order: "Put events in order from Daniel 12!",
+    buildSabbath: "📜 Build the Sabbath Story",
+    chooseSabbathEvent: "🕊️ Choose an Event",
+    placeSabbathEvent: "Place Event! 📍",
+    sabbathExpert: "Sabbath Scholar!",
+    sabbathDescription: "The Sabbath is God's gift from Creation to Eternity — a sign of His love!",
+    putSabbathOrder: "Put the Sabbath events in Biblical order!",
   },
   ht: {
     score: "Nòt",
