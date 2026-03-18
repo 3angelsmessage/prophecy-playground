@@ -333,6 +333,12 @@ const gameUI = {
     endTimeScholar: "Érudit des Derniers Temps !",
     daniel12Description: "Daniel 12 nous montre que le peuple de Dieu sera délivré au retour de Jésus !",
     putDaniel12Order: "Mettez les événements de Daniel 12 dans l'ordre !",
+    buildSabbath: "📜 Construire l'Histoire du Sabbat",
+    chooseSabbathEvent: "🕊️ Choisir un Événement",
+    placeSabbathEvent: "Placer l'Événement ! 📍",
+    sabbathExpert: "Érudit du Sabbat !",
+    sabbathDescription: "Le sabbat est le cadeau de Dieu de la Création à l'Éternité — un signe de Son amour !",
+    putSabbathOrder: "Mettez les événements du sabbat dans l'ordre biblique !",
   },
   es: {
     score: "Puntuación",
