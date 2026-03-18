@@ -12,7 +12,7 @@ import {
   getSanctuaryLocations, getFruitOfSpirit, getCommandments,
   getCreationDays, getDanielsVisions, getDaniel7Beasts,
   getDaniel11Events, getRevelation10Elements, getJudgmentElements,
-  getTimeOfEndElements, getGameContentMeta,
+  getTimeOfEndElements, getSabbathElements, getGameContentMeta,
 } from "@/data/gameTranslations";
 
 // Helper hook for game UI strings
