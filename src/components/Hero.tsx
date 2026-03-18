@@ -44,7 +44,7 @@ const Hero = () => {
               <span className="text-[hsl(120,80%,30%)]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7), -1px -1px 3px rgba(0,0,0,0.5)' }}>{t("hero.title2")}</span>
             </h1>
 
-            <p className="text-lg sm:text-xl text-muted-foreground mb-8 max-w-lg mx-auto">
+            <p className="text-lg sm:text-xl text-white mb-8 max-w-lg mx-auto" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.7)' }}>
               {t("hero.subtitle")}
             </p>
 
