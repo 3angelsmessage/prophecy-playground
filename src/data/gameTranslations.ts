@@ -221,6 +221,12 @@ const gameUI = {
     endTimeScholar: "Savanan Tan Lafen!",
     daniel12Description: "Danyèl 12 montre nou ke pèp Bondye a ap delivre lè Jezi retounen!",
     putDaniel12Order: "Mete evènman Danyèl 12 nan lòd!",
+    buildSabbath: "📜 Bati Istwa Saba a",
+    chooseSabbathEvent: "🕊️ Chwazi yon Evènman",
+    placeSabbathEvent: "Mete Evènman an! 📍",
+    sabbathExpert: "Savanan Saba!",
+    sabbathDescription: "Saba se kado Bondye soti nan Kreyasyon rive nan Letènite — yon siy lanmou Li!",
+    putSabbathOrder: "Mete evènman Saba yo nan lòd Biblik!",
   },
   fr: {
     score: "Score",
