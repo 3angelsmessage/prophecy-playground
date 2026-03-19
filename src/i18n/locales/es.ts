@@ -77,6 +77,11 @@ const es = {
         description: "¡Descubre la vida y el don profético de la mensajera de Dios para el tiempo del fin!",
         book: "Espíritu de Profecía",
       },
+      {
+        title: "El Día de Reposo",
+        description: "¡Aprende por qué Dios creó un día especial de descanso y cómo mantenerlo santo!",
+        book: "Éxodo 20:8-11",
+      },
     ],
   },
 

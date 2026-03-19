@@ -29,7 +29,7 @@ const Hero = () => {
 
       <div className="container mx-auto px-4 relative z-10 flex flex-col items-center justify-between min-h-[calc(100vh-6rem)]">
         {/* Text Content - Centered */}
-        <div className="flex-1 flex items-center">
+        <div className="flex-1 flex items-end pb-4">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}

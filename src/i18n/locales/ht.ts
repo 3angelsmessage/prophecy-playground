@@ -77,6 +77,11 @@ const ht = {
         description: "Dekouvri lavi ak don pwofetik mesaje Bondye pou tan lafen an!",
         book: "Lespri Pwofesi",
       },
+      {
+        title: "Jou Saba a",
+        description: "Aprann poukisa Bondye te kreye yon jou espesyal repo epi kijan pou kenbe li sen!",
+        book: "Egzòd 20:8-11",
+      },
     ],
   },
 
