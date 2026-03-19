@@ -77,6 +77,11 @@ const fr = {
         description: "Découvrez la vie et le don prophétique de la messagère de Dieu pour la fin des temps !",
         book: "Esprit de Prophétie",
       },
+      {
+        title: "Le Jour du Sabbat",
+        description: "Apprenez pourquoi Dieu a créé un jour spécial de repos et comment le garder saint !",
+        book: "Exode 20:8-11",
+      },
     ],
   },
 

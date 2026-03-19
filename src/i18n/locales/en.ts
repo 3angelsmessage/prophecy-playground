@@ -77,6 +77,11 @@ const en = {
         description: "Discover the life and prophetic gift of God's end-time messenger!",
         book: "Spirit of Prophecy",
       },
+      {
+        title: "The Sabbath Day",
+        description: "Learn why God created a special day of rest and how to keep it holy!",
+        book: "Exodus 20:8-11",
+      },
     ],
   },
 
