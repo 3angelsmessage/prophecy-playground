@@ -9,7 +9,7 @@ import { useLanguagePrefix } from "@/hooks/useLanguagePrefix";
 const QUESTION_TIME_LIMIT = 15;
 
 const sampleQuiz = [
-  { question: "In Daniel's dream, what was the head of the statue made of?", options: ["Silver", "Gold", "Bronze", "Iron", "Iron & Clay"], correct: 1, explanation: "The golden head represented Babylon, the first great kingdom!" },
+  { question: "In Daniel's dream, what was the head of the statue made of?", options: ["quiz.metals.silver", "quiz.metals.gold", "quiz.metals.bronze", "quiz.metals.iron", "quiz.metals.ironClay"], correct: 1, explanation: "The golden head represented Babylon, the first great kingdom!", translateOptions: true },
   { question: "How many beasts did Daniel see coming out of the sea?", options: ["Two", "Three", "Four", "Seven"], correct: 2, explanation: "Daniel saw four beasts: a lion, bear, leopard, and a terrifying fourth beast!" },
   { question: "In Revelation, how many seals does the Lamb open?", options: ["Three", "Five", "Seven", "Twelve"], correct: 2, explanation: "Jesus (the Lamb) opens seven seals on the scroll!" },
   { question: "What did the chest and arms of Daniel's statue represent?", options: ["Babylon", "Medo-Persia", "Greece", "Rome"], correct: 1, explanation: "The silver chest and arms represented the Medo-Persian Empire!" },
@@ -198,7 +198,7 @@ const QuizSection = () => {
                                 isSelected ? "bg-primary text-primary-foreground" :
                                 "bg-muted hover:bg-muted/80 border-2 border-transparent hover:border-primary/30"}`}
                           >
-                            <span>{option}</span>
+                            <span>{(question as any).translateOptions ? t(option) : option}</span>
                             {showCorrect && <Check className="w-6 h-6" />}
                             {showWrong && <X className="w-6 h-6" />}
                           </motion.button>
@@ -214,7 +214,7 @@ const QuizSection = () => {
                           </p>
                           {!isCorrect && !timedOut && (
                             <p className="text-sm text-muted-foreground mb-1">
-                              {t("quiz.correctAnswerWas")} <strong>{question.options[question.correct]}</strong>
+                              {t("quiz.correctAnswerWas")} <strong>{(question as any).translateOptions ? t(question.options[question.correct]) : question.options[question.correct]}</strong>
                             </p>
                           )}
                           <p className="text-sm text-muted-foreground">{question.explanation}</p>

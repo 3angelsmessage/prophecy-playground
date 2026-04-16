@@ -169,6 +169,13 @@ const en = {
     correctAnswerWas: "The correct answer was:",
     moreQuizzes: "Want more quizzes? Explore our full quiz library!",
     browseAll: "Browse All Quizzes 📝",
+    metals: {
+      gold: "Gold",
+      silver: "Silver",
+      bronze: "Bronze",
+      iron: "Iron",
+      ironClay: "Iron & Clay",
+    },
   },
 
   // Footer
