@@ -38,13 +38,13 @@ const Hero = () => {
           >
 
             <h1 className="font-display text-4xl sm:text-5xl lg:text-7xl font-black leading-tight mb-6">
-              <span className="text-[hsl(120,80%,30%)]" style={{ WebkitTextStroke: '3px white', paintOrder: 'stroke fill' }}>{t("hero.title1")}</span>{" "}
-              <span className="text-[hsl(330,80%,45%)]" style={{ WebkitTextStroke: '3px white', paintOrder: 'stroke fill' }}>{t("hero.titleHighlight")}</span>{" "}
+              <span className="text-[hsl(120,80%,30%)]" style={{ WebkitTextStroke: '10px white', paintOrder: 'stroke fill' }}>{t("hero.title1")}</span>{" "}
+              <span className="text-[hsl(330,80%,45%)]" style={{ WebkitTextStroke: '10px white', paintOrder: 'stroke fill' }}>{t("hero.titleHighlight")}</span>{" "}
               <br className="hidden sm:block" />
-              <span className="text-[hsl(120,80%,30%)]" style={{ WebkitTextStroke: '3px white', paintOrder: 'stroke fill' }}>{t("hero.title2")}</span>
+              <span className="text-[hsl(120,80%,30%)]" style={{ WebkitTextStroke: '10px white', paintOrder: 'stroke fill' }}>{t("hero.title2")}</span>
             </h1>
 
-            <p className="text-lg sm:text-xl text-white mb-8 max-w-lg mx-auto" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.7)' }}>
+            <p className="text-lg sm:text-xl font-semibold text-white mb-8 max-w-lg mx-auto" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.7)' }}>
               {t("hero.subtitle")}
             </p>
 
