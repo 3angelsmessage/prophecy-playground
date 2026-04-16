@@ -198,7 +198,7 @@ const QuizSection = () => {
                                 isSelected ? "bg-primary text-primary-foreground" :
                                 "bg-muted hover:bg-muted/80 border-2 border-transparent hover:border-primary/30"}`}
                           >
-                            <span>{option}</span>
+                            <span>{(question as any).translateOptions ? t(option) : option}</span>
                             {showCorrect && <Check className="w-6 h-6" />}
                             {showWrong && <X className="w-6 h-6" />}
                           </motion.button>
@@ -214,7 +214,7 @@ const QuizSection = () => {
                           </p>
                           {!isCorrect && !timedOut && (
                             <p className="text-sm text-muted-foreground mb-1">
-                              {t("quiz.correctAnswerWas")} <strong>{question.options[question.correct]}</strong>
+                              {t("quiz.correctAnswerWas")} <strong>{(question as any).translateOptions ? t(question.options[question.correct]) : question.options[question.correct]}</strong>
                             </p>
                           )}
                           <p className="text-sm text-muted-foreground">{question.explanation}</p>
