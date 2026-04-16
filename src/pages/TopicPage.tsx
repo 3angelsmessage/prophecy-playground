@@ -401,6 +401,25 @@ const topicsContentFr: Record<string, any> = {
     funFact: "Daniel 12:4 a prédit l'explosion de la connaissance et des voyages - en 100 ans, nous sommes passés des chevaux aux fusées !",
     keyVerse: "Ceux qui auront été intelligents brilleront comme la splendeur du firmament. - Daniel 12:3"
   },
+  "sabbath-day": {
+    title: "Le Jour du Sabbat",
+    subtitle: "Le Jour Spécial de Repos de Dieu",
+    book: "Exode 20:8-11",
+    emoji: "🕊️",
+    heroColor: "from-teal-500 to-cyan-600",
+    intro: "Dès le commencement, Dieu a mis à part un jour spécial pour que nous nous reposions et que nous nous souvenions de Lui. Le sabbat est un cadeau d'amour de notre Créateur !",
+    sections: [
+      { title: "Créé à la Création", content: "Après avoir fait le monde en six jours, Dieu s'est reposé le septième jour et l'a béni. Le sabbat a été fait pour tout le monde, même avant que le péché n'entre dans le monde !", icon: "🌅" },
+      { title: "Le Quatrième Commandement", content: "Dieu a écrit le commandement du sabbat avec Son propre doigt sur la pierre ! Il fait partie de Sa loi éternelle et nous rappelle qu'Il est notre Créateur.", icon: "📜" },
+      { title: "Jésus Gardait le Sabbat", content: "Jésus, notre exemple parfait, gardait le sabbat chaque semaine. Il nous a montré comment en faire un délice en faisant le bien et en adorant Son Père.", icon: "✝️" }
+    ],
+    scripture: {
+      reference: "Exode 20:8-11 (Louis Segond)",
+      text: `8 « Souviens-toi du jour du sabbat, pour le sanctifier. 9 Tu travailleras six jours et tu feras tout ton ouvrage, 10 mais le septième jour est le sabbat de l'Éternel, ton Dieu. Tu ne feras aucun travail : ni toi, ni ton fils, ni ta fille, ni ton serviteur, ni ta servante, ni ton bétail, ni l'étranger qui est dans tes portes. 11 Car en six jours le Seigneur a fait les cieux et la terre, la mer et tout ce qui s'y trouve, et il s'est reposé le septième jour. C'est pourquoi le Seigneur a béni le jour du sabbat et l'a sanctifié. »`
+    },
+    funFact: "Le sabbat est le seul jour de la semaine auquel Dieu a donné un nom spécial - tous les autres jours sont simplement numérotés !",
+    keyVerse: "Souviens-toi du jour du sabbat, pour le sanctifier. - Exode 20:8"
+  },
 };
 
 // Spanish content
@@ -537,6 +556,25 @@ const topicsContentEs: Record<string, any> = {
     funFact: "Daniel 12:4 predijo la explosión del conocimiento y los viajes: ¡en 100 años, hemos pasado de los caballos a los cohetes!",
     keyVerse: "Los sabios resplandecerán como el resplandor del firmamento. - Daniel 12:3"
   },
+  "sabbath-day": {
+    title: "El Día de Reposo",
+    subtitle: "El Día Especial de Descanso de Dios",
+    book: "Éxodo 20:8-11",
+    emoji: "🕊️",
+    heroColor: "from-teal-500 to-cyan-600",
+    intro: "Desde el principio, Dios apartó un día especial para que descansáramos y nos acordáramos de Él. ¡El sábado es un regalo de amor de nuestro Creador!",
+    sections: [
+      { title: "Creado en la Creación", content: "Después de hacer el mundo en seis días, Dios descansó el séptimo día y lo bendijo. ¡El sábado fue hecho para todos, incluso antes de que el pecado entrara en el mundo!", icon: "🌅" },
+      { title: "El Cuarto Mandamiento", content: "¡Dios escribió el mandamiento del sábado con Su propio dedo en piedra! Es parte de Su ley eterna y nos recuerda que Él es nuestro Creador.", icon: "📜" },
+      { title: "Jesús Guardó el Sábado", content: "Jesús, nuestro ejemplo perfecto, guardaba el sábado cada semana. Nos mostró cómo hacerlo un deleite haciendo el bien y adorando a Su Padre.", icon: "✝️" }
+    ],
+    scripture: {
+      reference: "Éxodo 20:8-11 (RVR1960)",
+      text: `8 "Acuérdate del día de reposo para santificarlo. 9 Seis días trabajarás, y harás toda tu obra; 10 mas el séptimo día es reposo para Jehová tu Dios; no hagas en él obra alguna, tú, ni tu hijo, ni tu hija, ni tu siervo, ni tu criada, ni tu bestia, ni tu extranjero que está dentro de tus puertas. 11 Porque en seis días hizo Jehová los cielos y la tierra, el mar, y todas las cosas que en ellos hay, y reposó en el séptimo día; por tanto, Jehová bendijo el día de reposo y lo santificó."`
+    },
+    funFact: "¡El sábado es el único día de la semana al que Dios le dio un nombre especial - todos los demás días solo están numerados!",
+    keyVerse: "Acuérdate del día de reposo para santificarlo. - Éxodo 20:8"
+  },
 };
 
 // Haitian Creole content
@@ -672,6 +710,25 @@ const topicsContentHt: Record<string, any> = {
     ],
     funFact: "Danyèl 12:4 te predi eksplozyon konesans ak vwayaj — nan 100 ane, nou pase soti nan cheval rive nan fize!",
     keyVerse: "Moun ki saj yo ap briye tankou klate syèl la. - Danyèl 12:3"
+  },
+  "sabbath-day": {
+    title: "Jou Saba a",
+    subtitle: "Jou Espesyal Repo Bondye a",
+    book: "Egzòd 20:8-11",
+    emoji: "🕊️",
+    heroColor: "from-teal-500 to-cyan-600",
+    intro: "Depi nan kòmansman, Bondye te mete yon jou espesyal apa pou nou repoze epi sonje L. Saba a se yon kado lanmou ki soti nan Kreyatè nou an!",
+    sections: [
+      { title: "Kreye nan Kreyasyon an", content: "Apre Li te fin fè mond lan nan sis jou, Bondye te repoze nan setyèm jou a epi Li te beni li. Saba a te fèt pou tout moun, menm anvan peche te antre nan mond lan!", icon: "🌅" },
+      { title: "Katriyèm Kòmandman an", content: "Bondye te ekri kòmandman saba a ak pwòp dwèt Li sou wòch! Li fè pati lwa etènèl Li epi li raple nou ke Li se Kreyatè nou.", icon: "📜" },
+      { title: "Jezi te Kenbe Saba a", content: "Jezi, egzanp pafè nou an, te kenbe saba a chak semèn. Li te montre nou kijan pou fè li yon plezi pa fè byen epi adore Papa L.", icon: "✝️" }
+    ],
+    scripture: {
+      reference: "Egzòd 20:8-11 (Bib la)",
+      text: `8 "Sonje jou Saba a pou ou ka mete l apa pou Bondye. 9 W ap travay sis jou, w ap fè tout sa ou gen pou fè. 10 Men, setyèm jou a se jou repo ki apa pou Senyè a, Bondye ou. Jou sa a, ou pa fèt pou fè ankenn travay, ni ou menm, ni pitit gason ou, ni pitit fi ou, ni domestik ou, ni bèt ou yo, ni etranje ki lakay ou. 11 Paske, nan sis jou, Senyè a te fè syèl la, tè a, lanmè a ak tout sa ki ladan yo. Apre sa, sou setyèm jou a, li pran repo. Se poutèt sa, Senyè a beni jou repo a, li mete l apa pou li."`
+    },
+    funFact: "Saba a se sèl jou nan semèn nan ke Bondye bay yon non espesyal — tout lòt jou yo gen sèlman nimewo!",
+    keyVerse: "Sonje jou Saba a pou ou ka mete l apa pou Bondye. - Egzòd 20:8"
   },
 };
 
