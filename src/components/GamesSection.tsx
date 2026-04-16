@@ -111,19 +111,19 @@ const GamesSection = () => {
                 <div className={`rounded-2xl overflow-hidden shadow-card hover:shadow-glow transition-all duration-300 border-b-4 ${vibrantBorders[meta.color] || "border-b-prophecy-gold"} ${vibrantBg[meta.color] || "bg-prophecy-gold/10"}`}>
                   <div className={`h-28 ${vibrantHeaderBg[meta.color] || "bg-prophecy-gold/30"} relative flex items-center justify-center`}>
                     <motion.div animate={{ rotate: [0, 10, -10, 0] }} transition={{ duration: 3, repeat: Infinity }}>
-                      <meta.icon className="w-14 h-14 text-foreground opacity-60" />
+                      <meta.icon className="w-20 h-20 text-foreground opacity-60" />
                     </motion.div>
-                    <span className="absolute top-3 right-3 bg-card/90 text-foreground text-xs font-bold px-3 py-1 rounded-full">
+                    <span className="absolute top-3 right-3 bg-card/90 text-foreground text-[15px] font-bold px-3 py-1 rounded-full">
                       {difficultyLabel}
                     </span>
                   </div>
                   <div className="p-5">
-                    <h3 className="font-display text-lg font-bold text-foreground mb-2 group-hover:text-[hsl(330,80%,45%)] transition-colors">
+                    <h3 className="font-display text-xl font-bold text-foreground mb-2 group-hover:text-[hsl(330,80%,45%)] transition-colors">
                       {item.title}
                     </h3>
-                    <p className="text-muted-foreground text-sm mb-4">{item.description}</p>
+                    <p className="text-muted-foreground text-[15px] mb-4">{item.description}</p>
                     <div className="flex items-center justify-between">
-                      <span className="text-xs text-muted-foreground">⏱️ {meta.time}</span>
+                      <span className="text-[15px] text-muted-foreground">⏱️ {meta.time}</span>
                       <Button variant="game" size="sm">
                         {t("games.playNow")}
                       </Button>
