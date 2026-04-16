@@ -168,6 +168,13 @@ const fr = {
     correctAnswerWas: "La bonne réponse était :",
     moreQuizzes: "Vous voulez plus de quiz ? Explorez notre bibliothèque complète !",
     browseAll: "Parcourir Tous les Quiz 📝",
+    metals: {
+      gold: "Or",
+      silver: "Argent",
+      bronze: "Bronze",
+      iron: "Fer",
+      ironClay: "Fer et Argile",
+    },
   },
 
   // Footer

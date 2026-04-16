@@ -9,7 +9,7 @@ import { useLanguagePrefix } from "@/hooks/useLanguagePrefix";
 const QUESTION_TIME_LIMIT = 15;
 
 const sampleQuiz = [
-  { question: "In Daniel's dream, what was the head of the statue made of?", options: ["Silver", "Gold", "Bronze", "Iron", "Iron & Clay"], correct: 1, explanation: "The golden head represented Babylon, the first great kingdom!" },
+  { question: "In Daniel's dream, what was the head of the statue made of?", options: ["quiz.metals.silver", "quiz.metals.gold", "quiz.metals.bronze", "quiz.metals.iron", "quiz.metals.ironClay"], correct: 1, explanation: "The golden head represented Babylon, the first great kingdom!", translateOptions: true },
   { question: "How many beasts did Daniel see coming out of the sea?", options: ["Two", "Three", "Four", "Seven"], correct: 2, explanation: "Daniel saw four beasts: a lion, bear, leopard, and a terrifying fourth beast!" },
   { question: "In Revelation, how many seals does the Lamb open?", options: ["Three", "Five", "Seven", "Twelve"], correct: 2, explanation: "Jesus (the Lamb) opens seven seals on the scroll!" },
   { question: "What did the chest and arms of Daniel's statue represent?", options: ["Babylon", "Medo-Persia", "Greece", "Rome"], correct: 1, explanation: "The silver chest and arms represented the Medo-Persian Empire!" },

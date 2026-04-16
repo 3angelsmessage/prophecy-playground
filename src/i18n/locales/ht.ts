@@ -168,6 +168,13 @@ const ht = {
     correctAnswerWas: "Bon repons lan te:",
     moreQuizzes: "Ou vle plis quiz? Eksplore tout bibliyotèk quiz nou an!",
     browseAll: "Gade Tout Quiz 📝",
+    metals: {
+      gold: "Lò",
+      silver: "Ajan",
+      bronze: "Kwiv",
+      iron: "Fè",
+      ironClay: "Fè ak Ajil",
+    },
   },
 
   // Footer
