@@ -16,6 +16,7 @@ import nebuchadnezzarStatue from "@/assets/nebuchadnezzar-statue.png";
 import newJerusalem from "@/assets/new-jerusalem.png";
 import investigativeJudgment from "@/assets/investigative-judgment.png";
 import ellenWhite from "@/assets/ellen-white.png";
+import sabbathDay from "@/assets/sabbath-day.png";
 import timelineImage from "@/assets/2300-day-timeline.png";
 
 const topicHeroImages: Record<string, string> = {
@@ -28,6 +29,7 @@ const topicHeroImages: Record<string, string> = {
   "time-of-end": prophecyTimeline,
   "new-jerusalem": newJerusalem,
   "ellen-white": ellenWhite,
+  "sabbath-day": sabbathDay,
 };
 
 // English content
