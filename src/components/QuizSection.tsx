@@ -9,7 +9,7 @@ import { useLanguagePrefix } from "@/hooks/useLanguagePrefix";
 const QUESTION_TIME_LIMIT = 15;
 
 const sampleQuiz = [
-  { question: "In Daniel's dream, what was the head of the statue made of?", options: ["Silver", "Gold", "Bronze", "Iron"], correct: 1, explanation: "The golden head represented Babylon, the first great kingdom!" },
+  { question: "In Daniel's dream, what was the head of the statue made of?", options: ["Silver", "Gold", "Bronze", "Iron", "Iron & Clay"], correct: 1, explanation: "The golden head represented Babylon, the first great kingdom!" },
   { question: "How many beasts did Daniel see coming out of the sea?", options: ["Two", "Three", "Four", "Seven"], correct: 2, explanation: "Daniel saw four beasts: a lion, bear, leopard, and a terrifying fourth beast!" },
   { question: "In Revelation, how many seals does the Lamb open?", options: ["Three", "Five", "Seven", "Twelve"], correct: 2, explanation: "Jesus (the Lamb) opens seven seals on the scroll!" },
   { question: "What did the chest and arms of Daniel's statue represent?", options: ["Babylon", "Medo-Persia", "Greece", "Rome"], correct: 1, explanation: "The silver chest and arms represented the Medo-Persian Empire!" },
@@ -192,15 +192,15 @@ const QuizSection = () => {
                             whileTap={!showResult ? { scale: 0.98 } : {}}
                             onClick={() => handleAnswer(index)}
                             disabled={showResult}
-                            className={`w-full p-4 rounded-xl text-left font-semibold transition-all flex items-center justify-between
+                            className={`w-full p-4 rounded-xl text-left font-semibold text-[15px] transition-all flex items-center justify-between
                               ${showCorrect ? "bg-green-100 text-green-700 border-2 border-green-400 dark:bg-green-900/30 dark:text-green-400" :
                                 showWrong ? "bg-red-100 text-red-700 border-2 border-red-400 dark:bg-red-900/30 dark:text-red-400" :
                                 isSelected ? "bg-primary text-primary-foreground" :
                                 "bg-muted hover:bg-muted/80 border-2 border-transparent hover:border-primary/30"}`}
                           >
                             <span>{option}</span>
-                            {showCorrect && <Check className="w-5 h-5" />}
-                            {showWrong && <X className="w-5 h-5" />}
+                            {showCorrect && <Check className="w-6 h-6" />}
+                            {showWrong && <X className="w-6 h-6" />}
                           </motion.button>
                         );
                       })}
