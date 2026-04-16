@@ -246,6 +246,25 @@ const topicsContentEn: Record<string, any> = {
     funFact: "Ellen White had a twin sister! They were crossing a common together when the accident happened that changed Ellen's life forever.",
     keyVerse: "Jesus alone cleanses from sin; He only can forgive our transgressions. He has pledged Himself to listen to the petition and grant the prayer of those who come to Him in faith."
   },
+  "sabbath-day": {
+    title: "The Sabbath Day",
+    subtitle: "God's Special Day of Rest",
+    book: "Exodus 20:8-11",
+    emoji: "🕊️",
+    heroColor: "from-teal-500 to-cyan-600",
+    intro: "From the very beginning, God set apart a special day for us to rest and remember Him. The Sabbath is a gift of love from our Creator!",
+    sections: [
+      { title: "Created at Creation", content: "After making the world in six days, God rested on the seventh day and blessed it. The Sabbath was made for everyone, even before sin entered the world!", icon: "🌅" },
+      { title: "The Fourth Commandment", content: "God wrote the Sabbath command with His own finger on stone! It's part of His eternal law and reminds us that He is our Creator.", icon: "📜" },
+      { title: "Jesus Kept the Sabbath", content: "Jesus, our perfect example, kept the Sabbath every week. He showed us how to make it a delight by doing good and worshiping His Father.", icon: "✝️" }
+    ],
+    scripture: {
+      reference: "Exodus 20:8-11 (NKJV)",
+      text: `8 "Remember the Sabbath day, to keep it holy. 9 Six days you shall labor and do all your work, 10 but the seventh day is the Sabbath of the Lord your God. In it you shall do no work: you, nor your son, nor your daughter, nor your male servant, nor your female servant, nor your cattle, nor your stranger who is within your gates. 11 For in six days the Lord made the heavens and the earth, the sea, and all that is in them, and rested the seventh day. Therefore the Lord blessed the Sabbath day and hallowed it."`
+    },
+    funFact: "The Sabbath is the only day of the week that God gave a special name - all other days are just numbered!",
+    keyVerse: "Remember the Sabbath day, to keep it holy. - Exodus 20:8"
+  },
 };
 
 // French content
