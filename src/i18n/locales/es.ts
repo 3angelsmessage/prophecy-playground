@@ -87,6 +87,11 @@ const es = {
         description: "¿Qué dice realmente la Biblia sobre lo que sucede cuando morimos? ¡Descubre la respuesta esperanzadora de Dios!",
         book: "Eclesiastés 9 / Salmo 146",
       },
+      {
+        title: "La Marca de la Bestia",
+        description: "¡Aprende qué es la marca, qué significa 666 y cómo el pueblo de Dios permanece fiel!",
+        book: "Apocalipsis 13",
+      },
     ],
   },
 

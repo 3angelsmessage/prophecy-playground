@@ -87,6 +87,11 @@ const en = {
         description: "What does the Bible really say happens when we die? Discover God's hopeful answer!",
         book: "Ecclesiastes 9 / Psalm 146",
       },
+      {
+        title: "The Mark of the Beast",
+        description: "Learn what the mark is, what 666 means, and how God's people stay faithful!",
+        book: "Revelation 13",
+      },
     ],
   },
 
