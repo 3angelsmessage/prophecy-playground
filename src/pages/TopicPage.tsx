@@ -18,6 +18,7 @@ import investigativeJudgment from "@/assets/investigative-judgment.png";
 import ellenWhite from "@/assets/ellen-white.png";
 import sabbathDay from "@/assets/sabbath-day.png";
 import stateOfTheDead from "@/assets/state-of-the-dead.png";
+import markOfTheBeast from "@/assets/mark-of-the-beast.png";
 import timelineImage from "@/assets/2300-day-timeline.png";
 
 const topicHeroImages: Record<string, string> = {
@@ -32,6 +33,7 @@ const topicHeroImages: Record<string, string> = {
   "ellen-white": ellenWhite,
   "sabbath-day": sabbathDay,
   "state-of-the-dead": stateOfTheDead,
+  "mark-of-the-beast": markOfTheBeast,
 };
 
 // English content
