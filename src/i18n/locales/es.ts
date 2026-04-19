@@ -82,6 +82,11 @@ const es = {
         description: "¡Aprende por qué Dios creó un día especial de descanso y cómo mantenerlo santo!",
         book: "Éxodo 20:8-11",
       },
+      {
+        title: "El Estado de los Muertos",
+        description: "¿Qué dice realmente la Biblia sobre lo que sucede cuando morimos? ¡Descubre la respuesta esperanzadora de Dios!",
+        book: "Eclesiastés 9 / Salmo 146",
+      },
     ],
   },
 

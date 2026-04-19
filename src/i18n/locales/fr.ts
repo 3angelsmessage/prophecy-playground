@@ -82,6 +82,11 @@ const fr = {
         description: "Apprenez pourquoi Dieu a créé un jour spécial de repos et comment le garder saint !",
         book: "Exode 20:8-11",
       },
+      {
+        title: "L'État des Morts",
+        description: "Que dit vraiment la Bible sur ce qui se passe quand nous mourons ? Découvrez la réponse pleine d'espoir de Dieu !",
+        book: "Ecclésiaste 9 / Psaume 146",
+      },
     ],
   },
 

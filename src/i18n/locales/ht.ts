@@ -82,6 +82,11 @@ const ht = {
         description: "Aprann poukisa Bondye te kreye yon jou espesyal repo epi kijan pou kenbe li sen!",
         book: "Egzòd 20:8-11",
       },
+      {
+        title: "Eta Mò Yo",
+        description: "Kisa Bib la reyèlman di ki rive lè nou mouri? Dekouvri repons Bondye plen espwa!",
+        book: "Eklezyas 9 / Sòm 146",
+      },
     ],
   },
 
