@@ -87,6 +87,11 @@ const fr = {
         description: "Que dit vraiment la Bible sur ce qui se passe quand nous mourons ? Découvrez la réponse pleine d'espoir de Dieu !",
         book: "Ecclésiaste 9 / Psaume 146",
       },
+      {
+        title: "La Marque de la Bête",
+        description: "Apprenez ce qu'est la marque, ce que signifie 666, et comment le peuple de Dieu reste fidèle !",
+        book: "Apocalypse 13",
+      },
     ],
   },
 

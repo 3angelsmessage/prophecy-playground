@@ -87,6 +87,11 @@ const ht = {
         description: "Kisa Bib la reyèlman di ki rive lè nou mouri? Dekouvri repons Bondye plen espwa!",
         book: "Eklezyas 9 / Sòm 146",
       },
+      {
+        title: "Mak Bèt la",
+        description: "Aprann sa mak la ye, sa 666 vle di, epi kijan pèp Bondye a rete fidèl!",
+        book: "Revelasyon 13",
+      },
     ],
   },
 
