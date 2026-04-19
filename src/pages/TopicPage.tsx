@@ -133,7 +133,7 @@ const topicsContentEn: Record<string, any> = {
     keyVerse: "Worthy is the Lamb who was slain, to receive power and wealth and wisdom and strength! - Revelation 5:12"
   },
   "three-angels": {
-    title: "The Three Angels' Messages", subtitle: "God's Final Call to the World", book: "Revelation 14", emoji: "👼", heroColor: "from-purple-500 to-pink-600",
+    title: "The Three Angels' Messages", subtitle: "God's Final Call to the World", book: "Revelation 14", emoji: "", heroColor: "from-purple-500 to-pink-600",
     intro: "Three angels fly across the sky with urgent messages for everyone on Earth. These messages are so important that they're meant for 'every nation, tribe, language and people!'",
     sections: [
       { title: "First Angel's Message", content: "The first angel shouts with a loud voice: 'Fear God and give Him glory, because the hour of His judgment has come!' This angel calls everyone to worship God as the Creator who made the heavens and earth.", icon: "1️⃣" },
@@ -338,7 +338,7 @@ const topicsContentFr: Record<string, any> = {
     keyVerse: "Digne est l'Agneau qui a été immolé, de recevoir la puissance, la richesse, la sagesse et la force ! - Apocalypse 5:12"
   },
   "three-angels": {
-    title: "Les Messages des Trois Anges", subtitle: "L'Appel Final de Dieu au Monde", book: "Apocalypse 14", emoji: "👼", heroColor: "from-purple-500 to-pink-600",
+    title: "Les Messages des Trois Anges", subtitle: "L'Appel Final de Dieu au Monde", book: "Apocalypse 14", emoji: "", heroColor: "from-purple-500 to-pink-600",
     intro: "Trois anges traversent le ciel avec des messages urgents pour tous sur Terre. Ces messages sont si importants qu'ils sont destinés à 'chaque nation, tribu, langue et peuple !'",
     sections: [
       { title: "Message du Premier Ange", content: "Le premier ange crie d'une voix forte : 'Craignez Dieu et donnez-Lui gloire, car l'heure de Son jugement est venue !' Cet ange appelle chacun à adorer Dieu comme le Créateur qui a fait les cieux et la terre.", icon: "1️⃣" },
@@ -497,7 +497,7 @@ const topicsContentEs: Record<string, any> = {
     keyVerse: "¡Digno es el Cordero que fue inmolado, de recibir poder, riquezas, sabiduría y fuerza! - Apocalipsis 5:12"
   },
   "three-angels": {
-    title: "Los Mensajes de los Tres Ángeles", subtitle: "El Llamado Final de Dios al Mundo", book: "Apocalipsis 14", emoji: "👼", heroColor: "from-purple-500 to-pink-600",
+    title: "Los Mensajes de los Tres Ángeles", subtitle: "El Llamado Final de Dios al Mundo", book: "Apocalipsis 14", emoji: "", heroColor: "from-purple-500 to-pink-600",
     intro: "Tres ángeles vuelan por el cielo con mensajes urgentes para todos en la Tierra. ¡Estos mensajes son tan importantes que están destinados a 'toda nación, tribu, lengua y pueblo'!",
     sections: [
       { title: "Mensaje del Primer Ángel", content: "El primer ángel grita con gran voz: '¡Temed a Dios y dadle gloria, porque la hora de Su juicio ha llegado!' Este ángel llama a todos a adorar a Dios como el Creador que hizo los cielos y la tierra.", icon: "1️⃣" },
@@ -656,7 +656,7 @@ const topicsContentHt: Record<string, any> = {
     keyVerse: "Diy se Ti Mouton ki te touye a, pou resevwa pouvwa, richès, sajès ak fòs! - Revelasyon 5:12"
   },
   "three-angels": {
-    title: "Mesaj Twa Zanj yo", subtitle: "Dènye Apèl Bondye bay Mond lan", book: "Revelasyon 14", emoji: "👼", heroColor: "from-purple-500 to-pink-600",
+    title: "Mesaj Twa Zanj yo", subtitle: "Dènye Apèl Bondye bay Mond lan", book: "Revelasyon 14", emoji: "", heroColor: "from-purple-500 to-pink-600",
     intro: "Twa zanj vole nan syèl la ak mesaj ijan pou tout moun sou Latè. Mesaj sa yo tèlman enpòtan ke yo fèt pou 'chak nasyon, tribi, lang ak pèp!'",
     sections: [
       { title: "Mesaj Premye Zanj lan", content: "Premye zanj lan rele ak yon gwo vwa: 'Pè Bondye epi ba Li glwa, paske lè jijman Li rive!' Zanj sa a rele tout moun pou adore Bondye kòm Kreyatè ki fè syèl la ak latè a.", icon: "1️⃣" },
