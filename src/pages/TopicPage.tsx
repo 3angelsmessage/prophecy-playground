@@ -142,7 +142,11 @@ const topicsContentEn: Record<string, any> = {
       { title: "The Result", content: "After the three angels' messages, we see Jesus coming on the clouds! These messages prepare people for Jesus' return.", icon: "☁️" }
     ],
     funFact: "Seventh-day Adventists believe they have a special mission to share these three angels' messages with the whole world before Jesus comes!",
-    keyVerse: "Here is the patience of the saints: here are they that keep the commandments of God, and the faith of Jesus. - Revelation 14:12"
+    keyVerse: "Here is the patience of the saints: here are they that keep the commandments of God, and the faith of Jesus. - Revelation 14:12",
+    egwQuote: {
+      text: "Several have written me, inquiring if the message of justification by faith is the third angel's message, and I have answered, \"It is the third angel's message in verity.\"",
+      source: "Review & Herald, April 1, 1890"
+    }
   },
   "sanctuary": {
     title: "The Heavenly Sanctuary", subtitle: "Where Jesus Ministers for Us", book: "Hebrews 8-9", emoji: "⛪", heroColor: "from-green-500 to-emerald-600",
@@ -343,7 +347,11 @@ const topicsContentFr: Record<string, any> = {
       { title: "Le Résultat", content: "Après les messages des trois anges, nous voyons Jésus venir sur les nuages ! Ces messages préparent les gens au retour de Jésus.", icon: "☁️" }
     ],
     funFact: "Les Adventistes du Septième Jour croient qu'ils ont une mission spéciale de partager ces messages des trois anges avec le monde entier avant que Jésus ne revienne !",
-    keyVerse: "C'est ici la persévérance des saints, ceux qui gardent les commandements de Dieu et la foi de Jésus. - Apocalypse 14:12"
+    keyVerse: "C'est ici la persévérance des saints, ceux qui gardent les commandements de Dieu et la foi de Jésus. - Apocalypse 14:12",
+    egwQuote: {
+      text: "Plusieurs m'ont écrit, demandant si le message de la justification par la foi est le message du troisième ange, et j'ai répondu : « C'est le message du troisième ange en vérité. »",
+      source: "Review & Herald, 1er avril 1890"
+    }
   },
   "sanctuary": {
     title: "Le Sanctuaire Céleste", subtitle: "Où Jésus Officie pour Nous", book: "Hébreux 8-9", emoji: "⛪", heroColor: "from-green-500 to-emerald-600",
@@ -498,7 +506,11 @@ const topicsContentEs: Record<string, any> = {
       { title: "El Resultado", content: "Después de los mensajes de los tres ángeles, ¡vemos a Jesús viniendo en las nubes! Estos mensajes preparan a la gente para el regreso de Jesús.", icon: "☁️" }
     ],
     funFact: "¡Los Adventistas del Séptimo Día creen que tienen una misión especial de compartir estos mensajes de los tres ángeles con todo el mundo antes de que Jesús venga!",
-    keyVerse: "Aquí está la paciencia de los santos, los que guardan los mandamientos de Dios y la fe de Jesús. - Apocalipsis 14:12"
+    keyVerse: "Aquí está la paciencia de los santos, los que guardan los mandamientos de Dios y la fe de Jesús. - Apocalipsis 14:12",
+    egwQuote: {
+      text: "Varios me han escrito preguntando si el mensaje de la justificación por la fe es el mensaje del tercer ángel, y he respondido: «Es el mensaje del tercer ángel en verdad».",
+      source: "Review & Herald, 1 de abril de 1890"
+    }
   },
   "sanctuary": {
     title: "El Santuario Celestial", subtitle: "Donde Jesús Ministra por Nosotros", book: "Hebreos 8-9", emoji: "⛪", heroColor: "from-green-500 to-emerald-600",
@@ -653,7 +665,11 @@ const topicsContentHt: Record<string, any> = {
       { title: "Rezilta a", content: "Apre mesaj twa zanj yo, nou wè Jezi k ap vini sou nyaj yo! Mesaj sa yo prepare moun pou retou Jezi.", icon: "☁️" }
     ],
     funFact: "Adventis Setyèm Jou kwè yo gen yon misyon espesyal pou pataje mesaj twa zanj sa yo ak tout mond lan anvan Jezi vini!",
-    keyVerse: "Men pasyans sen yo: men moun ki kenbe kòmandman Bondye ak lafwa Jezi. - Revelasyon 14:12"
+    keyVerse: "Men pasyans sen yo: men moun ki kenbe kòmandman Bondye ak lafwa Jezi. - Revelasyon 14:12",
+    egwQuote: {
+      text: "Plizyè moun ekri m, mande si mesaj jistifikasyon pa lafwa a se mesaj twazyèm zanj lan, epi mwen reponn: « Se mesaj twazyèm zanj lan an verite. »",
+      source: "Review & Herald, 1ye Avril 1890"
+    }
   },
   "sanctuary": {
     title: "Sanktyè Syèl la", subtitle: "Kote Jezi Travay pou Nou", book: "Ebre 8-9", emoji: "⛪", heroColor: "from-green-500 to-emerald-600",
