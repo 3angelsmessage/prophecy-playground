@@ -273,6 +273,29 @@ const topicsContentEn: Record<string, any> = {
     funFact: "The Sabbath is the only day of the week that God gave a special name - all other days are just numbered!",
     keyVerse: "Remember the Sabbath day, to keep it holy. - Exodus 20:8"
   },
+  "state-of-the-dead": {
+    title: "The State of the Dead",
+    subtitle: "What the Bible Teaches About Death",
+    book: "Ecclesiastes 9 / Psalm 146",
+    emoji: "",
+    heroColor: "from-blue-500 to-indigo-600",
+    intro: "What really happens when someone dies? The Bible gives us a clear, hopeful answer: death is like a peaceful sleep, and Jesus will wake His people up when He returns!",
+    sections: [
+      { title: "Death Is Like Sleep", content: "Throughout the Bible, death is compared to a deep sleep. The dead are not suffering and they are not aware of what is happening on earth — they are resting until resurrection day.", icon: "💤" },
+      { title: "Thoughts and Feelings Stop", content: "When a person dies, their breath returns to God and their thoughts perish that very day. Their love, hatred, and envy are gone. They take no part in anything done under the sun.", icon: "🌙" },
+      { title: "The Hope of Resurrection", content: "The good news is that death is not the end! Jesus promised that everyone who trusts in Him will be raised to life when He comes back in glory.", icon: "🌅" }
+    ],
+    scripture: {
+      reference: "Psalm 146:4 / Ecclesiastes 9:5-6 (KJV)",
+      text: `Psalm 146:4 — "His breath goeth forth, he returneth to his earth; in that very day his thoughts perish."
+
+Ecclesiastes 9:5 — "For the living know that they shall die: but the dead know not any thing, neither have they any more a reward; for the memory of them is forgotten."
+
+Ecclesiastes 9:6 — "Also their love, and their hatred, and their envy, is now perished; neither have they any more a portion for ever in any thing that is done under the sun."`
+    },
+    funFact: "Jesus called death 'sleep' more than once — including when He said about His friend Lazarus, 'Our friend Lazarus sleepeth; but I go, that I may awake him out of sleep.' (John 11:11)",
+    keyVerse: "His breath goeth forth, he returneth to his earth; in that very day his thoughts perish. — Psalm 146:4 (KJV)"
+  },
 };
 
 // French content
@@ -431,6 +454,29 @@ const topicsContentFr: Record<string, any> = {
     },
     funFact: "Le sabbat est le seul jour de la semaine auquel Dieu a donné un nom spécial - tous les autres jours sont simplement numérotés !",
     keyVerse: "Souviens-toi du jour du sabbat, pour le sanctifier. - Exode 20:8"
+  },
+  "state-of-the-dead": {
+    title: "L'État des Morts",
+    subtitle: "Ce que la Bible enseigne sur la mort",
+    book: "Ecclésiaste 9 / Psaume 146",
+    emoji: "",
+    heroColor: "from-blue-500 to-indigo-600",
+    intro: "Que se passe-t-il vraiment quand quelqu'un meurt ? La Bible donne une réponse claire et pleine d'espoir : la mort est comme un sommeil paisible, et Jésus réveillera Son peuple à Son retour !",
+    sections: [
+      { title: "La mort est comme un sommeil", content: "Dans toute la Bible, la mort est comparée à un sommeil profond. Les morts ne souffrent pas et ne sont pas conscients de ce qui se passe sur terre — ils se reposent jusqu'au jour de la résurrection.", icon: "💤" },
+      { title: "Pensées et sentiments cessent", content: "Quand une personne meurt, son souffle retourne à Dieu et ses pensées périssent ce jour-là. Son amour, sa haine et son envie disparaissent. Elle ne prend plus part à rien de ce qui se fait sous le soleil.", icon: "🌙" },
+      { title: "L'espoir de la résurrection", content: "La bonne nouvelle, c'est que la mort n'est pas la fin ! Jésus a promis que tous ceux qui mettent leur confiance en Lui seront ressuscités à Son retour glorieux.", icon: "🌅" }
+    ],
+    scripture: {
+      reference: "Psaume 146:4 / Ecclésiaste 9:5-6 (Louis Segond)",
+      text: `Psaume 146:4 — « Leur souffle s'en va, ils rentrent dans la terre, et ce même jour leurs desseins périssent. »
+
+Ecclésiaste 9:5 — « Les vivants, en effet, savent qu'ils mourront ; mais les morts ne savent rien, et il n'y a pour eux plus de salaire, puisque leur mémoire est oubliée. »
+
+Ecclésiaste 9:6 — « Et leur amour, et leur haine, et leur envie, ont déjà péri ; et ils n'auront plus jamais aucune part à tout ce qui se fait sous le soleil. »`
+    },
+    funFact: "Jésus a appelé la mort un « sommeil » plus d'une fois — y compris à propos de Son ami Lazare : « Lazare, notre ami, dort ; mais je vais le réveiller. » (Jean 11:11)",
+    keyVerse: "Leur souffle s'en va, ils rentrent dans la terre, et ce même jour leurs desseins périssent. — Psaume 146:4"
   },
 };
 
@@ -591,6 +637,29 @@ const topicsContentEs: Record<string, any> = {
     funFact: "¡El sábado es el único día de la semana al que Dios le dio un nombre especial - todos los demás días solo están numerados!",
     keyVerse: "Acuérdate del día de reposo para santificarlo. - Éxodo 20:8"
   },
+  "state-of-the-dead": {
+    title: "El Estado de los Muertos",
+    subtitle: "Lo que la Biblia enseña sobre la muerte",
+    book: "Eclesiastés 9 / Salmo 146",
+    emoji: "",
+    heroColor: "from-blue-500 to-indigo-600",
+    intro: "¿Qué sucede realmente cuando alguien muere? La Biblia da una respuesta clara y llena de esperanza: la muerte es como un sueño tranquilo, ¡y Jesús despertará a Su pueblo cuando regrese!",
+    sections: [
+      { title: "La muerte es como un sueño", content: "A lo largo de la Biblia, la muerte se compara con un sueño profundo. Los muertos no sufren ni saben lo que pasa en la tierra — descansan hasta el día de la resurrección.", icon: "💤" },
+      { title: "Pensamientos y sentimientos cesan", content: "Cuando una persona muere, su aliento vuelve a Dios y sus pensamientos perecen ese mismo día. Su amor, odio y envidia desaparecen. Ya no tienen parte en nada de lo que se hace bajo el sol.", icon: "🌙" },
+      { title: "La esperanza de la resurrección", content: "¡La buena noticia es que la muerte no es el fin! Jesús prometió que todos los que confían en Él resucitarán cuando Él vuelva en gloria.", icon: "🌅" }
+    ],
+    scripture: {
+      reference: "Salmo 146:4 / Eclesiastés 9:5-6 (RVR1960)",
+      text: `Salmo 146:4 — "Pues sale su aliento, y vuelve a la tierra; en ese mismo día perecen sus pensamientos."
+
+Eclesiastés 9:5 — "Porque los que viven saben que han de morir; pero los muertos nada saben, ni tienen más paga; porque su memoria es puesta en olvido."
+
+Eclesiastés 9:6 — "También su amor y su odio y su envidia fenecieron ya; y nunca más tendrán parte en todo lo que se hace debajo del sol."`
+    },
+    funFact: "Jesús llamó a la muerte 'sueño' más de una vez — incluso cuando dijo de Su amigo Lázaro: 'Nuestro amigo Lázaro duerme; mas voy para despertarle.' (Juan 11:11)",
+    keyVerse: "Pues sale su aliento, y vuelve a la tierra; en ese mismo día perecen sus pensamientos. — Salmo 146:4"
+  },
 };
 
 // Haitian Creole content
@@ -749,6 +818,29 @@ const topicsContentHt: Record<string, any> = {
     },
     funFact: "Saba a se sèl jou nan semèn nan ke Bondye bay yon non espesyal — tout lòt jou yo gen sèlman nimewo!",
     keyVerse: "Sonje jou Saba a pou ou ka mete l apa pou Bondye. - Egzòd 20:8"
+  },
+  "state-of-the-dead": {
+    title: "Eta Mò Yo",
+    subtitle: "Sa Bib la anseye sou lanmò",
+    book: "Eklezyas 9 / Sòm 146",
+    emoji: "",
+    heroColor: "from-blue-500 to-indigo-600",
+    intro: "Kisa ki rive vrèman lè yon moun mouri? Bib la bay yon repons klè ki plen espwa: lanmò se tankou yon dòmi trankil, e Jezi pral leve pèp Li lè Li retounen!",
+    sections: [
+      { title: "Lanmò se tankou dòmi", content: "Nan tout Bib la, yo konpare lanmò ak yon gwo dòmi. Mò yo pa soufri e yo pa konnen sa k ap pase sou tè a — y ap repoze jiska jou rezirèksyon an.", icon: "💤" },
+      { title: "Panse ak santiman sispann", content: "Lè yon moun mouri, souf li retounen jwenn Bondye e panse l peri menm jou a. Renmen li, rayisman li, ak jalouzi li disparèt. Li pa gen pati ankò nan anyen ki fèt anba solèy la.", icon: "🌙" },
+      { title: "Espwa rezirèksyon an", content: "Bòn nouvèl la se ke lanmò pa fen an! Jezi te pwomèt ke tout moun ki mete konfyans yo nan Li ap leve nan lavi lè Li retounen ak laglwa.", icon: "🌅" }
+    ],
+    scripture: {
+      reference: "Sòm 146:4 / Eklezyas 9:5-6 (Bib la)",
+      text: `Sòm 146:4 — « Souf li soti, li tounen nan tè li; menm jou sa a, tout panse li disparèt. »
+
+Eklezyas 9:5 — « Paske moun ki vivan yo konnen yo gen pou yo mouri; men moun mouri yo pa konnen anyen ankò. Yo pa gen okenn rekonpans ankò, paske yo bliye yo nèt. »
+
+Eklezyas 9:6 — « Renmen yo, rayisman yo ak jalouzi yo disparèt nèt. Yo p ap janm gen pati ankò nan anyen ki fèt anba solèy la. »`
+    },
+    funFact: "Jezi te rele lanmò 'dòmi' plizyè fwa — menm lè Li te di sou zanmi L Laza: 'Laza, zanmi nou an, ap dòmi; men m prale leve l.' (Jan 11:11)",
+    keyVerse: "Souf li soti, li tounen nan tè li; menm jou sa a, tout panse li disparèt. — Sòm 146:4"
   },
 };
 
