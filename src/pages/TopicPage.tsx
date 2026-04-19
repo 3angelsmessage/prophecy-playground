@@ -298,6 +298,36 @@ Ecclesiastes 9:6 — "Also their love, and their hatred, and their envy, is now 
     funFact: "Jesus called death 'sleep' more than once — including when He said about His friend Lazarus, 'Our friend Lazarus sleepeth; but I go, that I may awake him out of sleep.' (John 11:11)",
     keyVerse: "His breath goeth forth, he returneth to his earth; in that very day his thoughts perish. — Psalm 146:4 (KJV)"
   },
+  "mark-of-the-beast": {
+    title: "The Mark of the Beast",
+    subtitle: "Standing Faithful in the Last Days",
+    book: "Revelation 13",
+    emoji: "",
+    heroColor: "from-rose-500 to-red-600",
+    intro: "Revelation warns about a special test in the last days. But don't be afraid — God promises to keep His faithful children safe and seal them as His own!",
+    sections: [
+      { title: "What Is the Mark?", content: "The mark of the beast is a sign of loyalty to a power that tries to change God's law. Those who receive it choose human authority over God's commandments.", icon: "⚠️" },
+      { title: "What 666 Means", content: "Revelation 13:18 says 666 is the number of a man. It points to a power that exalts itself above God — but God has the final word!", icon: "🔢" },
+      { title: "The Sabbath Test", content: "The fourth commandment points to God as Creator. Staying faithful to His true Sabbath shows that we love and obey Him above any earthly power.", icon: "🕊️" },
+      { title: "God Seals His People", content: "Instead of the mark, God's faithful children receive His seal in their foreheads — a promise of His protection and love.", icon: "✨" }
+    ],
+    scripture: {
+      reference: "Revelation 13:15-18 (KJV)",
+      text: `15 And he had power to give life unto the image of the beast, that the image of the beast should both speak, and cause that as many as would not worship the image of the beast should be killed.
+
+16 And he causeth all, both small and great, rich and poor, free and bond, to receive a mark in their right hand, or in their foreheads:
+
+17 And that no man might buy or sell, save he that had the mark, or the name of the beast, or the number of his name.
+
+18 Here is wisdom. Let him that hath understanding count the number of the beast: for it is the number of a man; and his number is Six hundred threescore and six.`
+    },
+    egwQuote: {
+      text: "I saw all that \"would not receive the mark of the Beast, and of his Image, in their foreheads or in their hands,\" could not buy or sell. [Revelation 13:15-17.] I saw that the number (666) of the Image Beast was made up; [Revelation 13:18.] and that it was the Beast that changed the Sabbath, and the Image Beast had followed on after, and kept the Pope's, and not God's Sabbath.",
+      source: "A Word to the Little Flock, p. 19"
+    },
+    funFact: "God's people are never alone! Revelation 14:12 says the saints have patience, keep God's commandments, and trust in Jesus — that's the winning team!",
+    keyVerse: "Here is the patience of the saints: here are they that keep the commandments of God, and the faith of Jesus. — Revelation 14:12 (KJV)"
+  },
 };
 
 // French content
@@ -479,6 +509,36 @@ Ecclésiaste 9:6 — « Et leur amour, et leur haine, et leur envie, ont déjà 
     },
     funFact: "Jésus a appelé la mort un « sommeil » plus d'une fois — y compris à propos de Son ami Lazare : « Lazare, notre ami, dort ; mais je vais le réveiller. » (Jean 11:11)",
     keyVerse: "Leur souffle s'en va, ils rentrent dans la terre, et ce même jour leurs desseins périssent. — Psaume 146:4"
+  },
+  "mark-of-the-beast": {
+    title: "La Marque de la Bête",
+    subtitle: "Rester Fidèle dans les Derniers Jours",
+    book: "Apocalypse 13",
+    emoji: "",
+    heroColor: "from-rose-500 to-red-600",
+    intro: "L'Apocalypse parle d'un test spécial pour les derniers jours. N'aie pas peur — Dieu promet de garder Ses enfants fidèles en sécurité et de les marquer de Son sceau !",
+    sections: [
+      { title: "Qu'est-ce que la marque ?", content: "La marque de la bête est un signe de loyauté envers un pouvoir qui essaie de changer la loi de Dieu. Ceux qui la reçoivent choisissent l'autorité humaine plutôt que les commandements de Dieu.", icon: "⚠️" },
+      { title: "Ce que signifie 666", content: "Apocalypse 13:18 dit que 666 est le nombre d'un homme. Il désigne un pouvoir qui s'élève au-dessus de Dieu — mais Dieu a le dernier mot !", icon: "🔢" },
+      { title: "Le test du sabbat", content: "Le quatrième commandement désigne Dieu comme Créateur. Rester fidèle à Son vrai sabbat montre que nous L'aimons et Lui obéissons par-dessus tout pouvoir terrestre.", icon: "🕊️" },
+      { title: "Dieu scelle Son peuple", content: "Au lieu de la marque, les enfants fidèles de Dieu reçoivent Son sceau sur leur front — une promesse de Sa protection et de Son amour.", icon: "✨" }
+    ],
+    scripture: {
+      reference: "Apocalypse 13:15-18 (Louis Segond)",
+      text: `15 Et il lui fut donné d'animer l'image de la bête, afin que l'image de la bête parlât, et qu'elle fît que tous ceux qui n'adoreraient pas l'image de la bête fussent tués.
+
+16 Et elle fit que tous, petits et grands, riches et pauvres, libres et esclaves, reçussent une marque sur leur main droite ou sur leur front,
+
+17 et que personne ne pût acheter ni vendre, sans avoir la marque, le nom de la bête ou le nombre de son nom.
+
+18 C'est ici la sagesse. Que celui qui a de l'intelligence calcule le nombre de la bête. Car c'est un nombre d'homme, et son nombre est six cent soixante-six.`
+    },
+    egwQuote: {
+      text: "J'ai vu que tous ceux qui « ne recevraient pas la marque de la Bête et de son Image sur leur front ou sur leur main » ne pourraient ni acheter ni vendre. [Apocalypse 13:15-17.] J'ai vu que le nombre (666) de la Bête-Image était complet ; [Apocalypse 13:18.] et que c'est la Bête qui a changé le sabbat, et que la Bête-Image a suivi, et a gardé le sabbat du Pape, et non celui de Dieu.",
+      source: "A Word to the Little Flock, p. 19"
+    },
+    funFact: "Le peuple de Dieu n'est jamais seul ! Apocalypse 14:12 dit que les saints ont de la patience, gardent les commandements de Dieu et ont la foi de Jésus — c'est l'équipe gagnante !",
+    keyVerse: "C'est ici la persévérance des saints, qui gardent les commandements de Dieu et la foi de Jésus. — Apocalypse 14:12"
   },
 };
 
@@ -662,6 +722,36 @@ Eclesiastés 9:6 — "También su amor y su odio y su envidia fenecieron ya; y n
     funFact: "Jesús llamó a la muerte 'sueño' más de una vez — incluso cuando dijo de Su amigo Lázaro: 'Nuestro amigo Lázaro duerme; mas voy para despertarle.' (Juan 11:11)",
     keyVerse: "Pues sale su aliento, y vuelve a la tierra; en ese mismo día perecen sus pensamientos. — Salmo 146:4"
   },
+  "mark-of-the-beast": {
+    title: "La Marca de la Bestia",
+    subtitle: "Permanecer Fieles en los Últimos Días",
+    book: "Apocalipsis 13",
+    emoji: "",
+    heroColor: "from-rose-500 to-red-600",
+    intro: "Apocalipsis advierte sobre una prueba especial en los últimos días. ¡Pero no temas — Dios promete proteger a Sus hijos fieles y sellarlos como Suyos!",
+    sections: [
+      { title: "¿Qué es la marca?", content: "La marca de la bestia es una señal de lealtad a un poder que intenta cambiar la ley de Dios. Quienes la reciben escogen la autoridad humana sobre los mandamientos de Dios.", icon: "⚠️" },
+      { title: "Lo que significa 666", content: "Apocalipsis 13:18 dice que 666 es el número de un hombre. Apunta a un poder que se exalta a sí mismo sobre Dios — ¡pero Dios tiene la última palabra!", icon: "🔢" },
+      { title: "La prueba del sábado", content: "El cuarto mandamiento señala a Dios como Creador. Mantenerse fiel a Su verdadero sábado muestra que Lo amamos y obedecemos por encima de cualquier poder terrenal.", icon: "🕊️" },
+      { title: "Dios sella a Su pueblo", content: "En lugar de la marca, los hijos fieles de Dios reciben Su sello en sus frentes — una promesa de Su protección y amor.", icon: "✨" }
+    ],
+    scripture: {
+      reference: "Apocalipsis 13:15-18 (RVR1960)",
+      text: `15 Y se le permitió infundir aliento a la imagen de la bestia, para que la imagen hablase e hiciese matar a todo el que no la adorase.
+
+16 Y hacía que a todos, pequeños y grandes, ricos y pobres, libres y esclavos, se les pusiese una marca en la mano derecha, o en la frente;
+
+17 y que ninguno pudiese comprar ni vender, sino el que tuviese la marca o el nombre de la bestia, o el número de su nombre.
+
+18 Aquí hay sabiduría. El que tiene entendimiento, cuente el número de la bestia, pues es número de hombre. Y su número es seiscientos sesenta y seis.`
+    },
+    egwQuote: {
+      text: "Vi que todos los que «no recibieran la marca de la Bestia y de su Imagen en sus frentes o en sus manos» no podrían comprar ni vender. [Apocalipsis 13:15-17.] Vi que el número (666) de la Bestia-Imagen estaba completo; [Apocalipsis 13:18.] y que fue la Bestia la que cambió el sábado, y la Bestia-Imagen la siguió, y guardó el sábado del Papa, y no el de Dios.",
+      source: "A Word to the Little Flock, p. 19"
+    },
+    funFact: "¡El pueblo de Dios nunca está solo! Apocalipsis 14:12 dice que los santos tienen paciencia, guardan los mandamientos de Dios y tienen la fe de Jesús — ¡ese es el equipo ganador!",
+    keyVerse: "Aquí está la paciencia de los santos, los que guardan los mandamientos de Dios y la fe de Jesús. — Apocalipsis 14:12"
+  },
 };
 
 // Haitian Creole content
@@ -843,6 +933,36 @@ Eklezyas 9:6 — « Renmen yo, rayisman yo ak jalouzi yo disparèt nèt. Yo p ap
     },
     funFact: "Jezi te rele lanmò 'dòmi' plizyè fwa — menm lè Li te di sou zanmi L Laza: 'Laza, zanmi nou an, ap dòmi; men m prale leve l.' (Jan 11:11)",
     keyVerse: "Souf li soti, li tounen nan tè li; menm jou sa a, tout panse li disparèt. — Sòm 146:4"
+  },
+  "mark-of-the-beast": {
+    title: "Mak Bèt la",
+    subtitle: "Rete Fidèl nan Dènye Jou yo",
+    book: "Revelasyon 13",
+    emoji: "",
+    heroColor: "from-rose-500 to-red-600",
+    intro: "Revelasyon avèti sou yon tès espesyal nan dènye jou yo. Men pa pè — Bondye pwomèt pou pwoteje pitit fidèl Li yo epi mete so Li sou yo!",
+    sections: [
+      { title: "Kisa mak la ye?", content: "Mak bèt la se yon siy fidelite anvè yon pouvwa k ap eseye chanje lwa Bondye. Sa ki resevwa l yo chwazi otorite moun pase kòmandman Bondye yo.", icon: "⚠️" },
+      { title: "Sa 666 vle di", content: "Revelasyon 13:18 di 666 se nimewo yon nonm. Li montre yon pouvwa ki leve tèt li pi wo pase Bondye — men se Bondye ki gen dènye mo a!", icon: "🔢" },
+      { title: "Tès Saba a", content: "Katriyèm kòmandman an montre Bondye kòm Kreyatè. Rete fidèl ak vrè Saba L la montre nou renmen L epi obeyi L pi wo pase nenpòt pouvwa sou tè a.", icon: "🕊️" },
+      { title: "Bondye sele pèp Li a", content: "Olye mak la, pitit fidèl Bondye yo resevwa so Li sou fwon yo — yon pwomès pwoteksyon ak lanmou Li.", icon: "✨" }
+    ],
+    scripture: {
+      reference: "Revelasyon 13:15-18",
+      text: `15 Yo te ba li pouvwa pou l bay imaj bèt la lavi, pou imaj bèt la te ka pale epi fè pou yo touye tout moun ki refize adore imaj bèt la.
+
+16 Li fòse tout moun, piti kou gran, rich kou pòv, lib kou esklav, pran yon mak sou men dwat yo oswa sou fwon yo,
+
+17 pou pèsonn pa kapab achte ni vann, eksepte moun ki gen mak la, oswa non bèt la, oswa nimewo non li.
+
+18 Men sajès la. Se pou moun ki gen entèlijans kalkile nimewo bèt la, paske se yon nimewo moun. Nimewo li se sis san swasant-sis.`
+    },
+    egwQuote: {
+      text: "Mwen te wè ke tout moun ki « pa t ap resevwa mak Bèt la, ak Imaj li, sou fwon yo oswa sou men yo » pa t ap kapab achte ni vann. [Revelasyon 13:15-17.] Mwen te wè ke nimewo (666) Bèt-Imaj la te konplete; [Revelasyon 13:18.] epi se Bèt la ki te chanje Saba a, epi Bèt-Imaj la te swiv apre, epi te kenbe Saba Pap la, epi pa Saba Bondye a.",
+      source: "A Word to the Little Flock, p. 19"
+    },
+    funFact: "Pèp Bondye a pa janm pou kont yo! Revelasyon 14:12 di sen yo gen pasyans, kenbe kòmandman Bondye yo, epi gen lafwa Jezi — sa se ekip ki ap genyen an!",
+    keyVerse: "Men pasyans sen yo: men sa ki kenbe kòmandman Bondye yo ak lafwa Jezi. — Revelasyon 14:12"
   },
 };
 
