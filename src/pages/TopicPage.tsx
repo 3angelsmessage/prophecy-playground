@@ -906,6 +906,25 @@ const TopicPage = () => {
         </div>
       </section>
 
+      {topic.egwQuote && (
+        <section className="py-12 bg-secondary/5">
+          <div className="container mx-auto px-4">
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              className="max-w-3xl mx-auto bg-card rounded-3xl p-6 md:p-8 shadow-card border border-secondary/20">
+              <div className="flex items-center gap-3 mb-4">
+                <Star className="w-6 h-6 text-secondary" />
+                <h3 className="text-lg font-display font-bold text-secondary">Spirit of Prophecy</h3>
+              </div>
+              <blockquote className="text-base md:text-lg italic text-foreground leading-relaxed mb-3">
+                "{topic.egwQuote.text}"
+              </blockquote>
+              <p className="text-sm text-muted-foreground text-right">— Ellen G. White, {topic.egwQuote.source}</p>
+            </motion.div>
+          </div>
+        </section>
+      )}
+
       <section className="py-12 border-t border-border">
         <div className="container mx-auto px-4">
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
