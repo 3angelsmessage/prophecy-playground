@@ -61,10 +61,10 @@ const Hero = () => {
                 { number: "7", label: t("hero.statTopics", "Prophecy Topics") },
               ].map((stat) => (
                 <div key={stat.label} className="text-center">
-                  <p className="font-display text-3xl font-bold text-[hsl(120,80%,30%)]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7), -1px -1px 3px rgba(0,0,0,0.5)' }}>
+                  <p className="font-display text-4xl sm:text-5xl font-bold text-[hsl(120,80%,30%)]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7), -1px -1px 3px rgba(0,0,0,0.5)' }}>
                     {stat.number}
                   </p>
-                  <p className="text-sm text-[hsl(330,80%,45%)] font-medium" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.5)' }}>
+                  <p className="text-base sm:text-lg text-[hsl(330,80%,45%)] font-semibold" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.5)' }}>
                     {stat.label}
                   </p>
                 </div>
@@ -80,11 +80,11 @@ const Hero = () => {
           transition={{ delay: 0.4 }}
           className="flex flex-col sm:flex-row gap-3 justify-center items-center pb-24"
         >
-          <Button variant="hero" size="sm" className="w-auto px-5 h-10 text-sm" onClick={() => document.getElementById('games')?.scrollIntoView({ behavior: 'smooth' })}>
-            <Play size={14} />
+          <Button variant="hero" size="lg" className="w-auto px-8 h-14 text-lg" onClick={() => document.getElementById('games')?.scrollIntoView({ behavior: 'smooth' })}>
+            <Play size={20} />
             {t("hero.startPlaying")}
           </Button>
-          <Button variant="heroOutline" size="sm" className="w-auto px-5 h-10 text-sm" onClick={() => document.getElementById('learn')?.scrollIntoView({ behavior: 'smooth' })}>
+          <Button variant="heroOutline" size="lg" className="w-auto px-8 h-14 text-lg" onClick={() => document.getElementById('learn')?.scrollIntoView({ behavior: 'smooth' })}>
             {t("hero.learnFirst")}
           </Button>
         </motion.div>

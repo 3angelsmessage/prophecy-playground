@@ -82,6 +82,11 @@ const en = {
         description: "Learn why God created a special day of rest and how to keep it holy!",
         book: "Exodus 20:8-11",
       },
+      {
+        title: "The State of the Dead",
+        description: "What does the Bible really say happens when we die? Discover God's hopeful answer!",
+        book: "Ecclesiastes 9 / Psalm 146",
+      },
     ],
   },
 

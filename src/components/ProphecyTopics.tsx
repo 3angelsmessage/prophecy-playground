@@ -13,6 +13,7 @@ import newJerusalem from "@/assets/new-jerusalem.png";
 import investigativeJudgment from "@/assets/investigative-judgment.png";
 import ellenWhite from "@/assets/ellen-white.png";
 import sabbathDay from "@/assets/sabbath-day.png";
+import stateOfTheDead from "@/assets/state-of-the-dead.png";
 
 const topicImages = [
   { image: nebuchadnezzarStatue, color: "from-prophecy-gold/80", slug: "daniels-statue" },
@@ -25,6 +26,7 @@ const topicImages = [
   { image: newJerusalem, color: "from-prophecy-gold/80", slug: "new-jerusalem" },
   { image: ellenWhite, color: "from-prophecy-purple/80", slug: "ellen-white" },
   { image: sabbathDay, color: "from-prophecy-teal/80", slug: "sabbath-day" },
+  { image: stateOfTheDead, color: "from-prophecy-blue/80", slug: "state-of-the-dead" },
 ];
 
 const ProphecyTopics = () => {
