@@ -15,7 +15,7 @@ const ht = {
     title1: "Dekouvri",
     titleHighlight: "Etònan",
     title2: "Pwofesi Bib la!",
-    subtitle: "Aprann sou Danyèl ak Revelasyon atravè jwèt amizan, quiz eksite, ak istwa ki gen koulè. Dekouvri plan Bondye pou mond nou an!",
+    subtitle: "Aprann plis sou Danyèl ak Revelasyon atravè jwèt amizan, quiz eksite, ak istwa ki gen koulè, epi dekouvri plan Bondye pou lavi w!",
     startPlaying: "Kòmanse Jwe",
     learnFirst: "Aprann Dabò",
     statGames: "Jwèt Amizan",

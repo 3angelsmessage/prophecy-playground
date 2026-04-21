@@ -44,7 +44,7 @@ const Hero = () => {
               <span className="text-[hsl(120,80%,30%)]" style={{ WebkitTextStroke: '10px white', paintOrder: 'stroke fill' }}>{t("hero.title2")}</span>
             </h1>
 
-            <p className="text-lg sm:text-xl font-semibold text-white mb-8 max-w-lg mx-auto" style={{ textShadow: '1px 1px 3px rgba(0,0,0,0.7)' }}>
+            <p className="text-lg sm:text-xl font-bold text-white mb-8 max-w-lg mx-auto" style={{ textShadow: '2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 3px 3px 8px rgba(0,0,0,0.9)' }}>
               {t("hero.subtitle")}
             </p>
 

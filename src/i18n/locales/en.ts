@@ -15,7 +15,7 @@ const en = {
     title1: "Discover",
     titleHighlight: "Amazing",
     title2: "Bible Prophecies!",
-    subtitle: "Learn about Daniel & Revelation through fun games, exciting quizzes, and colorful stories. Uncover God's plan for our world!",
+    subtitle: "Learn more about Daniel & Revelation through fun games, exciting quizzes, and colorful stories, and uncover God's plan for your life!",
     startPlaying: "Start Playing",
     learnFirst: "Learn First",
     statGames: "Fun Games",
