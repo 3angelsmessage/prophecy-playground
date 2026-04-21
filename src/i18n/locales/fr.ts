@@ -15,7 +15,7 @@ const fr = {
     title1: "Découvrez les",
     titleHighlight: "Incroyables",
     title2: "Prophéties Bibliques !",
-    subtitle: "Plonger dans le livre de Daniel et l'Apocalypse à travers des jeux amusants, des quiz passionnants et des histoires colorées. Découvrez le plan de Dieu pour notre monde !",
+    subtitle: "Apprenez-en plus sur Daniel et l'Apocalypse à travers des jeux amusants, des quiz passionnants et des histoires colorées, et découvrez le plan de Dieu pour votre vie !",
     startPlaying: "Jouer",
     learnFirst: "Apprendre",
     statGames: "Jeux amusants",

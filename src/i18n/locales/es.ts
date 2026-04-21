@@ -15,7 +15,7 @@ const es = {
     title1: "¡Descubre",
     titleHighlight: "Increíbles",
     title2: "Profecías Bíblicas!",
-    subtitle: "Aprende sobre Daniel y Apocalipsis a través de juegos divertidos, emocionantes quizzes e historias coloridas. ¡Descubre el plan de Dios para nuestro mundo!",
+    subtitle: "Aprende más sobre Daniel y Apocalipsis a través de juegos divertidos, emocionantes quizzes e historias coloridas, ¡y descubre el plan de Dios para tu vida!",
     startPlaying: "Jugar",
     learnFirst: "Aprender",
     statGames: "Juegos divertidos",
