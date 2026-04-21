@@ -32,7 +32,7 @@ const Header = () => {
     >
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
-          <motion.div whileHover={{ scale: 1.05 }} className="flex items-center gap-2">
+          <motion.div whileHover={{ scale: 1.05 }} className="flex items-center gap-2 ml-[5px]">
             <img src={logo} alt="Prophecy Kids Logo" className="w-16 h-16 rounded-full object-cover" />
           </motion.div>
 
