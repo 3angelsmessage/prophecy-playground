@@ -101,22 +101,7 @@ const fr = {
     title: "Regardez et",
     titleHighlight: "Apprenez la Prophétie",
     subtitle: "Plongez plus profondément dans la prophétie biblique avec des leçons vidéo captivantes !",
-    items: [
-      {
-        title: "L'Homme Vêtu de Lin",
-        reference: "Daniel 12:6-7",
-        description: "L'Homme Vêtu de Lin joue un rôle crucial dans la transmission des messages prophétiques à Daniel. Dans Daniel 12:6-7, on le voit debout au-dessus des eaux d'une rivière, levant les mains vers le ciel et jurant par Celui qui vit éternellement, indiquant la certitude et l'origine divine de la prophétie concernant la fin des temps.",
-        scripture: "\"L'un d'eux dit à l'homme vêtu de lin, qui était au-dessus des eaux du fleuve : 'Quand sera la fin de ces merveilles ?' Et l'homme vêtu de lin, qui était au-dessus des eaux du fleuve, leva sa main droite et sa main gauche vers le ciel, et jura par celui qui vit éternellement que ce sera pour un temps, des temps et la moitié d'un temps, et que toutes ces choses seront accomplies quand la force du peuple saint sera entièrement brisée.'\"",
-        scriptureRef: "Daniel 12:6-7",
-      },
-      {
-        title: "Les Messages des Trois Anges",
-        reference: "Apocalypse 14:6-12",
-        description: "Trois anges traversent le ciel en proclamant des messages urgents à chaque personne sur terre. Le premier ange appelle le monde à adorer Dieu comme Créateur et annonce que l'heure de Son jugement est venue. Le deuxième ange déclare la chute de Babylone spirituelle. Le troisième ange donne un avertissement solennel contre la réception de la marque de la bête, appelant le peuple de Dieu à la patience et à la fidélité.",
-        scripture: "\"Puis je vis un autre ange qui volait au milieu du ciel, ayant un Évangile éternel à prêcher à ceux qui habitent sur la terre, à toute nation, à toute tribu, à toute langue et à tout peuple, disant d'une voix forte : 'Craignez Dieu et donnez-lui gloire, car l'heure de son jugement est venue ; adorez celui qui a fait le ciel et la terre, la mer et les sources d'eaux.' Et un autre ange suivit, disant : 'Elle est tombée, elle est tombée, Babylone la grande.' Puis un troisième ange suivit, disant d'une voix forte : 'Si quelqu'un adore la bête et son image, et reçoit une marque sur son front ou sur sa main, il boira lui aussi du vin de la fureur de Dieu...' C'est ici la persévérance des saints, ceux qui gardent les commandements de Dieu et la foi de Jésus.\"",
-        scriptureRef: "Apocalypse 14:6-12",
-      },
-    ],
+    items: [],
   },
 
   // Games section

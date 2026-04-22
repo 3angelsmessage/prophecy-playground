@@ -101,22 +101,7 @@ const es = {
     title: "Mira y",
     titleHighlight: "Aprende Profecía",
     subtitle: "¡Sumérgete más profundo en la profecía bíblica con lecciones en video cautivadoras!",
-    items: [
-      {
-        title: "El Hombre Vestido de Lino",
-        reference: "Daniel 12:6-7",
-        description: "El Hombre Vestido de Lino juega un papel crucial en la entrega de mensajes proféticos a Daniel. En Daniel 12:6-7, se le ve de pie sobre las aguas de un río, levantando sus manos al cielo y jurando por Aquel que vive para siempre, indicando la certeza y el origen divino de la profecía sobre los últimos tiempos.",
-        scripture: "\"Uno de ellos dijo al hombre vestido de lino, que estaba sobre las aguas del río: '¿Cuándo será el fin de estas maravillas?' Y el hombre vestido de lino, que estaba sobre las aguas del río, levantó su mano derecha y su mano izquierda al cielo, y juró por Aquel que vive para siempre, diciendo: 'Será por un tiempo, tiempos y la mitad de un tiempo. Cuando el poder del pueblo santo haya sido quebrantado, todas estas cosas se cumplirán.'\"",
-        scriptureRef: "Daniel 12:6-7",
-      },
-      {
-        title: "Los Mensajes de los Tres Ángeles",
-        reference: "Apocalipsis 14:6-12",
-        description: "Tres ángeles vuelan por el cielo proclamando mensajes urgentes a cada persona en la tierra. El primer ángel llama al mundo a adorar a Dios como Creador y anuncia que la hora de Su juicio ha llegado. El segundo ángel declara la caída de Babilonia espiritual. El tercer ángel da una advertencia solemne contra recibir la marca de la bestia, llamando al pueblo de Dios a la paciencia y fidelidad.",
-        scripture: "\"Vi volar por en medio del cielo a otro ángel, que tenía el evangelio eterno para predicarlo a los moradores de la tierra, a toda nación, tribu, lengua y pueblo, diciendo a gran voz: 'Temed a Dios, y dadle gloria, porque la hora de su juicio ha llegado; y adorad a aquel que hizo el cielo y la tierra, el mar y las fuentes de las aguas.' Otro ángel le siguió, diciendo: 'Ha caído, ha caído Babilonia, la gran ciudad.' Y un tercer ángel los siguió, diciendo a gran voz: 'Si alguno adora a la bestia y a su imagen, y recibe la marca en su frente o en su mano, él también beberá del vino de la ira de Dios...' Aquí está la paciencia de los santos, los que guardan los mandamientos de Dios y la fe de Jesús.\"",
-        scriptureRef: "Apocalipsis 14:6-12",
-      },
-    ],
+    items: [],
   },
 
   // Games section
