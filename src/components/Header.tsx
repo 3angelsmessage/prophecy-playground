@@ -33,7 +33,9 @@ const Header = () => {
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           <motion.div whileHover={{ scale: 1.05 }} className="flex items-center gap-2 ml-[5px]">
-            <img src={logo} alt="Prophecy Kids Logo" className="w-16 h-16 object-contain" />
+            <div className="bg-white rounded-xl p-2 shadow-soft">
+              <img src={logo} alt="Prophecy Kids Logo" className="w-28 h-28 sm:w-32 sm:h-32 object-contain" />
+            </div>
           </motion.div>
 
           <nav className="hidden md:flex items-center gap-1">
