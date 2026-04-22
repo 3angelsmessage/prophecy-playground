@@ -101,22 +101,7 @@ const ht = {
     title: "Gade &",
     titleHighlight: "Aprann Pwofesi",
     subtitle: "Ale pi fon nan pwofesi Bib la ak leson videyo ki enteresan!",
-    items: [
-      {
-        title: "Nonm ki Abiye an Len an",
-        reference: "Danyèl 12:6-7",
-        description: "Nonm ki abiye an len an jwe yon wòl enpòtan nan bay Danyèl mesaj pwofetik. Nan Danyèl 12:6-7, li kanpe anlè dlo rivyè a, li leve men l nan syèl la, li sèmante pa Sila ki viv pou tout tan an, ki montre sètitid ak orijin diven pwofesi sou tan lafen an.",
-        scripture: "\"Youn nan yo di nonm ki abiye an len an, ki te anlè dlo rivyè a, 'Konbyen tan anvan tout mèvèy sa yo fini?' Nonm ki abiye an len an, ki te anlè dlo rivyè a, leve men dwat li ak men goch li nan syèl la. Mwen tande l sèmante pa Sila ki viv pou tout tan an: 'L ap dire yon tan, de tan, ak mwatye yon tan. Lè pouvwa pèp sen an fin kraze, tout bagay sa yo va fini.'\"",
-        scriptureRef: "Danyèl 12:6-7",
-      },
-      {
-        title: "Mesaj Twa Zanj yo",
-        reference: "Revelasyon 14:6-12",
-        description: "Twa zanj vole nan syèl la pou pwoklame mesaj ijan bay tout moun sou latè. Premye zanj lan rele mond lan pou adore Bondye kòm Kreyatè epi anonse lè jijman Li rive. Dezyèm zanj lan deklare tonbe Babilòn espirityèl la. Twazyèm zanj lan bay yon avètisman solanèl kont mak bèt la, li rele pèp Bondye a pou pasyans ak fidelite.",
-        scripture: "\"Lè sa a mwen wè yon lòt zanj k ap vole nan mitan syèl la, li te gen levanjil etènèl la pou preche bay moun ki rete sou latè a — bay tout nasyon, tribi, lang, ak pèp — li di ak yon gwo vwa, 'Pè Bondye epi ba Li glwa, paske lè jijman Li rive; adore Sila ki fè syèl la ak latè a, lanmè a ak sous dlo yo.'\"",
-        scriptureRef: "Revelasyon 14:6-12",
-      },
-    ],
+    items: [],
   },
 
   // Games section
