@@ -101,22 +101,7 @@ const en = {
     title: "Watch &",
     titleHighlight: "Learn Prophecy",
     subtitle: "Dive deeper into Bible prophecy with engaging video lessons!",
-    items: [
-      {
-        title: "The Man Clothed in Linen",
-        reference: "Daniel 12:6-7",
-        description: "The Man Clothed in Linen plays a crucial role in delivering prophetic messages to Daniel. In Daniel 12:6-7, he is seen standing above the waters of a river, raising his hands to heaven, and swearing by Him who lives forever, indicating the certainty and divine origin of the prophecy concerning the end times.",
-        scripture: "\"One of them said to the man clothed in linen, who was above the waters of the river, 'How long until the fulfillment of these wonders?' And the man clothed in linen, who was above the waters of the river, raised his right hand and his left hand toward heaven. And I heard him swear by Him who lives forever, saying, 'It will be for a time, times, and half a time. When the power of the holy people has been shattered, all these things will be completed.'\"",
-        scriptureRef: "Daniel 12:6-7",
-      },
-      {
-        title: "The Three Angels' Messages",
-        reference: "Revelation 14:6-12",
-        description: "Three angels fly through heaven proclaiming urgent messages to every person on earth. The first angel calls the world to worship God as Creator and announces that the hour of His judgment has come. The second angel declares the fall of spiritual Babylon. The third angel gives a solemn warning against receiving the mark of the beast, calling God's people to patient endurance and faithfulness.",
-        scripture: "\"Then I saw another angel flying in the midst of heaven, having the everlasting gospel to preach to those who dwell on the earth—to every nation, tribe, tongue, and people—saying with a loud voice, 'Fear God and give glory to Him, for the hour of His judgment has come; and worship Him who made heaven and earth, the sea and springs of water.' And another angel followed, saying, 'Babylon is fallen, is fallen, that great city, because she has made all nations drink of the wine of the wrath of her fornication.' Then a third angel followed them, saying with a loud voice, 'If anyone worships the beast and his image, and receives his mark on his forehead or on his hand, he himself shall also drink of the wine of the wrath of God...' Here is the patience of the saints; here are those who keep the commandments of God and the faith of Jesus.\"",
-        scriptureRef: "Revelation 14:6-12",
-      },
-    ],
+    items: [],
   },
 
   // Games section
