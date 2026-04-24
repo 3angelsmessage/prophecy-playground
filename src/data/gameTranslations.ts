@@ -462,24 +462,28 @@ const beastMatchData = {
     { beast: "🐻 Bear", empire: "Medo-Persia" },
     { beast: "🐆 Leopard", empire: "Greece" },
     { beast: "🦷 Terrible Beast", empire: "Rome" },
+    { beast: "🐏 Pointy Horn", empire: "Papal Rome" },
   ],
   fr: [
     { beast: "🦁 Lion", empire: "Babylone" },
     { beast: "🐻 Ours", empire: "Médo-Perse" },
     { beast: "🐆 Léopard", empire: "Grèce" },
     { beast: "🦷 Bête Terrible", empire: "Rome" },
+    { beast: "🐏 Petite Corne", empire: "Rome Papale" },
   ],
   es: [
     { beast: "🦁 León", empire: "Babilonia" },
     { beast: "🐻 Oso", empire: "Medo-Persia" },
     { beast: "🐆 Leopardo", empire: "Grecia" },
     { beast: "🦷 Bestia Terrible", empire: "Roma" },
+    { beast: "🐏 Cuerno Puntiagudo", empire: "Roma Papal" },
   ],
   ht: [
     { beast: "🦁 Lyon", empire: "Babilòn" },
     { beast: "🐻 Lous", empire: "Medo-Pès" },
     { beast: "🐆 Leyopa", empire: "Grès" },
     { beast: "🦷 Bèt Terib", empire: "Wòm" },
+    { beast: "🐏 Ti Kòn Pwenti", empire: "Wòm Papal" },
   ],
 };
 
