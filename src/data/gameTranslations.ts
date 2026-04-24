@@ -469,7 +469,7 @@ const beastMatchData = {
     { beast: "🐻 Ours", empire: "Médo-Perse" },
     { beast: "🐆 Léopard", empire: "Grèce" },
     { beast: "🦷 Bête Terrible", empire: "Rome" },
-    { beast: "🐏 Petite Corne", empire: "Rome Papale" },
+    { beast: "👁️ Petite Corne avec un Visage", empire: "Rome Papale" },
   ],
   es: [
     { beast: "🦁 León", empire: "Babilonia" },
