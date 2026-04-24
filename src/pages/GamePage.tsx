@@ -71,7 +71,7 @@ const MatchTheBeastsGame = () => {
               onClick={() => !matches[beast.beast] && handleBeastClick(index)}
               className={`w-full p-4 rounded-xl text-left font-semibold transition-all ${matches[beast.beast] ? "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400" : selectedBeast === index ? "bg-primary text-primary-foreground" : "bg-card border-2 border-border hover:border-primary"}`}
               disabled={!!matches[beast.beast]}
-            >{beast.beast} {matches[beast.beast] && "✓"}</motion.button>
+            ><span className="text-2xl">{beast.beast}</span> {matches[beast.beast] && "✓"}</motion.button>
           ))}
         </div>
       </div>
