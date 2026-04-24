@@ -69,9 +69,14 @@ const MatchTheBeastsGame = () => {
           {beasts.map((beast, index) => (
             <motion.button key={beast.id} whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}
               onClick={() => !matches[beast.beast] && handleBeastClick(index)}
-              className={`w-full p-4 rounded-xl text-left font-semibold transition-all ${matches[beast.beast] ? "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400" : selectedBeast === index ? "bg-primary text-primary-foreground" : "bg-card border-2 border-border hover:border-primary"}`}
+              className={`w-full p-4 rounded-xl text-left font-semibold transition-all flex items-center gap-3 ${matches[beast.beast] ? "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400" : selectedBeast === index ? "bg-primary text-primary-foreground" : "bg-card border-2 border-border hover:border-primary"}`}
               disabled={!!matches[beast.beast]}
-            ><span className="text-2xl">{beast.beast}</span> {matches[beast.beast] && "✓"}</motion.button>
+            >
+              {(beast as any).image && (
+                <img src={(beast as any).image} alt="" className="w-12 h-12 object-contain shrink-0" />
+              )}
+              <span className="text-2xl">{beast.beast}</span> {matches[beast.beast] && "✓"}
+            </motion.button>
           ))}
         </div>
       </div>
