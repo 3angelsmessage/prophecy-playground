@@ -40,10 +40,10 @@ const MatchTheBeastsGame = () => {
     const beast = beasts[selectedBeast];
     if (beast.empire === empire) {
       setMatches(prev => ({ ...prev, [beast.beast]: empire }));
-      setScore(prev => prev + 25);
+      setScore(prev => prev + 20);
     }
     setSelectedBeast(null);
-    if (Object.keys(matches).length + 1 === 4) {
+    if (Object.keys(matches).length + 1 === beasts.length) {
       setTimeout(() => setShowResult(true), 500);
     }
   };
