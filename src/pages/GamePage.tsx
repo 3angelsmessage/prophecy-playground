@@ -87,12 +87,12 @@ const MatchTheBeastsGame = () => {
             <motion.button key={item.id} whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}
               onClick={() => handleEmpireClick(item.empire)}
               disabled={Object.values(matches).includes(item.empire)}
-              className={`w-full p-4 rounded-xl text-left font-semibold transition-all ${Object.values(matches).includes(item.empire) ? "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400" : "bg-card border-2 border-border hover:border-secondary"}`}
+              className={`w-full p-4 rounded-xl text-left text-xl font-semibold transition-all ${Object.values(matches).includes(item.empire) ? "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400" : "bg-card border-2 border-border hover:border-secondary"}`}
             >{item.empire} {Object.values(matches).includes(item.empire) && "✓"}</motion.button>
           ))}
         </div>
       </div>
-      <div className="md:col-span-2 text-center"><p className="text-lg font-bold">{ui.score}: {score}/100</p></div>
+      <div className="md:col-span-2 text-center"><p className="text-2xl font-bold">{ui.score}: {score}/100</p></div>
     </div>
   );
 };
