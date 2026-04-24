@@ -456,34 +456,36 @@ const gameUI = {
 
 // ==================== Game Data ====================
 
+import littleHornImg from "@/assets/little-horn.png";
+
 const beastMatchData = {
   en: [
     { beast: "🦁 Lion", empire: "Babylon" },
     { beast: "🐻 Bear", empire: "Medo-Persia" },
     { beast: "🐆 Leopard", empire: "Greece" },
     { beast: "🦷 Terrible Beast", empire: "Rome" },
-    { beast: "📯 Pointy Horn with a Face", empire: "Papal Rome" },
+    { beast: "Pointy Horn with a Face", empire: "Papal Rome", image: littleHornImg },
   ],
   fr: [
     { beast: "🦁 Lion", empire: "Babylone" },
     { beast: "🐻 Ours", empire: "Médo-Perse" },
     { beast: "🐆 Léopard", empire: "Grèce" },
     { beast: "🦷 Bête Terrible", empire: "Rome" },
-    { beast: "📯 Petite Corne avec un Visage", empire: "Rome Papale" },
+    { beast: "Petite Corne avec un Visage", empire: "Rome Papale", image: littleHornImg },
   ],
   es: [
     { beast: "🦁 León", empire: "Babilonia" },
     { beast: "🐻 Oso", empire: "Medo-Persia" },
     { beast: "🐆 Leopardo", empire: "Grecia" },
     { beast: "🦷 Bestia Terrible", empire: "Roma" },
-    { beast: "📯 Cuerno Puntiagudo con Rostro", empire: "Roma Papal" },
+    { beast: "Cuerno Puntiagudo con Rostro", empire: "Roma Papal", image: littleHornImg },
   ],
   ht: [
     { beast: "🦁 Lyon", empire: "Babilòn" },
     { beast: "🐻 Lous", empire: "Medo-Pès" },
     { beast: "🐆 Leyopa", empire: "Grès" },
     { beast: "🦷 Bèt Terib", empire: "Wòm" },
-    { beast: "📯 Ti Kòn Pwenti ak yon Figi", empire: "Wòm Papal" },
+    { beast: "Ti Kòn Pwenti ak yon Figi", empire: "Wòm Papal", image: littleHornImg },
   ],
 };
 
