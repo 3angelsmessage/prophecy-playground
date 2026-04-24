@@ -1248,12 +1248,12 @@ const GamePage = () => {
         <Button variant="ghost" onClick={() => navigate(`${prefix}/#games`)} className="mb-6 gap-2">
           <ArrowLeft className="w-4 h-4" /> {t("gamePage.backToGames")}
         </Button>
-        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-3xl mx-auto">
+        <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} className="max-w-4xl mx-auto">
           <div className="text-center mb-8">
-            <h1 className="text-3xl md:text-4xl font-display font-bold mb-2">🎮 {meta.title}</h1>
-            <p className="text-muted-foreground">{meta.description}</p>
+            <h1 className="text-4xl md:text-5xl font-display font-bold mb-2">🎮 {meta.title}</h1>
+            <p className="text-lg text-muted-foreground">{meta.description}</p>
           </div>
-          <div className="bg-card rounded-3xl p-6 md:p-8 shadow-card border border-border">
+          <div className="bg-card rounded-3xl p-6 md:p-8 shadow-card border border-border text-lg [&_.text-xs]:text-sm [&_.text-sm]:text-base">
             {component}
           </div>
         </motion.div>
