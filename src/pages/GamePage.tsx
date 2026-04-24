@@ -64,7 +64,7 @@ const MatchTheBeastsGame = () => {
   return (
     <div className="grid md:grid-cols-2 gap-8">
       <div>
-        <h3 className="font-bold mb-4 text-center">{ui.selectBeast}</h3>
+        <h3 className="text-xl font-bold mb-4 text-center">{ui.selectBeast}</h3>
         <div className="space-y-3">
           {beasts.map((beast, index) => (
             <motion.button key={beast.id} whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}
@@ -81,18 +81,18 @@ const MatchTheBeastsGame = () => {
         </div>
       </div>
       <div>
-        <h3 className="font-bold mb-4 text-center">{ui.matchEmpire}</h3>
+        <h3 className="text-xl font-bold mb-4 text-center">{ui.matchEmpire}</h3>
         <div className="space-y-3">
           {shuffledEmpires.map((item) => (
             <motion.button key={item.id} whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}
               onClick={() => handleEmpireClick(item.empire)}
               disabled={Object.values(matches).includes(item.empire)}
-              className={`w-full p-4 rounded-xl text-left font-semibold transition-all ${Object.values(matches).includes(item.empire) ? "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400" : "bg-card border-2 border-border hover:border-secondary"}`}
+              className={`w-full p-4 rounded-xl text-left text-xl font-semibold transition-all ${Object.values(matches).includes(item.empire) ? "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400" : "bg-card border-2 border-border hover:border-secondary"}`}
             >{item.empire} {Object.values(matches).includes(item.empire) && "✓"}</motion.button>
           ))}
         </div>
       </div>
-      <div className="md:col-span-2 text-center"><p className="text-lg font-bold">{ui.score}: {score}/100</p></div>
+      <div className="md:col-span-2 text-center"><p className="text-2xl font-bold">{ui.score}: {score}/100</p></div>
     </div>
   );
 };
@@ -145,7 +145,7 @@ const KingdomBuilderGame = () => {
   return (
     <div className="grid md:grid-cols-2 gap-8">
       <div className="order-2 md:order-1">
-        <h3 className="font-bold mb-4 text-center">{ui.buildStatue}</h3>
+        <h3 className="text-xl font-bold mb-4 text-center">{ui.buildStatue}</h3>
         <div className="bg-muted/50 rounded-2xl p-4 min-h-[400px] flex flex-col items-center justify-end">
           <div className="w-full max-w-[200px] space-y-1">
             {statuePieces.map((piece, index) => {
@@ -178,7 +178,7 @@ const KingdomBuilderGame = () => {
         </div>
       </div>
       <div className="order-1 md:order-2">
-        <h3 className="font-bold mb-4 text-center">{ui.choosePiece}</h3>
+        <h3 className="text-xl font-bold mb-4 text-center">{ui.choosePiece}</h3>
         <div className="space-y-3">
           {shuffledPieces.map((piece) => {
             const isPlaced = placedPieces.includes(piece.id);
@@ -255,7 +255,7 @@ const ProphecyTimelineGame = () => {
     <div className="space-y-8">
       {/* Event choices */}
       <div>
-        <h3 className="font-bold mb-4 text-center">{ui.chooseEvent}</h3>
+        <h3 className="text-xl font-bold mb-4 text-center">{ui.chooseEvent}</h3>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
           <AnimatePresence>
             {shuffledEvents.map((event) => {
@@ -289,7 +289,7 @@ const ProphecyTimelineGame = () => {
 
       {/* Timeline answer area */}
       <div>
-        <h3 className="font-bold mb-4 text-center">{ui.buildTimeline}</h3>
+        <h3 className="text-xl font-bold mb-4 text-center">{ui.buildTimeline}</h3>
         <div className="bg-muted/50 rounded-2xl p-4 min-h-[200px]">
           <div className="relative">
             <div className="absolute left-6 top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-secondary to-accent rounded-full" />
@@ -581,7 +581,7 @@ const BibleBooksGame = () => {
   return (
     <div className="grid md:grid-cols-2 gap-6">
       <div>
-        <h3 className="font-bold mb-4 text-center">{ui.orderBooks}</h3>
+        <h3 className="text-xl font-bold mb-4 text-center">{ui.orderBooks}</h3>
         <div className="space-y-2">
           {booksData.map((_, index) => (
             <div key={index} className={`p-3 rounded-lg ${placed[index] ? "bg-accent/20 text-accent font-bold" : "bg-muted/50 border-2 border-dashed border-muted-foreground/30"}`}>
@@ -592,7 +592,7 @@ const BibleBooksGame = () => {
         {selected && <Button onClick={handlePlace} variant="hero" className="w-full mt-4">{ui.placeBook}</Button>}
       </div>
       <div>
-        <h3 className="font-bold mb-4 text-center">{ui.chooseBook}</h3>
+        <h3 className="text-xl font-bold mb-4 text-center">{ui.chooseBook}</h3>
         <div className="space-y-2">
           {shuffled.map((book) => (
             <motion.button key={book.name} disabled={placed.includes(book.name)} onClick={() => setSelected(book.name)}
@@ -678,7 +678,7 @@ const SanctuaryGame = () => {
   return (
     <div className="grid md:grid-cols-2 gap-6">
       <div>
-        <h3 className="font-bold mb-4 text-center">{ui.sanctuaryItems}</h3>
+        <h3 className="text-xl font-bold mb-4 text-center">{ui.sanctuaryItems}</h3>
         <div className="space-y-2">
           {shuffled.map((part) => (
             <motion.button key={part.id} disabled={!!matched[part.id]} onClick={() => setSelected(part.id)}
@@ -688,7 +688,7 @@ const SanctuaryGame = () => {
         </div>
       </div>
       <div>
-        <h3 className="font-bold mb-4 text-center">{ui.placeInLocation}</h3>
+        <h3 className="text-xl font-bold mb-4 text-center">{ui.placeInLocation}</h3>
         <div className="space-y-3">
           {locations.map((location) => (
             <motion.button key={location} onClick={() => handleLocationClick(location)} whileHover={{ scale: 1.02 }}
@@ -792,7 +792,7 @@ const CommandmentsGame = () => {
   return (
     <div className="grid md:grid-cols-2 gap-6">
       <div>
-        <h3 className="font-bold mb-4 text-center">{ui.orderCommandments}</h3>
+        <h3 className="text-xl font-bold mb-4 text-center">{ui.orderCommandments}</h3>
         <div className="space-y-1 text-sm">
           {commandments.map((_, index) => (
             <div key={index} className={`p-2 rounded-lg ${placed[index] ? "bg-accent/20 text-accent font-bold" : "bg-muted/50 border border-dashed border-muted-foreground/30"}`}>
@@ -803,7 +803,7 @@ const CommandmentsGame = () => {
         {selected && <Button onClick={handlePlace} variant="hero" className="w-full mt-4">{ui.place}</Button>}
       </div>
       <div>
-        <h3 className="font-bold mb-4 text-center">{ui.chooseNext}</h3>
+        <h3 className="text-xl font-bold mb-4 text-center">{ui.chooseNext}</h3>
         <div className="space-y-1 text-sm">
           {shuffled.map((cmd) => (
             <motion.button key={cmd} disabled={placed.includes(cmd)} onClick={() => setSelected(cmd)}
@@ -851,7 +851,7 @@ const CreationGame = () => {
   return (
     <div className="grid md:grid-cols-2 gap-6">
       <div>
-        <h3 className="font-bold mb-4 text-center">{ui.creationWeek}</h3>
+        <h3 className="text-xl font-bold mb-4 text-center">{ui.creationWeek}</h3>
         <div className="space-y-2">
           {creationDays.map((day) => (
             <div key={day.day} className={`p-3 rounded-lg flex items-center gap-2 ${placed.includes(day.day) ? "bg-accent/20 text-accent font-bold" : "bg-muted/50 border-2 border-dashed border-muted-foreground/30"}`}>
@@ -863,7 +863,7 @@ const CreationGame = () => {
         {selected && <Button onClick={handlePlace} variant="hero" className="w-full mt-4">{ui.placeDay} {selected} 🌟</Button>}
       </div>
       <div>
-        <h3 className="font-bold mb-4 text-center">{ui.chooseDay}</h3>
+        <h3 className="text-xl font-bold mb-4 text-center">{ui.chooseDay}</h3>
         <div className="space-y-2">
           {shuffled.map((day) => (
             <motion.button key={day.day} disabled={placed.includes(day.day)} onClick={() => setSelected(day.day)}
@@ -917,7 +917,7 @@ const DanielsVisionsGame = () => {
   return (
     <div className="grid md:grid-cols-2 gap-6">
       <div>
-        <h3 className="font-bold mb-4 text-center">{ui.selectSymbol}</h3>
+        <h3 className="text-xl font-bold mb-4 text-center">{ui.selectSymbol}</h3>
         <div className="space-y-2">
           {visions.map((vision, index) => (
             <motion.button key={vision.symbol} whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}
@@ -931,7 +931,7 @@ const DanielsVisionsGame = () => {
         </div>
       </div>
       <div>
-        <h3 className="font-bold mb-4 text-center">{ui.matchMeaning}</h3>
+        <h3 className="text-xl font-bold mb-4 text-center">{ui.matchMeaning}</h3>
         <div className="space-y-2">
           {shuffledMeanings.map((meaning) => (
             <motion.button key={meaning} whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}
@@ -990,7 +990,7 @@ const Daniel7BeastsGame = () => {
   return (
     <div className="grid md:grid-cols-2 gap-6">
       <div>
-        <h3 className="font-bold mb-4 text-center">{ui.selectSymbolD7}</h3>
+        <h3 className="text-xl font-bold mb-4 text-center">{ui.selectSymbolD7}</h3>
         <div className="space-y-2">
           {beasts.map((item, index) => (
             <motion.button key={item.beast} whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}
@@ -1004,7 +1004,7 @@ const Daniel7BeastsGame = () => {
         </div>
       </div>
       <div>
-        <h3 className="font-bold mb-4 text-center">{ui.matchMeaning}</h3>
+        <h3 className="text-xl font-bold mb-4 text-center">{ui.matchMeaning}</h3>
         <div className="space-y-2">
           {shuffledMeanings.map((meaning) => (
             <motion.button key={meaning} whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}
@@ -1078,7 +1078,7 @@ const GenericTimelineGame = ({ elements, buildLabel, chooseLabel, placeLabel, ma
   return (
     <div className="grid md:grid-cols-2 gap-8">
       <div className="order-2 md:order-1">
-        <h3 className="font-bold mb-4 text-center">{buildLabel}</h3>
+        <h3 className="text-xl font-bold mb-4 text-center">{buildLabel}</h3>
         <div className="bg-muted/50 rounded-2xl p-4 min-h-[400px]">
           <div className="relative">
             <div className={`absolute left-6 top-0 bottom-0 w-1 bg-gradient-to-b ${gc} rounded-full`} />
@@ -1123,7 +1123,7 @@ const GenericTimelineGame = ({ elements, buildLabel, chooseLabel, placeLabel, ma
         </div>
       </div>
       <div className="order-1 md:order-2">
-        <h3 className="font-bold mb-4 text-center">{chooseLabel}</h3>
+        <h3 className="text-xl font-bold mb-4 text-center">{chooseLabel}</h3>
         <div className="space-y-2">
           {shuffledElements.map((element) => {
             const id = getId(element);
