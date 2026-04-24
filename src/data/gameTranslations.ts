@@ -457,35 +457,39 @@ const gameUI = {
 // ==================== Game Data ====================
 
 import littleHornImg from "@/assets/little-horn-cartoon.png";
+import beastLionImg from "@/assets/beast-lion.png";
+import beastBearImg from "@/assets/beast-bear.png";
+import beastLeopardImg from "@/assets/beast-leopard.png";
+import beastTerribleImg from "@/assets/beast-terrible.png";
 
 const beastMatchData = {
   en: [
-    { beast: "🦁 Lion", empire: "Babylon" },
-    { beast: "🐻 Bear", empire: "Medo-Persia" },
-    { beast: "🐆 Leopard", empire: "Greece" },
-    { beast: "🦷 Terrible Beast", empire: "Pagan Rome" },
-    { beast: "Pointy Horn with a Face", empire: "Papal Rome", image: littleHornImg },
+    { beast: "Lion", empire: "Babylon", image: beastLionImg },
+    { beast: "Bear", empire: "Medo-Persia", image: beastBearImg },
+    { beast: "Leopard", empire: "Greece", image: beastLeopardImg },
+    { beast: "Terrible Beast", empire: "Pagan Rome", image: beastTerribleImg },
+    { beast: "Little Horn", empire: "Papal Rome", image: littleHornImg },
   ],
   fr: [
-    { beast: "🦁 Lion", empire: "Babylone" },
-    { beast: "🐻 Ours", empire: "Médo-Perse" },
-    { beast: "🐆 Léopard", empire: "Grèce" },
-    { beast: "🦷 Bête Terrible", empire: "Rome Païenne" },
-    { beast: "Petite Corne avec un Visage", empire: "Rome Papale", image: littleHornImg },
+    { beast: "Lion", empire: "Babylone", image: beastLionImg },
+    { beast: "Ours", empire: "Médo-Perse", image: beastBearImg },
+    { beast: "Léopard", empire: "Grèce", image: beastLeopardImg },
+    { beast: "Bête Terrible", empire: "Rome Païenne", image: beastTerribleImg },
+    { beast: "Petite Corne", empire: "Rome Papale", image: littleHornImg },
   ],
   es: [
-    { beast: "🦁 León", empire: "Babilonia" },
-    { beast: "🐻 Oso", empire: "Medo-Persia" },
-    { beast: "🐆 Leopardo", empire: "Grecia" },
-    { beast: "🦷 Bestia Terrible", empire: "Roma Pagana" },
-    { beast: "Cuerno Puntiagudo con Rostro", empire: "Roma Papal", image: littleHornImg },
+    { beast: "León", empire: "Babilonia", image: beastLionImg },
+    { beast: "Oso", empire: "Medo-Persia", image: beastBearImg },
+    { beast: "Leopardo", empire: "Grecia", image: beastLeopardImg },
+    { beast: "Bestia Terrible", empire: "Roma Pagana", image: beastTerribleImg },
+    { beast: "Cuerno Pequeño", empire: "Roma Papal", image: littleHornImg },
   ],
   ht: [
-    { beast: "🦁 Lyon", empire: "Babilòn" },
-    { beast: "🐻 Lous", empire: "Medo-Pès" },
-    { beast: "🐆 Leyopa", empire: "Grès" },
-    { beast: "🦷 Bèt Terib", empire: "Wòm Payen" },
-    { beast: "Ti Kòn Pwenti ak yon Figi", empire: "Wòm Papal", image: littleHornImg },
+    { beast: "Lyon", empire: "Babilòn", image: beastLionImg },
+    { beast: "Lous", empire: "Medo-Pès", image: beastBearImg },
+    { beast: "Leyopa", empire: "Grès", image: beastLeopardImg },
+    { beast: "Bèt Terib", empire: "Wòm Payen", image: beastTerribleImg },
+    { beast: "Ti Kòn", empire: "Wòm Papal", image: littleHornImg },
   ],
 };
 
