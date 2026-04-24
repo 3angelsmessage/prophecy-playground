@@ -462,7 +462,7 @@ const beastMatchData = {
     { beast: "🐻 Bear", empire: "Medo-Persia" },
     { beast: "🐆 Leopard", empire: "Greece" },
     { beast: "🦷 Terrible Beast", empire: "Rome" },
-    { beast: "🐏 Pointy Horn", empire: "Papal Rome" },
+    { beast: "👁️ Pointy Horn with a Face", empire: "Papal Rome" },
   ],
   fr: [
     { beast: "🦁 Lion", empire: "Babylone" },
