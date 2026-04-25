@@ -49,7 +49,7 @@ const Hero = () => {
             >
               {t("hero.titleHighlight")}
             </span>{" "}
-            <br className="hidden sm:block" />
+            <br />
             <span
               className="text-[hsl(120,80%,30%)]"
               style={{ WebkitTextStroke: "8px white", paintOrder: "stroke fill" }}
