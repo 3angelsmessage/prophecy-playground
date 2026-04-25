@@ -28,25 +28,6 @@ const Hero = () => {
         />
 
         {/* "Amazing Bible prophecies" heading below the lion */}
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          className="font-display text-3xl sm:text-5xl lg:text-6xl font-black text-center mt-2 mb-6"
-        >
-          <span
-            className="text-[hsl(330,80%,45%)]"
-            style={{ WebkitTextStroke: "8px white", paintOrder: "stroke fill" }}
-          >
-            Amazing
-          </span>{" "}
-          <span
-            className="text-[hsl(120,80%,30%)]"
-            style={{ WebkitTextStroke: "8px white", paintOrder: "stroke fill" }}
-          >
-            Bible prophecies
-          </span>
-        </motion.h2>
 
         {/* Existing texts */}
         <motion.div
