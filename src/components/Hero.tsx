@@ -24,7 +24,7 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.6 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="w-full max-w-md sm:max-w-lg lg:max-w-xl h-auto object-contain drop-shadow-[0_0_80px_hsl(var(--primary)/0.3)]"
+          className="w-full max-w-md sm:max-w-lg lg:max-w-xl h-auto object-contain mt-8 sm:mt-12 drop-shadow-[0_0_80px_hsl(var(--primary)/0.3)]"
         />
 
         {/* "Amazing Bible prophecies" heading below the lion */}
