@@ -20,7 +20,7 @@ const Hero = () => {
           initial={{ opacity: 0, scale: 0.3 }}
           animate={{ opacity: 0.55, scale: 1 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="w-full h-full object-cover object-center min-h-[90vh] sm:min-h-0 sm:max-h-none mx-auto scale-125 sm:scale-100 drop-shadow-[0_0_80px_hsl(var(--primary)/0.3)]"
+          className="w-full h-full object-cover object-center min-h-[75vh] sm:min-h-0 sm:max-h-none mx-auto scale-105 sm:scale-100 drop-shadow-[0_0_80px_hsl(var(--primary)/0.3)]"
         />
       </div>
       <div className="absolute top-20 left-10 w-32 h-32 bg-primary/20 rounded-full blur-3xl z-[1]" />
