@@ -13,14 +13,14 @@ const Hero = () => {
       className="relative min-h-screen pt-24 pb-16 overflow-hidden"
     >
       {/* Background image */}
-      <div className="absolute inset-0 z-0 flex items-center justify-center sm:block">
+      <div className="absolute inset-0 z-0 flex items-end justify-center pt-32 sm:pt-0 sm:items-center sm:block">
         <motion.img
           src={heroLion}
           alt=""
           initial={{ opacity: 0, scale: 0.3 }}
           animate={{ opacity: 0.55, scale: 1 }}
           transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-          className="w-full max-w-full h-auto max-h-[76vh] object-contain object-center sm:w-full sm:h-full sm:max-h-none sm:object-cover drop-shadow-[0_0_80px_hsl(var(--primary)/0.3)]"
+          className="w-full max-w-full h-auto max-h-[65vh] object-contain object-bottom sm:w-full sm:h-full sm:max-h-none sm:object-cover sm:object-center drop-shadow-[0_0_80px_hsl(var(--primary)/0.3)]"
         />
       </div>
       <div className="absolute top-20 left-10 w-32 h-32 bg-primary/20 rounded-full blur-3xl z-[1]" />
