@@ -36,7 +36,7 @@ const Header = () => {
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ type: "spring", stiffness: 100 }}
-      className="fixed top-0 left-0 right-0 z-50 bg-[#FCFAF6]/95 backdrop-blur-md shadow-soft"
+      className="fixed top-0 left-0 right-0 z-50 bg-[#FCFAF6] backdrop-blur-md shadow-soft"
     >
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
@@ -52,9 +52,9 @@ const Header = () => {
                 onClick={(e) => { e.preventDefault(); handleNavClick(link.href); }}
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="flex items-center gap-1.5 px-3 py-1.5 rounded-full text-sm text-[hsl(120,80%,30%)] hover:text-[hsl(120,80%,25%)] hover:bg-[hsl(120,80%,30%)]/10 transition-all font-extrabold"
+                className="flex items-center gap-2 px-4 py-2.5 rounded-full text-xl text-[hsl(120,80%,30%)] hover:text-[hsl(120,80%,25%)] hover:bg-[hsl(120,80%,30%)]/10 transition-all font-extrabold"
               >
-                <link.icon size={14} />
+                <link.icon size={20} />
                 {link.name}
               </motion.a>
             ))}
@@ -62,7 +62,7 @@ const Header = () => {
 
           <div className="hidden md:flex items-center gap-3">
             <LanguageSwitcher />
-            <Button variant="hero" size="sm" className="text-xs px-3 py-1 h-7" onClick={() => document.getElementById('learn')?.scrollIntoView({ behavior: 'smooth' })}>
+            <Button variant="hero" size="lg" className="text-base px-6 py-3 h-12" onClick={() => document.getElementById('learn')?.scrollIntoView({ behavior: 'smooth' })}>
               {t("nav.startLearning")}
             </Button>
           </div>
