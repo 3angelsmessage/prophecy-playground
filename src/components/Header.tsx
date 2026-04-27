@@ -20,7 +20,15 @@ const Header = () => {
 
   const handleNavClick = (href: string) => {
     setIsOpen(false);
-    document.getElementById(href.replace('#', ''))?.scrollIntoView({ behavior: 'smooth' });
+    const id = href.replace('#', '');
+    // Defer to allow mobile menu to close before measuring
+    setTimeout(() => {
+      const el = document.getElementById(id);
+      if (!el) return;
+      const headerOffset = 96; // ~6rem to clear the fixed header
+      const top = el.getBoundingClientRect().top + window.scrollY - headerOffset;
+      window.scrollTo({ top, behavior: 'smooth' });
+    }, 50);
   };
 
   return (
