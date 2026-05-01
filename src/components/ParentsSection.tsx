@@ -33,9 +33,6 @@ const ParentsSection = () => {
               <Button variant="hero" size="lg" onClick={() => setShowGuide(!showGuide)}>
                 {t("parents.guideBtn")}
               </Button>
-              <Button variant="heroOutline" size="lg">
-                {t("parents.learnMoreBtn")}
-              </Button>
             </div>
 
             <AnimatePresence>
