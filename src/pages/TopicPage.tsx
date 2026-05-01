@@ -207,7 +207,7 @@ const topicsContentEn: Record<string, any> = {
       { title: "Signs of the End", content: "Daniel 12 mentions that in the time of the end, people will travel far and wide, and knowledge will increase greatly. Look around - this is happening today!", icon: "🌍" },
       { title: "The Resurrection Promise", content: "The best part of Daniel 12 is the promise that 'those who sleep in the dust of the earth will awake' - God's people will be raised to everlasting life when Jesus returns!", icon: "🌅" }
     ],
-    funFact: "Daniel 12:4 predicted the explosion of knowledge and travel - in the last 100 years, we've gone from horses to rockets!",
+    funFact: "Daniel 12:4 predicts that the sealed book is now open to God's people living in the Time of the End.",
     keyVerse: "Those who are wise will shine like the brightness of the heavens. - Daniel 12:3"
   },
   "ellen-white": {
@@ -465,7 +465,7 @@ const topicsContentFr: Record<string, any> = {
       { title: "Signes de la Fin", content: "Daniel 12 mentionne qu'au temps de la fin, les gens voyageront loin et la connaissance augmentera grandement. Regardez autour de vous - cela se produit aujourd'hui !", icon: "🌍" },
       { title: "La Promesse de la Résurrection", content: "La meilleure partie de Daniel 12 est la promesse que 'ceux qui dorment dans la poussière de la terre se réveilleront' - le peuple de Dieu sera ressuscité pour la vie éternelle quand Jésus reviendra !", icon: "🌅" }
     ],
-    funFact: "Daniel 12:4 a prédit l'explosion de la connaissance et des voyages - en 100 ans, nous sommes passés des chevaux aux fusées !",
+    funFact: "Daniel 12:4 prédit que le livre scellé est maintenant ouvert au peuple de Dieu qui vit au Temps de la Fin.",
     keyVerse: "Ceux qui auront été intelligents brilleront comme la splendeur du firmament. - Daniel 12:3"
   },
   "sabbath-day": {
@@ -677,7 +677,7 @@ const topicsContentEs: Record<string, any> = {
       { title: "Señales del Fin", content: "Daniel 12 menciona que en el tiempo del fin, la gente viajará por todas partes y el conocimiento aumentará grandemente. ¡Mira a tu alrededor: esto está sucediendo hoy!", icon: "🌍" },
       { title: "La Promesa de la Resurrección", content: "¡La mejor parte de Daniel 12 es la promesa de que 'los que duermen en el polvo de la tierra despertarán': el pueblo de Dios será resucitado para vida eterna cuando Jesús regrese!", icon: "🌅" }
     ],
-    funFact: "Daniel 12:4 predijo la explosión del conocimiento y los viajes: ¡en 100 años, hemos pasado de los caballos a los cohetes!",
+    funFact: "Daniel 12:4 predice que el libro sellado ahora está abierto para el pueblo de Dios que vive en el Tiempo del Fin.",
     keyVerse: "Los sabios resplandecerán como el resplandor del firmamento. - Daniel 12:3"
   },
   "sabbath-day": {
@@ -889,7 +889,7 @@ const topicsContentHt: Record<string, any> = {
       { title: "Siy Lafen an", content: "Danyèl 12 mansyone ke nan tan lafen an, moun ap vwayaje toupatou epi konesans ap ogmante anpil. Gade toutotou ou — sa ap pase jodi a!", icon: "🌍" },
       { title: "Pwomès Rezireksyon an", content: "Pi bon pati Danyèl 12 se pwomès ke 'moun ki dòmi nan pousyè tè a ap leve' — pèp Bondye a ap leve pou lavi etènèl lè Jezi retounen!", icon: "🌅" }
     ],
-    funFact: "Danyèl 12:4 te predi eksplozyon konesans ak vwayaj — nan 100 ane, nou pase soti nan cheval rive nan fize!",
+    funFact: "Danyèl 12:4 predi ke liv ki te sele a kounye a louvri pou pèp Bondye a k ap viv nan Tan Lafen an.",
     keyVerse: "Moun ki saj yo ap briye tankou klate syèl la. - Danyèl 12:3"
   },
   "sabbath-day": {
