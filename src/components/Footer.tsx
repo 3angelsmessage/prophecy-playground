@@ -1,14 +1,32 @@
 import { motion } from "framer-motion";
 import { Heart, BookOpen, Mail, Star } from "lucide-react";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useLanguagePrefix } from "@/hooks/useLanguagePrefix";
 import logo from "@/assets/logo.png";
 
 const Footer = () => {
   const { t } = useTranslation();
   const { prefix } = useLanguagePrefix();
+  const location = useLocation();
+  const navigate = useNavigate();
   const currentYear = new Date().getFullYear();
+
+  const scrollToId = (id: string) => {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleNavClick = (e: React.MouseEvent, id: string) => {
+    e.preventDefault();
+    const onHome = location.pathname === prefix || location.pathname === `${prefix}/`;
+    if (!onHome) {
+      navigate(prefix);
+      setTimeout(() => scrollToId(id), 350);
+      return;
+    }
+    setTimeout(() => scrollToId(id), 50);
+  };
 
   return (
     <footer className="bg-[hsl(330,80%,45%)] text-white py-12">
@@ -28,10 +46,10 @@ const Footer = () => {
           <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: 0.1 }}>
             <h4 className="font-display font-bold text-lg mb-4">{t("footer.quickLinks")}</h4>
             <ul className="space-y-2 text-sm opacity-80">
-              <li><a href="#home" className="flex items-center gap-2 hover:opacity-100 transition-opacity"><BookOpen className="w-4 h-4" /> {t("footer.home")}</a></li>
-              <li><a href="#learn" className="flex items-center gap-2 hover:opacity-100 transition-opacity"><BookOpen className="w-4 h-4" /> {t("footer.learnProphecies")}</a></li>
-              <li><a href="#games" className="flex items-center gap-2 hover:opacity-100 transition-opacity"><Star className="w-4 h-4" /> {t("footer.playGames")}</a></li>
-              <li><a href="#quizzes" className="flex items-center gap-2 hover:opacity-100 transition-opacity"><BookOpen className="w-4 h-4" /> {t("footer.takeQuizzes")}</a></li>
+              <li><a href="#home" onClick={(e) => handleNavClick(e, "home")} className="flex items-center gap-2 hover:opacity-100 transition-opacity cursor-pointer"><BookOpen className="w-4 h-4" /> {t("footer.home")}</a></li>
+              <li><a href="#learn" onClick={(e) => handleNavClick(e, "learn")} className="flex items-center gap-2 hover:opacity-100 transition-opacity cursor-pointer"><BookOpen className="w-4 h-4" /> {t("footer.learnProphecies")}</a></li>
+              <li><a href="#games" onClick={(e) => handleNavClick(e, "games")} className="flex items-center gap-2 hover:opacity-100 transition-opacity cursor-pointer"><Star className="w-4 h-4" /> {t("footer.playGames")}</a></li>
+              <li><a href="#quizzes" onClick={(e) => handleNavClick(e, "quizzes")} className="flex items-center gap-2 hover:opacity-100 transition-opacity cursor-pointer"><BookOpen className="w-4 h-4" /> {t("footer.takeQuizzes")}</a></li>
               <li><Link to={`${prefix}/contact`} className="flex items-center gap-2 hover:opacity-100 transition-opacity"><Mail className="w-4 h-4" /> {t("footer.contactUs")}</Link></li>
             </ul>
           </motion.div>
