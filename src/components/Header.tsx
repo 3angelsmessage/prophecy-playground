@@ -3,12 +3,17 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, BookOpen, Gamepad2, Trophy, Home, Play, HelpCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
+import { useNavigate, useLocation } from "react-router-dom";
 import LanguageSwitcher from "./LanguageSwitcher";
+import { useLanguagePrefix } from "@/hooks/useLanguagePrefix";
 import logo from "@/assets/logo.png";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { t } = useTranslation();
+  const navigate = useNavigate();
+  const location = useLocation();
+  const { prefix } = useLanguagePrefix();
 
   const navLinks = [
     { name: t("nav.home"), icon: Home, href: "#home" },
@@ -18,17 +23,25 @@ const Header = () => {
     { name: t("nav.quiz"), icon: Trophy, href: "#quizzes" },
   ];
 
+  const scrollToId = (id: string) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const headerOffset = 96;
+    const top = el.getBoundingClientRect().top + window.scrollY - headerOffset;
+    window.scrollTo({ top, behavior: 'smooth' });
+  };
+
   const handleNavClick = (href: string) => {
     setIsOpen(false);
     const id = href.replace('#', '');
-    // Defer to allow mobile menu to close before measuring
-    setTimeout(() => {
-      const el = document.getElementById(id);
-      if (!el) return;
-      const headerOffset = 96; // ~6rem to clear the fixed header
-      const top = el.getBoundingClientRect().top + window.scrollY - headerOffset;
-      window.scrollTo({ top, behavior: 'smooth' });
-    }, 50);
+    const onHome = location.pathname === prefix || location.pathname === `${prefix}/`;
+    if (!onHome) {
+      navigate(prefix);
+      // Wait for home to render, then scroll
+      setTimeout(() => scrollToId(id), 350);
+      return;
+    }
+    setTimeout(() => scrollToId(id), 50);
   };
 
   return (

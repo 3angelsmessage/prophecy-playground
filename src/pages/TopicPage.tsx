@@ -1004,9 +1004,9 @@ const TopicPage = () => {
           </div>
         )}
         <div className="container mx-auto px-4 relative z-10">
-          <Link to={`${prefix}/#topics`} className="inline-flex items-center gap-2 text-white/80 hover:text-white mb-6 transition-colors">
+          <Link to={prefix} className="inline-flex items-center gap-2 text-white/80 hover:text-white mb-6 transition-colors">
             <ArrowLeft className="w-4 h-4" />
-            {t("topicPage.backToTopics")}
+            {t("topicPage.backToHome", "Back to Home")}
           </Link>
           
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
