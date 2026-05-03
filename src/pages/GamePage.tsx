@@ -14,8 +14,8 @@ import {
   getDaniel11Events, getRevelation10Elements, getJudgmentElements,
   getTimeOfEndElements, getSabbathElements, getGameContentMeta,
 } from "@/data/gameTranslations";
-import { playCorrect } from "@/lib/sound";
-import { recordCorrect } from "@/lib/progress";
+import { playCorrect, setActivity } from "@/lib/sound";
+import { recordCompletion } from "@/lib/progress";
 import { useEffect } from "react";
 
 // Helper hook for game UI strings
