@@ -291,6 +291,28 @@ const fr = {
     ],
   },
 
+  // Progress
+  progress: {
+    title: "Votre",
+    titleHighlight: "Progrès",
+    subtitle: "Suivez chaque jeu et quiz auxquels vous avez joué.",
+    backToHome: "Retour à l'accueil",
+    totalCorrect: "Bonnes réponses",
+    gamesPlayed: "Jeux joués",
+    quizzesTaken: "Quiz passés",
+    avgBest: "Meilleur score moyen",
+    attempts: "tentatives",
+    correct: "correctes",
+    gamesSection: "🎮 Jeux",
+    quizzesSection: "🧠 Quiz",
+    noGames: "Aucun jeu joué — choisissez-en un et commencez !",
+    noQuizzes: "Aucun quiz passé — essayez-en un !",
+    allGames: "Voir les jeux",
+    allQuizzes: "Voir les quiz",
+    reset: "Réinitialiser",
+    confirmReset: "Réinitialiser toute la progression ? Cette action est irréversible.",
+  },
+
   // Language
   language: {
     en: "English",

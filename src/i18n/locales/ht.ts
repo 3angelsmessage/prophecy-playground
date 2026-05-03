@@ -291,6 +291,28 @@ const ht = {
     ],
   },
 
+  // Progress
+  progress: {
+    title: "Pwogrè",
+    titleHighlight: "Ou",
+    subtitle: "Swiv chak jwèt ak quiz ou jwe.",
+    backToHome: "Retounen Lakay",
+    totalCorrect: "Bon Repons",
+    gamesPlayed: "Jwèt Jwe",
+    quizzesTaken: "Quiz Pran",
+    avgBest: "Mwayèn Pi Bon Nòt",
+    attempts: "eseye",
+    correct: "kòrèk",
+    gamesSection: "🎮 Jwèt",
+    quizzesSection: "🧠 Quiz",
+    noGames: "Ou poko jwe okenn jwèt — chwazi youn epi kòmanse!",
+    noQuizzes: "Ou poko pran okenn quiz — eseye youn!",
+    allGames: "Wè Jwèt yo",
+    allQuizzes: "Wè Quiz yo",
+    reset: "Reyajiste Pwogrè",
+    confirmReset: "Reyajiste tout pwogrè a? Sa pa ka defèt.",
+  },
+
   // Language
   language: {
     en: "English",

@@ -291,6 +291,28 @@ const es = {
     ],
   },
 
+  // Progress
+  progress: {
+    title: "Tu",
+    titleHighlight: "Progreso",
+    subtitle: "Sigue cada juego y cuestionario que has jugado.",
+    backToHome: "Volver al inicio",
+    totalCorrect: "Respuestas correctas",
+    gamesPlayed: "Juegos jugados",
+    quizzesTaken: "Cuestionarios hechos",
+    avgBest: "Puntaje medio",
+    attempts: "intentos",
+    correct: "correctas",
+    gamesSection: "🎮 Juegos",
+    quizzesSection: "🧠 Cuestionarios",
+    noGames: "Aún no has jugado ningún juego — ¡elige uno y empieza!",
+    noQuizzes: "Aún no has hecho cuestionarios — ¡prueba uno!",
+    allGames: "Ver juegos",
+    allQuizzes: "Ver cuestionarios",
+    reset: "Reiniciar progreso",
+    confirmReset: "¿Reiniciar todo el progreso? Esta acción no se puede deshacer.",
+  },
+
   // Language
   language: {
     en: "English",
