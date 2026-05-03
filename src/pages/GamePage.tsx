@@ -2,7 +2,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, RotateCcw, Trophy } from "lucide-react";
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useLanguagePrefix } from "@/hooks/useLanguagePrefix";
 import {
@@ -15,8 +15,6 @@ import {
   getTimeOfEndElements, getSabbathElements, getGameContentMeta,
 } from "@/data/gameTranslations";
 import { playCorrect, setActivity } from "@/lib/sound";
-import { recordCompletion } from "@/lib/progress";
-import { useEffect } from "react";
 
 // Helper hook for game UI strings
 const useGameUI = () => {
