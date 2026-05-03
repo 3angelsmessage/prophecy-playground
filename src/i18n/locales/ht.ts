@@ -6,7 +6,7 @@ const ht = {
     videos: "Videyo",
     games: "Jwèt",
     quiz: "Quiz",
-    progress: "PROGRESS_PLACEHOLDER_ht",
+    progress: "Pwogrè",
     startLearning: "Kòmanse Aprann! ✨",
   },
 
