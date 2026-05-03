@@ -1235,10 +1235,7 @@ const GamePage = () => {
   const component = gameComponents[gameId || ""];
 
   useEffect(() => {
-    if (gameId && meta) {
-      setActivity({ id: gameId, type: "game", name: meta.title });
-      recordCompletion(gameId, "game", 0, meta.title); // ensures entry exists
-    }
+    if (gameId && meta) setActivity({ id: gameId, type: "game", name: meta.title });
     return () => setActivity(null);
   }, [gameId, meta]);
 
