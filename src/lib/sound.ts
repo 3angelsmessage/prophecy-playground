@@ -1,4 +1,8 @@
 // Simple sound effects using the Web Audio API (no assets required).
+import { recordCorrect } from "./progress";
+
+let _activity: { id: string; type: "game" | "quiz"; name?: string } | null = null;
+export const setActivity = (a: { id: string; type: "game" | "quiz"; name?: string } | null) => { _activity = a; };
 
 let ctx: AudioContext | null = null;
 const getCtx = () => {
