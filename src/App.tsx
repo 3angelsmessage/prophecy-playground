@@ -10,6 +10,7 @@ import TopicPage from "./pages/TopicPage";
 import GamePage from "./pages/GamePage";
 import QuizLibrary from "./pages/QuizLibrary";
 import ContactPage from "./pages/ContactPage";
+import ProgressPage from "./pages/ProgressPage";
 
 const queryClient = new QueryClient();
 
