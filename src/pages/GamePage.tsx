@@ -448,7 +448,7 @@ const VerseScrambleGame = () => {
   };
 
   const checkAnswer = () => {
-    if (selectedWords.join(" ") === verseData[currentVerse].verse) setScore(prev => prev + 1); playCorrect();
+    if (selectedWords.join(" ") === verseData[currentVerse].verse) { setScore(prev => prev + 1); playCorrect(); }
     if (currentVerse < verseData.length - 1) {
       setCurrentVerse(prev => prev + 1);
       setShuffledWords([...verseData[currentVerse + 1].words].sort(() => Math.random() - 0.5));
@@ -506,7 +506,7 @@ const ProphetQuizGame = () => {
 
   const handleAnswer = (answer: string) => {
     setSelected(answer);
-    if (answer === quizData[current].answer) setScore(prev => prev + 1); playCorrect();
+    if (answer === quizData[current].answer) { setScore(prev => prev + 1); playCorrect(); }
     setTimeout(() => {
       if (current < quizData.length - 1) { setCurrent(prev => prev + 1); setSelected(null); }
       else setShowResult(true);
