@@ -40,7 +40,7 @@ const MatchTheBeastsGame = () => {
     const beast = beasts[selectedBeast];
     if (beast.empire === empire) {
       setMatches(prev => ({ ...prev, [beast.beast]: empire }));
-      setScore(prev => prev + 20);
+      setScore(prev => prev + 20); playCorrect();
     }
     setSelectedBeast(null);
     if (Object.keys(matches).length + 1 === beasts.length) {
@@ -119,7 +119,7 @@ const KingdomBuilderGame = () => {
     if (!piece) return;
     if (piece.position === nextPosition) {
       setPlacedPieces(prev => [...prev, selectedPiece]);
-      setScore(prev => prev + 20);
+      setScore(prev => prev + 20); playCorrect();
       setSelectedPiece(null);
       if (placedPieces.length + 1 === 5) setTimeout(() => setShowResult(true), 800);
     } else {
@@ -448,7 +448,7 @@ const VerseScrambleGame = () => {
   };
 
   const checkAnswer = () => {
-    if (selectedWords.join(" ") === verseData[currentVerse].verse) setScore(prev => prev + 1);
+    if (selectedWords.join(" ") === verseData[currentVerse].verse) setScore(prev => prev + 1); playCorrect();
     if (currentVerse < verseData.length - 1) {
       setCurrentVerse(prev => prev + 1);
       setShuffledWords([...verseData[currentVerse + 1].words].sort(() => Math.random() - 0.5));
@@ -506,7 +506,7 @@ const ProphetQuizGame = () => {
 
   const handleAnswer = (answer: string) => {
     setSelected(answer);
-    if (answer === quizData[current].answer) setScore(prev => prev + 1);
+    if (answer === quizData[current].answer) setScore(prev => prev + 1); playCorrect();
     setTimeout(() => {
       if (current < quizData.length - 1) { setCurrent(prev => prev + 1); setSelected(null); }
       else setShowResult(true);
