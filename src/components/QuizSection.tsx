@@ -5,6 +5,8 @@ import { Button } from "./ui/button";
 import { Check, X, ArrowRight, RotateCcw, Trophy, Clock } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { useLanguagePrefix } from "@/hooks/useLanguagePrefix";
+import { playCorrect } from "@/lib/sound";
+import { recordCorrect, recordCompletion } from "@/lib/progress";
 
 const QUESTION_TIME_LIMIT = 15;
 
@@ -48,6 +50,8 @@ const QuizSection = () => {
     setShowResult(true);
     if (index === sampleQuiz[currentQuestion].correct) {
       setScore(prev => prev + 1);
+      playCorrect();
+      recordCorrect("home-quiz", "quiz", "Daily Quiz");
     }
   }, [selectedAnswer, timedOut, currentQuestion]);
 
