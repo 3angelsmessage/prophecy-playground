@@ -6,6 +6,7 @@ const fr = {
     videos: "Vidéos",
     games: "Jeux",
     quiz: "Quiz",
+    progress: "Progrès",
     startLearning: "Commencer ! ✨",
   },
 
@@ -288,6 +289,28 @@ const fr = {
       { title: "Temps en Famille", description: "Guides de discussion et activités parfaites pour les dévotions familiales." },
       { title: "Suivi des Progrès", description: "Suivez le parcours d'apprentissage de votre enfant à travers les sujets et jeux de prophétie." },
     ],
+  },
+
+  // Progress
+  progress: {
+    title: "Votre",
+    titleHighlight: "Progrès",
+    subtitle: "Suivez chaque jeu et quiz auxquels vous avez joué.",
+    backToHome: "Retour à l'accueil",
+    totalCorrect: "Bonnes réponses",
+    gamesPlayed: "Jeux joués",
+    quizzesTaken: "Quiz passés",
+    avgBest: "Meilleur score moyen",
+    attempts: "tentatives",
+    correct: "correctes",
+    gamesSection: "🎮 Jeux",
+    quizzesSection: "🧠 Quiz",
+    noGames: "Aucun jeu joué — choisissez-en un et commencez !",
+    noQuizzes: "Aucun quiz passé — essayez-en un !",
+    allGames: "Voir les jeux",
+    allQuizzes: "Voir les quiz",
+    reset: "Réinitialiser",
+    confirmReset: "Réinitialiser toute la progression ? Cette action est irréversible.",
   },
 
   // Language
