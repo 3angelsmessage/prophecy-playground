@@ -2,9 +2,6 @@
 
 const KEY = "prophecy-kids-progress-v1";
 
-let _active: { id: string; type: "game" | "quiz"; name?: string } | null = null;
-export const setActiveActivity = (a: { id: string; type: "game" | "quiz"; name?: string } | null) => { _active = a; };
-export const recordActiveCorrect = () => { if (_active) recordCorrect(_active.id, _active.type, _active.name); };
 
 
 export type ProgressEntry = {
