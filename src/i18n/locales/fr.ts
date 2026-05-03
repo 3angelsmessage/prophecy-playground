@@ -6,6 +6,7 @@ const fr = {
     videos: "Vidéos",
     games: "Jeux",
     quiz: "Quiz",
+    progress: "PROGRESS_PLACEHOLDER_fr",
     startLearning: "Commencer ! ✨",
   },
 
