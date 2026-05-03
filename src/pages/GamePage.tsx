@@ -1234,6 +1234,14 @@ const GamePage = () => {
   const meta = gameMeta[gameId || ""];
   const component = gameComponents[gameId || ""];
 
+  useEffect(() => {
+    if (gameId && meta) {
+      setActivity({ id: gameId, type: "game", name: meta.title });
+      recordCompletion(gameId, "game", 0, meta.title); // ensures entry exists
+    }
+    return () => setActivity(null);
+  }, [gameId, meta]);
+
   if (!meta || !component) {
     return (
       <div className="min-h-screen flex items-center justify-center">
