@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Menu, X, BookOpen, Gamepad2, Trophy, Home, Play, HelpCircle } from "lucide-react";
+import { Menu, X, BookOpen, Gamepad2, Trophy, Home, Play, HelpCircle, BarChart3 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useTranslation } from "react-i18next";
 import { useNavigate, useLocation } from "react-router-dom";
@@ -21,6 +21,7 @@ const Header = () => {
     { name: t("nav.videos"), icon: Play, href: "#videos" },
     { name: t("nav.games"), icon: Gamepad2, href: "#games" },
     { name: t("nav.quiz"), icon: Trophy, href: "#quizzes" },
+    { name: t("nav.progress", "Progress"), icon: BarChart3, href: "/progress" },
   ];
 
   const scrollToId = (id: string) => {
@@ -33,11 +34,14 @@ const Header = () => {
 
   const handleNavClick = (href: string) => {
     setIsOpen(false);
+    if (href.startsWith("/")) {
+      navigate(`${prefix}${href}`);
+      return;
+    }
     const id = href.replace('#', '');
     const onHome = location.pathname === prefix || location.pathname === `${prefix}/`;
     if (!onHome) {
       navigate(prefix);
-      // Wait for home to render, then scroll
       setTimeout(() => scrollToId(id), 350);
       return;
     }

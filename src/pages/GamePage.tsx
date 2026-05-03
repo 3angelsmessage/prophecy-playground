@@ -2,7 +2,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, RotateCcw, Trophy } from "lucide-react";
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useLanguagePrefix } from "@/hooks/useLanguagePrefix";
 import {
@@ -14,6 +14,7 @@ import {
   getDaniel11Events, getRevelation10Elements, getJudgmentElements,
   getTimeOfEndElements, getSabbathElements, getGameContentMeta,
 } from "@/data/gameTranslations";
+import { playCorrect, setActivity } from "@/lib/sound";
 
 // Helper hook for game UI strings
 const useGameUI = () => {
@@ -40,7 +41,7 @@ const MatchTheBeastsGame = () => {
     const beast = beasts[selectedBeast];
     if (beast.empire === empire) {
       setMatches(prev => ({ ...prev, [beast.beast]: empire }));
-      setScore(prev => prev + 20);
+      setScore(prev => prev + 20); playCorrect();
     }
     setSelectedBeast(null);
     if (Object.keys(matches).length + 1 === beasts.length) {
@@ -119,7 +120,7 @@ const KingdomBuilderGame = () => {
     if (!piece) return;
     if (piece.position === nextPosition) {
       setPlacedPieces(prev => [...prev, selectedPiece]);
-      setScore(prev => prev + 20);
+      setScore(prev => prev + 20); playCorrect();
       setSelectedPiece(null);
       if (placedPieces.length + 1 === 5) setTimeout(() => setShowResult(true), 800);
     } else {
@@ -227,7 +228,7 @@ const ProphecyTimelineGame = () => {
       setSlidingEvent(eventId);
       setTimeout(() => {
         setPlacedEvents(prev => [...prev, eventId]);
-        setScore(prev => prev + Math.round(100 / timelineEvents.length));
+        setScore(prev => prev + Math.round(100 / timelineEvents.length)); playCorrect();
         setSlidingEvent(null);
         if (placedEvents.length + 1 === timelineEvents.length) setTimeout(() => setShowResult(true), 800);
       }, 500);
@@ -448,7 +449,7 @@ const VerseScrambleGame = () => {
   };
 
   const checkAnswer = () => {
-    if (selectedWords.join(" ") === verseData[currentVerse].verse) setScore(prev => prev + 1);
+    if (selectedWords.join(" ") === verseData[currentVerse].verse) { setScore(prev => prev + 1); playCorrect(); }
     if (currentVerse < verseData.length - 1) {
       setCurrentVerse(prev => prev + 1);
       setShuffledWords([...verseData[currentVerse + 1].words].sort(() => Math.random() - 0.5));
@@ -506,7 +507,7 @@ const ProphetQuizGame = () => {
 
   const handleAnswer = (answer: string) => {
     setSelected(answer);
-    if (answer === quizData[current].answer) setScore(prev => prev + 1);
+    if (answer === quizData[current].answer) { setScore(prev => prev + 1); playCorrect(); }
     setTimeout(() => {
       if (current < quizData.length - 1) { setCurrent(prev => prev + 1); setSelected(null); }
       else setShowResult(true);
@@ -894,7 +895,7 @@ const DanielsVisionsGame = () => {
     const vision = visions[selectedSymbol];
     if (vision.meaning === meaning) {
       setMatches(prev => ({ ...prev, [vision.symbol]: meaning }));
-      setScore(prev => prev + Math.round(100 / visions.length));
+      setScore(prev => prev + Math.round(100 / visions.length)); playCorrect();
     }
     setSelectedSymbol(null);
     if (Object.keys(matches).length + 1 === visions.length) setTimeout(() => setShowResult(true), 500);
@@ -967,7 +968,7 @@ const Daniel7BeastsGame = () => {
     const beast = beasts[selectedBeast];
     if (beast.meaning === meaning) {
       setMatches(prev => ({ ...prev, [beast.beast]: meaning }));
-      setScore(prev => prev + Math.round(100 / beasts.length));
+      setScore(prev => prev + Math.round(100 / beasts.length)); playCorrect();
     }
     setSelectedBeast(null);
     if (Object.keys(matches).length + 1 === beasts.length) setTimeout(() => setShowResult(true), 500);
@@ -1050,7 +1051,7 @@ const GenericTimelineGame = ({ elements, buildLabel, chooseLabel, placeLabel, ma
     if (!element) return;
     if (element.order === nextPosition) {
       setPlacedElements(prev => [...prev, selectedElement]);
-      setScore(prev => prev + Math.round(100 / elements.length));
+      setScore(prev => prev + Math.round(100 / elements.length)); playCorrect();
       setSelectedElement(null);
       if (placedElements.length + 1 === elements.length) setTimeout(() => setShowResult(true), 800);
     } else {
@@ -1230,6 +1231,11 @@ const GamePage = () => {
   const gameMeta = getGameContentMeta(i18n.language);
   const meta = gameMeta[gameId || ""];
   const component = gameComponents[gameId || ""];
+
+  useEffect(() => {
+    if (gameId && meta) setActivity({ id: gameId, type: "game", name: meta.title });
+    return () => setActivity(null);
+  }, [gameId, meta]);
 
   if (!meta || !component) {
     return (

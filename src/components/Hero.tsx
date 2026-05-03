@@ -78,7 +78,7 @@ const Hero = () => {
             {[
               { number: "50+", label: t("hero.statGames") },
               { number: "100+", label: t("hero.statQuizzes") },
-              { number: "7", label: t("hero.statTopics", "Prophecy Topics") },
+              { number: "11", label: t("hero.statTopics", "Prophecy Topics") },
             ].map((stat) => (
               <div key={stat.label} className="text-center">
                 <p

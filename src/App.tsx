@@ -10,6 +10,7 @@ import TopicPage from "./pages/TopicPage";
 import GamePage from "./pages/GamePage";
 import QuizLibrary from "./pages/QuizLibrary";
 import ContactPage from "./pages/ContactPage";
+import ProgressPage from "./pages/ProgressPage";
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => (
           <Route path="/:lang/games/:gameId" element={<GamePage />} />
           <Route path="/:lang/quizzes" element={<QuizLibrary />} />
           <Route path="/:lang/contact" element={<ContactPage />} />
+          <Route path="/:lang/progress" element={<ProgressPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
