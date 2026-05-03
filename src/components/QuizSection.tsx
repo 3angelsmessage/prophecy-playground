@@ -78,6 +78,7 @@ const QuizSection = () => {
       setTimedOut(false);
     } else {
       setQuizComplete(true);
+      recordCompletion("home-quiz", "quiz", (score / sampleQuiz.length) * 100, "Daily Quiz");
     }
   };
 
