@@ -2,7 +2,7 @@
 import { recordCorrect } from "./progress";
 
 let _activity: { id: string; type: "game" | "quiz"; name?: string } | null = null;
-export const setActivity = (a: { id: string; type: "game" | "quiz"; name?: string } | null) => { _activity = a; };
+export const setActivity = (a: typeof _activity) => { _activity = a; };
 
 let ctx: AudioContext | null = null;
 const getCtx = () => {
@@ -15,7 +15,7 @@ const getCtx = () => {
   return ctx;
 };
 
-const tone = (freq: number, time: number, duration: number, type: OscillatorType = "sine", gain = 0.15) => {
+const tone = (freq: number, time: number, duration: number, type: OscillatorType = "triangle", gain = 0.15) => {
   const c = getCtx();
   if (!c) return;
   const osc = c.createOscillator();
@@ -31,10 +31,10 @@ const tone = (freq: number, time: number, duration: number, type: OscillatorType
 };
 
 export const playCorrect = () => {
-  // Cheerful ascending chime
-  tone(523.25, 0, 0.15, "triangle"); // C5
-  tone(659.25, 0.1, 0.15, "triangle"); // E5
-  tone(783.99, 0.2, 0.25, "triangle"); // G5
+  tone(523.25, 0, 0.15);
+  tone(659.25, 0.1, 0.15);
+  tone(783.99, 0.2, 0.25);
+  if (_activity) recordCorrect(_activity.id, _activity.type, _activity.name);
 };
 
 export const playWin = () => {
