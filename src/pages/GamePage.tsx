@@ -227,7 +227,7 @@ const ProphecyTimelineGame = () => {
       setSlidingEvent(eventId);
       setTimeout(() => {
         setPlacedEvents(prev => [...prev, eventId]);
-        setScore(prev => prev + Math.round(100 / timelineEvents.length));
+        setScore(prev => prev + Math.round(100 / timelineEvents.length)); playCorrect();
         setSlidingEvent(null);
         if (placedEvents.length + 1 === timelineEvents.length) setTimeout(() => setShowResult(true), 800);
       }, 500);
@@ -894,7 +894,7 @@ const DanielsVisionsGame = () => {
     const vision = visions[selectedSymbol];
     if (vision.meaning === meaning) {
       setMatches(prev => ({ ...prev, [vision.symbol]: meaning }));
-      setScore(prev => prev + Math.round(100 / visions.length));
+      setScore(prev => prev + Math.round(100 / visions.length)); playCorrect();
     }
     setSelectedSymbol(null);
     if (Object.keys(matches).length + 1 === visions.length) setTimeout(() => setShowResult(true), 500);
@@ -967,7 +967,7 @@ const Daniel7BeastsGame = () => {
     const beast = beasts[selectedBeast];
     if (beast.meaning === meaning) {
       setMatches(prev => ({ ...prev, [beast.beast]: meaning }));
-      setScore(prev => prev + Math.round(100 / beasts.length));
+      setScore(prev => prev + Math.round(100 / beasts.length)); playCorrect();
     }
     setSelectedBeast(null);
     if (Object.keys(matches).length + 1 === beasts.length) setTimeout(() => setShowResult(true), 500);
@@ -1050,7 +1050,7 @@ const GenericTimelineGame = ({ elements, buildLabel, chooseLabel, placeLabel, ma
     if (!element) return;
     if (element.order === nextPosition) {
       setPlacedElements(prev => [...prev, selectedElement]);
-      setScore(prev => prev + Math.round(100 / elements.length));
+      setScore(prev => prev + Math.round(100 / elements.length)); playCorrect();
       setSelectedElement(null);
       if (placedElements.length + 1 === elements.length) setTimeout(() => setShowResult(true), 800);
     } else {
