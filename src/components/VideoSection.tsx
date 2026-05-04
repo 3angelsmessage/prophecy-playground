@@ -79,7 +79,22 @@ const VideoSection = () => {
             <span className="text-[hsl(330,80%,45%)]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>Soon</span>
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {Array.from({ length: 6 }).map((_, i) => (
+            <div className="bg-card rounded-2xl shadow-card border-2 border-primary/30 overflow-hidden hover:border-primary/60 transition-colors">
+              <AspectRatio ratio={16 / 9}>
+                <iframe
+                  src="https://www.youtube.com/embed/vHKkAfl0cec"
+                  title="The Story of Young Ellen G. White"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
+              </AspectRatio>
+              <div className="p-5">
+                <h4 className="font-display font-bold text-base mb-1">The Story of Young Ellen G. White</h4>
+                <p className="text-sm text-muted-foreground">Discover the early life of God's end-time messenger.</p>
+              </div>
+            </div>
+            {Array.from({ length: 5 }).map((_, i) => (
               <div
                 key={i}
                 className="bg-card rounded-2xl shadow-card border-2 border-dashed border-border overflow-hidden hover:border-primary/50 transition-colors"
