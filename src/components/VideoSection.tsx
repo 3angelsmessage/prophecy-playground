@@ -85,6 +85,39 @@ const VideoSection = () => {
             </motion.div>
           ))}
         </div>
+
+        {/* Future video topics grid */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="max-w-6xl mx-auto mt-16"
+        >
+          <h3 className="font-display text-2xl sm:text-3xl font-bold text-center mb-8">
+            <span className="text-[hsl(120,80%,30%)]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>Coming</span>{" "}
+            <span className="text-[hsl(330,80%,45%)]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>Soon</span>
+          </h3>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {Array.from({ length: 6 }).map((_, i) => (
+              <div
+                key={i}
+                className="bg-card rounded-2xl shadow-card border-2 border-dashed border-border overflow-hidden hover:border-primary/50 transition-colors"
+              >
+                <AspectRatio ratio={16 / 9}>
+                  <div className="w-full h-full gradient-hero flex items-center justify-center">
+                    <Play className="w-12 h-12 text-primary-foreground/60" />
+                  </div>
+                </AspectRatio>
+                <div className="p-5">
+                  <div className="h-5 bg-muted rounded w-3/4 mb-2" />
+                  <div className="h-4 bg-muted/60 rounded w-full mb-1" />
+                  <div className="h-4 bg-muted/60 rounded w-5/6" />
+                  <p className="mt-4 text-xs font-bold text-muted-foreground uppercase tracking-wide">Coming soon</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </motion.div>
       </div>
     </section>
   );
