@@ -1033,6 +1033,24 @@ const TopicPage = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto space-y-12">
+            {topicId === "daniels-statue" && (
+              <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                className="bg-card rounded-3xl shadow-card border border-border overflow-hidden"
+              >
+                <div className="aspect-video w-full">
+                  <iframe
+                    src="https://www.youtube.com/embed/vHKkAfl0cec"
+                    title="Bible Prophecy Video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-full"
+                  />
+                </div>
+              </motion.div>
+            )}
             {topicId === "time-of-end" && (
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
