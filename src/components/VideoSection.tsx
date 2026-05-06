@@ -77,73 +77,41 @@ const VideoSection = () => {
           className="max-w-6xl mx-auto mt-16"
         >
           <h3 className="font-display text-2xl sm:text-3xl font-bold text-center mb-8">
-            <span className="text-[hsl(120,80%,30%)]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>Coming</span>{" "}
-            <span className="text-[hsl(330,80%,45%)]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>Soon</span>
+            <span className="text-[hsl(120,80%,30%)]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>{t("videos.comingSoon.title")}</span>{" "}
+            <span className="text-[hsl(330,80%,45%)]" style={{ textShadow: '2px 2px 4px rgba(0,0,0,0.7)' }}>{t("videos.comingSoon.titleHighlight")}</span>
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="bg-card rounded-2xl shadow-card border-2 border-primary/30 overflow-hidden hover:border-primary/60 transition-colors">
-              <AspectRatio ratio={16 / 9}>
-                <iframe
-                  src="https://www.youtube.com/embed/vHKkAfl0cec"
-                  title="The Story of Young Ellen G. White"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="w-full h-full"
-                />
-              </AspectRatio>
-              <div className="p-5">
-                <h4 className="font-display font-bold text-base mb-1">The Story of Young Ellen G. White</h4>
-                <p className="text-sm text-muted-foreground">Discover the early life of God's end-time messenger.</p>
-              </div>
-            </div>
-            <div className="bg-card rounded-2xl shadow-card border-2 border-primary/30 overflow-hidden hover:border-primary/60 transition-colors">
-              <AspectRatio ratio={16 / 9}>
-                <iframe
-                  src="https://www.youtube.com/embed/3NEah7t91oE"
-                  title="Prophecy video"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="w-full h-full"
-                />
-              </AspectRatio>
-              <div className="p-5">
-                <h4 className="font-display font-bold text-base mb-1">Prophecy Insights</h4>
-                <p className="text-sm text-muted-foreground">Dive deeper into end-time Bible prophecy.</p>
-              </div>
-            </div>
-            <div className="bg-card rounded-2xl shadow-card border-2 border-primary/30 overflow-hidden hover:border-primary/60 transition-colors">
-              <AspectRatio ratio={16 / 9}>
-                <iframe
-                  src="https://www.youtube.com/embed/ZRcVAEXLD3g"
-                  title="Prophecy video"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                  className="w-full h-full"
-                />
-              </AspectRatio>
-              <div className="p-5">
-                <h4 className="font-display font-bold text-base mb-1">Prophecy Insights</h4>
-                <p className="text-sm text-muted-foreground">Dive deeper into end-time Bible prophecy.</p>
-              </div>
-            </div>
             {[
-              { src: "/videos/three-angels.mp4", title: "The Three Angels' Messages", desc: "Celestial messengers descending upon the world." },
-              { src: "/videos/daniel-statue.mp4", title: "Daniel's Statue", desc: "Explore the prophetic vision of world empires." },
-              { src: "/videos/beasts-rising.mp4", title: "Beasts Rising From the Sea", desc: "Prophetic beasts emerging from the stormy sea." },
-            ].map((v) => (
-              <div
-                key={v.src}
-                className="bg-card rounded-2xl shadow-card border-2 border-primary/30 overflow-hidden hover:border-primary/60 transition-colors"
-              >
-                <AspectRatio ratio={16 / 9}>
-                  <video src={v.src} controls className="w-full h-full object-cover" />
-                </AspectRatio>
-                <div className="p-5">
-                  <h4 className="font-display font-bold text-base mb-1">{v.title}</h4>
-                  <p className="text-sm text-muted-foreground">{v.desc}</p>
+              { type: "iframe" as const, src: "https://www.youtube.com/embed/vHKkAfl0cec" },
+              { type: "iframe" as const, src: "https://www.youtube.com/embed/3NEah7t91oE" },
+              { type: "iframe" as const, src: "https://www.youtube.com/embed/ZRcVAEXLD3g" },
+              { type: "video" as const, src: "/videos/three-angels.mp4" },
+              { type: "video" as const, src: "/videos/daniel-statue.mp4" },
+              { type: "video" as const, src: "/videos/beasts-rising.mp4" },
+            ].map((v, i) => {
+              const card = cards[i] || { title: "", desc: "" };
+              return (
+                <div key={v.src} className="bg-card rounded-2xl shadow-card border-2 border-primary/30 overflow-hidden hover:border-primary/60 transition-colors">
+                  <AspectRatio ratio={16 / 9}>
+                    {v.type === "iframe" ? (
+                      <iframe
+                        src={v.src}
+                        title={card.title}
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                        className="w-full h-full"
+                      />
+                    ) : (
+                      <video src={v.src} controls className="w-full h-full object-cover" />
+                    )}
+                  </AspectRatio>
+                  <div className="p-5">
+                    <h4 className="font-display font-bold text-base mb-1">{card.title}</h4>
+                    <p className="text-sm text-muted-foreground">{card.desc}</p>
+                  </div>
                 </div>
-              </div>
-            ))}
+              );
+            })}
             {Array.from({ length: 0 }).map((_, i) => (
               <div
                 key={i}
