@@ -11,6 +11,8 @@ const VideoSection = () => {
   const items = Array.isArray(rawItems) ? rawItems as Array<{
     title: string; reference: string; description: string; scripture: string; scriptureRef: string;
   }> : [];
+  const rawCards = t("videos.cards", { returnObjects: true });
+  const cards = Array.isArray(rawCards) ? rawCards as Array<{ title: string; desc: string }> : [];
 
   return (
     <section id="videos" className="py-20 relative overflow-hidden">
