@@ -102,6 +102,15 @@ const fr = {
     title: "Regardez et",
     titleHighlight: "Apprenez la Prophétie",
     subtitle: "Plongez plus profondément dans la prophétie biblique avec des leçons vidéo captivantes !",
+    comingSoon: { title: "Bientôt", titleHighlight: "Disponible" },
+    cards: [
+      { title: "L'histoire de la jeune Ellen G. White", desc: "Découvrez la jeunesse de la messagère de Dieu pour les derniers temps." },
+      { title: "Aperçus Prophétiques", desc: "Plongez plus profondément dans la prophétie biblique des derniers temps." },
+      { title: "Aperçus Prophétiques", desc: "Plongez plus profondément dans la prophétie biblique des derniers temps." },
+      { title: "Le Message des Trois Anges", desc: "Des messagers célestes descendant sur le monde." },
+      { title: "La Statue de Daniel", desc: "Explorez la vision prophétique des empires du monde." },
+      { title: "Les Bêtes Sortant de la Mer", desc: "Des bêtes prophétiques émergeant de la mer agitée." },
+    ],
     items: [],
   },
 

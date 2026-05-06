@@ -102,6 +102,15 @@ const ht = {
     title: "Gade &",
     titleHighlight: "Aprann Pwofesi",
     subtitle: "Ale pi fon nan pwofesi Bib la ak leson videyo ki enteresan!",
+    comingSoon: { title: "Ap", titleHighlight: "Vini" },
+    cards: [
+      { title: "Istwa jèn Ellen G. White", desc: "Dekouvri jenès mesajè Bondye a pou dènye jou yo." },
+      { title: "Konprann Pwofesi yo", desc: "Ale pi fon nan pwofesi Bib la sou dènye jou yo." },
+      { title: "Konprann Pwofesi yo", desc: "Ale pi fon nan pwofesi Bib la sou dènye jou yo." },
+      { title: "Mesaj Twa Zanj yo", desc: "Mesajè selès yo k ap desann sou mond lan." },
+      { title: "Estati Danyèl la", desc: "Eksplore vizyon pwofetik anpi mond yo." },
+      { title: "Bèt yo k ap Soti nan Lanmè a", desc: "Bèt pwofetik yo k ap soti nan lanmè ki ajite a." },
+    ],
     items: [],
   },
 

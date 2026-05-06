@@ -102,6 +102,15 @@ const en = {
     title: "Watch &",
     titleHighlight: "Learn Prophecy",
     subtitle: "Dive deeper into Bible prophecy with engaging video lessons!",
+    comingSoon: { title: "Coming", titleHighlight: "Soon" },
+    cards: [
+      { title: "The Story of Young Ellen G. White", desc: "Discover the early life of God's end-time messenger." },
+      { title: "Prophecy Insights", desc: "Dive deeper into end-time Bible prophecy." },
+      { title: "Prophecy Insights", desc: "Dive deeper into end-time Bible prophecy." },
+      { title: "The Three Angels' Messages", desc: "Celestial messengers descending upon the world." },
+      { title: "Daniel's Statue", desc: "Explore the prophetic vision of world empires." },
+      { title: "Beasts Rising From the Sea", desc: "Prophetic beasts emerging from the stormy sea." },
+    ],
     items: [],
   },
 
