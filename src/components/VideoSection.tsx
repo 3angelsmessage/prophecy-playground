@@ -125,9 +125,9 @@ const VideoSection = () => {
               </div>
             </div>
             {[
-              { src: "/videos/tower-of-babel.mp4", title: "The Tower of Babel", desc: "Witness humanity's defiance and God's response." },
+              { src: "/videos/three-angels.mp4", title: "The Three Angels' Messages", desc: "Celestial messengers descending upon the world." },
               { src: "/videos/daniel-statue.mp4", title: "Daniel's Statue", desc: "Explore the prophetic vision of world empires." },
-              { src: "/videos/lion-with-wings.mp4", title: "Lion With Wings", desc: "The first beast rising from the sea in Daniel 7." },
+              { src: "/videos/beasts-rising.mp4", title: "Beasts Rising From the Sea", desc: "Prophetic beasts emerging from the stormy sea." },
             ].map((v) => (
               <div
                 key={v.src}
