@@ -109,7 +109,22 @@ const VideoSection = () => {
                 <p className="text-sm text-muted-foreground">Dive deeper into end-time Bible prophecy.</p>
               </div>
             </div>
-            {Array.from({ length: 4 }).map((_, i) => (
+            <div className="bg-card rounded-2xl shadow-card border-2 border-primary/30 overflow-hidden hover:border-primary/60 transition-colors">
+              <AspectRatio ratio={16 / 9}>
+                <iframe
+                  src="https://www.youtube.com/embed/ZRcVAEXLD3g"
+                  title="Prophecy video"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="w-full h-full"
+                />
+              </AspectRatio>
+              <div className="p-5">
+                <h4 className="font-display font-bold text-base mb-1">Prophecy Insights</h4>
+                <p className="text-sm text-muted-foreground">Dive deeper into end-time Bible prophecy.</p>
+              </div>
+            </div>
+            {Array.from({ length: 3 }).map((_, i) => (
               <div
                 key={i}
                 className="bg-card rounded-2xl shadow-card border-2 border-dashed border-border overflow-hidden hover:border-primary/50 transition-colors"
