@@ -124,7 +124,25 @@ const VideoSection = () => {
                 <p className="text-sm text-muted-foreground">Dive deeper into end-time Bible prophecy.</p>
               </div>
             </div>
-            {Array.from({ length: 3 }).map((_, i) => (
+            {[
+              { src: "/videos/tower-of-babel.mp4", title: "The Tower of Babel", desc: "Witness humanity's defiance and God's response." },
+              { src: "/videos/daniel-statue.mp4", title: "Daniel's Statue", desc: "Explore the prophetic vision of world empires." },
+              { src: "/videos/lion-with-wings.mp4", title: "Lion With Wings", desc: "The first beast rising from the sea in Daniel 7." },
+            ].map((v) => (
+              <div
+                key={v.src}
+                className="bg-card rounded-2xl shadow-card border-2 border-primary/30 overflow-hidden hover:border-primary/60 transition-colors"
+              >
+                <AspectRatio ratio={16 / 9}>
+                  <video src={v.src} controls className="w-full h-full object-cover" />
+                </AspectRatio>
+                <div className="p-5">
+                  <h4 className="font-display font-bold text-base mb-1">{v.title}</h4>
+                  <p className="text-sm text-muted-foreground">{v.desc}</p>
+                </div>
+              </div>
+            ))}
+            {Array.from({ length: 0 }).map((_, i) => (
               <div
                 key={i}
                 className="bg-card rounded-2xl shadow-card border-2 border-dashed border-border overflow-hidden hover:border-primary/50 transition-colors"
