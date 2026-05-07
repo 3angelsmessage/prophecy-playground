@@ -1191,9 +1191,10 @@ const TopicPage = () => {
                 <h3 className="text-xl font-display font-bold mb-4 text-center">{tph.timelineTitle}</h3>
                 <img 
                   src={timelineImage} 
-                  alt="2300 year prophecy timeline from 457 BC to 1844 AD" 
+                  alt={tph.timelineAlt} 
                   className="w-full h-auto rounded-xl"
                 />
+                <p className="mt-4 text-sm text-muted-foreground text-center italic">{tph.timelineCaption}</p>
 
                 <div className="mt-8 space-y-6 text-muted-foreground leading-relaxed">
                   <h3 className="text-2xl font-display font-bold text-foreground">{tph.heading}</h3>
