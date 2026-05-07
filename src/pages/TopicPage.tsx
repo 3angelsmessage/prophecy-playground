@@ -1073,6 +1073,8 @@ const TopicPage = () => {
                 },
                 fr: {
                   timelineTitle: "📅 Chronologie de la prophétie des 2300 ans",
+                  timelineAlt: "Chronologie de la prophétie des 2300 ans, de 457 av. J.-C. à 1844 ap. J.-C.",
+                  timelineCaption: "Du décret de reconstruire Jérusalem en 457 av. J.-C., en passant par le baptême (27 ap. J.-C.), la crucifixion (31 ap. J.-C.) et la fin des 70 semaines (34 ap. J.-C.), jusqu'à la purification du sanctuaire céleste en 1844.",
                   heading: "Sur la trace de l'histoire prophétique",
                   intro: "En grandissant, tu réalises que l'histoire n'est pas une simple suite d'événements au hasard ; c'est un plan soigneusement conçu. La prophétie des 2300 jours est la plus longue prophétie temporelle de la Bible, et elle prouve que Dieu a tout sous contrôle.",
                   yearDayLabel: "Le principe jour-année :",
