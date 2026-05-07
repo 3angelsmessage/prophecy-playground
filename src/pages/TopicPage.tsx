@@ -1046,6 +1046,69 @@ const TopicPage = () => {
                   alt="2300 year prophecy timeline from 457 BC to 1844 AD" 
                   className="w-full h-auto rounded-xl"
                 />
+
+                <div className="mt-8 space-y-6 text-muted-foreground leading-relaxed">
+                  <h3 className="text-2xl font-display font-bold text-foreground">Tracking Prophetic History</h3>
+                  <p>
+                    As you grow, you realize that history isn't just a list of random events; it is a carefully designed plan. The 2300-day prophecy is the longest time-prophecy in the Bible, and it proves that God is in total control.
+                  </p>
+                  <p>
+                    <span className="font-semibold text-foreground">The Year-Day Principle:</span> To understand{" "}
+                    <a href="https://www.biblegateway.com/passage/?search=Daniel+8%3A14&version=NKJV" target="_blank" rel="noopener noreferrer" className="text-secondary underline hover:text-primary">Daniel 8:14</a>{" "}
+                    we apply the key found in{" "}
+                    <a href="https://www.biblegateway.com/passage/?search=Ezekiel+4%3A6&version=NKJV" target="_blank" rel="noopener noreferrer" className="text-secondary underline hover:text-primary">Ezekiel 4:6</a>: "I have appointed thee each day for a year." This turns 2300 literal days into 2300 years of history.
+                  </p>
+                  <p>
+                    <span className="font-semibold text-foreground">The Link to Jesus' Death:</span> The first part of this long period (70 weeks or 490 years) was specifically "cut off" for the Jewish people (
+                    <a href="https://www.biblegateway.com/passage/?search=Daniel+9%3A24&version=NKJV" target="_blank" rel="noopener noreferrer" className="text-secondary underline hover:text-primary">Daniel 9:24</a>
+                    ). This period ended perfectly with the baptism and death of Jesus, proving the timeline is accurate (
+                    <a href="https://www.biblegateway.com/passage/?search=Daniel+9%3A26-27&version=NKJV" target="_blank" rel="noopener noreferrer" className="text-secondary underline hover:text-primary">Daniel 9:26-27</a>
+                    ). ✝️
+                  </p>
+                  <p>
+                    <span className="font-semibold text-foreground">The Investigative Judgment:</span> In 1844, at the end of the 2300 years, the Bible says the "judgment was set, and the books were opened" (
+                    <a href="https://www.biblegateway.com/passage/?search=Daniel+7%3A10&version=NKJV" target="_blank" rel="noopener noreferrer" className="text-secondary underline hover:text-primary">Daniel 7:10</a>
+                    ). This isn't something to be afraid of if we love Jesus! It is the time when our High Priest, Jesus, stands before the Father to advocate for us.
+                  </p>
+                  <p>
+                    <span className="font-semibold text-foreground">A Call to Character:</span> Knowing that we live in this special time—the "time of the end"—God calls us to be "wise" and understand His plan (
+                    <a href="https://www.biblegateway.com/passage/?search=Daniel+12%3A10&version=NKJV" target="_blank" rel="noopener noreferrer" className="text-secondary underline hover:text-primary">Daniel 12:10</a>
+                    ). He wants us to reflect His character and keep His commandments (
+                    <a href="https://www.biblegateway.com/passage/?search=Revelation+14%3A12&version=NKJV" target="_blank" rel="noopener noreferrer" className="text-secondary underline hover:text-primary">Revelation 14:12</a>
+                    ).
+                  </p>
+
+                  <div className="pt-4 border-t border-border">
+                    <h4 className="text-xl font-display font-bold text-foreground mb-4">📖 Bible Study Summary</h4>
+                    <ul className="space-y-3 list-disc list-inside">
+                      <li>
+                        <span className="font-semibold text-foreground">The Vision:</span> "Unto two thousand and three hundred days; then shall the sanctuary be cleansed" (
+                        <a href="https://www.biblegateway.com/passage/?search=Daniel+8%3A14&version=NKJV" target="_blank" rel="noopener noreferrer" className="text-secondary underline hover:text-primary">Daniel 8:14</a>
+                        ).
+                      </li>
+                      <li>
+                        <span className="font-semibold text-foreground">The Rule:</span> "Each day for a year" (
+                        <a href="https://www.biblegateway.com/passage/?search=Numbers+14%3A34&version=NKJV" target="_blank" rel="noopener noreferrer" className="text-secondary underline hover:text-primary">Numbers 14:34</a>
+                        ).
+                      </li>
+                      <li>
+                        <span className="font-semibold text-foreground">The Purpose:</span> To reveal the "hour of his judgment" (
+                        <a href="https://www.biblegateway.com/passage/?search=Revelation+14%3A7&version=NKJV" target="_blank" rel="noopener noreferrer" className="text-secondary underline hover:text-primary">Revelation 14:7</a>
+                        ) and the work of our High Priest in heaven (
+                        <a href="https://www.biblegateway.com/passage/?search=Hebrews+9%3A23-24&version=NKJV" target="_blank" rel="noopener noreferrer" className="text-secondary underline hover:text-primary">Hebrews 9:23-24</a>
+                        ).
+                      </li>
+                      <li>
+                        <span className="font-semibold text-foreground">The Invitation:</span> Jesus is currently making atonement for us. He says, "As many as I love, I rebuke and chasten: be zealous therefore, and repent" (
+                        <a href="https://www.biblegateway.com/passage/?search=Revelation+3%3A19&version=NKJV" target="_blank" rel="noopener noreferrer" className="text-secondary underline hover:text-primary">Revelation 3:19</a>
+                        ).
+                      </li>
+                    </ul>
+                    <p className="mt-4 italic">
+                      Jesus wants you to be part of His kingdom! He is working right now to make sure you are ready to live with Him forever.
+                    </p>
+                  </div>
+                </div>
               </motion.div>
             )}
             {topic.sections.map((section: any, index: number) => (
