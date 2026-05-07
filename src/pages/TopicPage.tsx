@@ -1143,6 +1143,8 @@ const TopicPage = () => {
                 },
                 ht: {
                   timelineTitle: "📅 Liy tan pwofesi 2300 ane a",
+                  timelineAlt: "Liy tan pwofesi 2300 ane a, soti 457 anvan J.-K. rive 1844 apre J.-K.",
+                  timelineCaption: "Soti nan dekrè pou rebati Jerizalèm an 457 anvan J.-K., pase nan batèm (27 apre J.-K.), krisifiksyon (31 apre J.-K.) ak fen 70 semèn yo (34 apre J.-K.), rive nan netwayaj sanktyè selès la an 1844.",
                   heading: "Suiv istwa pwofetik la",
                   intro: "Lè w ap grandi, ou reyalize istwa a pa jis yon lis evènman owaza; se yon plan ki byen kalkile. Pwofesi 2300 jou a se pi long pwofesi tan nan Bib la, e li pwouve Bondye gen kontwòl total.",
                   yearDayLabel: "Prensip jou-ane a:",
