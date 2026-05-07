@@ -1108,6 +1108,8 @@ const TopicPage = () => {
                 },
                 es: {
                   timelineTitle: "📅 Línea de tiempo de la profecía de 2300 años",
+                  timelineAlt: "Línea de tiempo de la profecía de 2300 años, desde el 457 a.C. hasta el 1844 d.C.",
+                  timelineCaption: "Desde el decreto para reconstruir Jerusalén en 457 a.C., pasando por el bautismo (27 d.C.), la crucifixión (31 d.C.) y el fin de las 70 semanas (34 d.C.), hasta la purificación del santuario celestial en 1844.",
                   heading: "Siguiendo la historia profética",
                   intro: "A medida que creces, te das cuenta de que la historia no es solo una lista de eventos al azar; es un plan cuidadosamente diseñado. La profecía de los 2300 días es la profecía de tiempo más larga de la Biblia, y prueba que Dios tiene el control total.",
                   yearDayLabel: "El principio día-año:",
