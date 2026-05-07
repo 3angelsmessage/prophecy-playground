@@ -1038,6 +1038,8 @@ const TopicPage = () => {
               const tphAll = {
                 en: {
                   timelineTitle: "📅 2300 Year Prophecy Timeline",
+                  timelineAlt: "2300 year prophecy timeline from 457 BC to 1844 AD",
+                  timelineCaption: "From the decree to rebuild Jerusalem in 457 BC, through the baptism (27 AD), crucifixion (31 AD), and end of the 70 weeks (34 AD), all the way to the cleansing of the heavenly sanctuary in 1844.",
                   heading: "Tracking Prophetic History",
                   intro: "As you grow, you realize that history isn't just a list of random events; it is a carefully designed plan. The 2300-day prophecy is the longest time-prophecy in the Bible, and it proves that God is in total control.",
                   yearDayLabel: "The Year-Day Principle:",
@@ -1071,6 +1073,8 @@ const TopicPage = () => {
                 },
                 fr: {
                   timelineTitle: "📅 Chronologie de la prophétie des 2300 ans",
+                  timelineAlt: "Chronologie de la prophétie des 2300 ans, de 457 av. J.-C. à 1844 ap. J.-C.",
+                  timelineCaption: "Du décret de reconstruire Jérusalem en 457 av. J.-C., en passant par le baptême (27 ap. J.-C.), la crucifixion (31 ap. J.-C.) et la fin des 70 semaines (34 ap. J.-C.), jusqu'à la purification du sanctuaire céleste en 1844.",
                   heading: "Sur la trace de l'histoire prophétique",
                   intro: "En grandissant, tu réalises que l'histoire n'est pas une simple suite d'événements au hasard ; c'est un plan soigneusement conçu. La prophétie des 2300 jours est la plus longue prophétie temporelle de la Bible, et elle prouve que Dieu a tout sous contrôle.",
                   yearDayLabel: "Le principe jour-année :",
@@ -1104,6 +1108,8 @@ const TopicPage = () => {
                 },
                 es: {
                   timelineTitle: "📅 Línea de tiempo de la profecía de 2300 años",
+                  timelineAlt: "Línea de tiempo de la profecía de 2300 años, desde el 457 a.C. hasta el 1844 d.C.",
+                  timelineCaption: "Desde el decreto para reconstruir Jerusalén en 457 a.C., pasando por el bautismo (27 d.C.), la crucifixión (31 d.C.) y el fin de las 70 semanas (34 d.C.), hasta la purificación del santuario celestial en 1844.",
                   heading: "Siguiendo la historia profética",
                   intro: "A medida que creces, te das cuenta de que la historia no es solo una lista de eventos al azar; es un plan cuidadosamente diseñado. La profecía de los 2300 días es la profecía de tiempo más larga de la Biblia, y prueba que Dios tiene el control total.",
                   yearDayLabel: "El principio día-año:",
@@ -1137,6 +1143,8 @@ const TopicPage = () => {
                 },
                 ht: {
                   timelineTitle: "📅 Liy tan pwofesi 2300 ane a",
+                  timelineAlt: "Liy tan pwofesi 2300 ane a, soti 457 anvan J.-K. rive 1844 apre J.-K.",
+                  timelineCaption: "Soti nan dekrè pou rebati Jerizalèm an 457 anvan J.-K., pase nan batèm (27 apre J.-K.), krisifiksyon (31 apre J.-K.) ak fen 70 semèn yo (34 apre J.-K.), rive nan netwayaj sanktyè selès la an 1844.",
                   heading: "Suiv istwa pwofetik la",
                   intro: "Lè w ap grandi, ou reyalize istwa a pa jis yon lis evènman owaza; se yon plan ki byen kalkile. Pwofesi 2300 jou a se pi long pwofesi tan nan Bib la, e li pwouve Bondye gen kontwòl total.",
                   yearDayLabel: "Prensip jou-ane a:",
@@ -1183,9 +1191,10 @@ const TopicPage = () => {
                 <h3 className="text-xl font-display font-bold mb-4 text-center">{tph.timelineTitle}</h3>
                 <img 
                   src={timelineImage} 
-                  alt="2300 year prophecy timeline from 457 BC to 1844 AD" 
+                  alt={tph.timelineAlt} 
                   className="w-full h-auto rounded-xl"
                 />
+                <p className="mt-4 text-sm text-muted-foreground text-center italic">{tph.timelineCaption}</p>
 
                 <div className="mt-8 space-y-6 text-muted-foreground leading-relaxed">
                   <h3 className="text-2xl font-display font-bold text-foreground">{tph.heading}</h3>
