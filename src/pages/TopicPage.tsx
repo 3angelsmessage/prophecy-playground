@@ -1038,6 +1038,8 @@ const TopicPage = () => {
               const tphAll = {
                 en: {
                   timelineTitle: "📅 2300 Year Prophecy Timeline",
+                  timelineAlt: "2300 year prophecy timeline from 457 BC to 1844 AD",
+                  timelineCaption: "From the decree to rebuild Jerusalem in 457 BC, through the baptism (27 AD), crucifixion (31 AD), and end of the 70 weeks (34 AD), all the way to the cleansing of the heavenly sanctuary in 1844.",
                   heading: "Tracking Prophetic History",
                   intro: "As you grow, you realize that history isn't just a list of random events; it is a carefully designed plan. The 2300-day prophecy is the longest time-prophecy in the Bible, and it proves that God is in total control.",
                   yearDayLabel: "The Year-Day Principle:",
