@@ -1033,14 +1033,154 @@ const TopicPage = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto space-y-12">
-            {topicId === "time-of-end" && (
+            {topicId === "time-of-end" && (() => {
+              const lang = i18n.language as "en" | "fr" | "es" | "ht";
+              const tphAll = {
+                en: {
+                  timelineTitle: "📅 2300 Year Prophecy Timeline",
+                  heading: "Tracking Prophetic History",
+                  intro: "As you grow, you realize that history isn't just a list of random events; it is a carefully designed plan. The 2300-day prophecy is the longest time-prophecy in the Bible, and it proves that God is in total control.",
+                  yearDayLabel: "The Year-Day Principle:",
+                  yearDayBefore: "To understand ",
+                  yearDayMid: " we apply the key found in ",
+                  yearDayAfter: ': "I have appointed thee each day for a year." This turns 2300 literal days into 2300 years of history.',
+                  jesusLabel: "The Link to Jesus' Death:",
+                  jesusBefore: 'The first part of this long period (70 weeks or 490 years) was specifically "cut off" for the Jewish people (',
+                  jesusMid: "). This period ended perfectly with the baptism and death of Jesus, proving the timeline is accurate (",
+                  jesusAfter: "). ✝️",
+                  judgmentLabel: "The Investigative Judgment:",
+                  judgmentBefore: 'In 1844, at the end of the 2300 years, the Bible says the "judgment was set, and the books were opened" (',
+                  judgmentAfter: "). This isn't something to be afraid of if we love Jesus! It is the time when our High Priest, Jesus, stands before the Father to advocate for us.",
+                  characterLabel: "A Call to Character:",
+                  characterBefore: 'Knowing that we live in this special time—the "time of the end"—God calls us to be "wise" and understand His plan (',
+                  characterMid: "). He wants us to reflect His character and keep His commandments (",
+                  characterAfter: ").",
+                  summaryHeading: "📖 Bible Study Summary",
+                  visionLabel: "The Vision:",
+                  visionBefore: '"Unto two thousand and three hundred days; then shall the sanctuary be cleansed" (',
+                  ruleLabel: "The Rule:",
+                  ruleBefore: '"Each day for a year" (',
+                  purposeLabel: "The Purpose:",
+                  purposeBefore: 'To reveal the "hour of his judgment" (',
+                  purposeMid: ") and the work of our High Priest in heaven (",
+                  invitationLabel: "The Invitation:",
+                  invitationBefore: 'Jesus is currently making atonement for us. He says, "As many as I love, I rebuke and chasten: be zealous therefore, and repent" (',
+                  closing: "Jesus wants you to be part of His kingdom! He is working right now to make sure you are ready to live with Him forever.",
+                  refs: { d814: "Daniel 8:14", ez46: "Ezekiel 4:6", d924: "Daniel 9:24", d92627: "Daniel 9:26-27", d710: "Daniel 7:10", d1210: "Daniel 12:10", r1412: "Revelation 14:12", n1434: "Numbers 14:34", r147: "Revelation 14:7", h92324: "Hebrews 9:23-24", r319: "Revelation 3:19" },
+                  closeParen: ").",
+                },
+                fr: {
+                  timelineTitle: "📅 Chronologie de la prophétie des 2300 ans",
+                  heading: "Sur la trace de l'histoire prophétique",
+                  intro: "En grandissant, tu réalises que l'histoire n'est pas une simple suite d'événements au hasard ; c'est un plan soigneusement conçu. La prophétie des 2300 jours est la plus longue prophétie temporelle de la Bible, et elle prouve que Dieu a tout sous contrôle.",
+                  yearDayLabel: "Le principe jour-année :",
+                  yearDayBefore: "Pour comprendre ",
+                  yearDayMid: " nous appliquons la clé trouvée dans ",
+                  yearDayAfter: " : « Je t'ai compté un jour pour une année ». Cela transforme 2300 jours littéraux en 2300 années d'histoire.",
+                  jesusLabel: "Le lien avec la mort de Jésus :",
+                  jesusBefore: "La première partie de cette longue période (70 semaines, soit 490 ans) a été spécifiquement « retranchée » pour le peuple juif (",
+                  jesusMid: "). Cette période s'est terminée parfaitement avec le baptême et la mort de Jésus, prouvant l'exactitude de la chronologie (",
+                  jesusAfter: "). ✝️",
+                  judgmentLabel: "Le jugement investigatif :",
+                  judgmentBefore: "En 1844, à la fin des 2300 ans, la Bible dit que « le jugement s'assit, et les livres furent ouverts » (",
+                  judgmentAfter: "). Ce n'est pas quelque chose à craindre si nous aimons Jésus ! C'est le moment où notre Souverain Sacrificateur, Jésus, se tient devant le Père pour intercéder pour nous.",
+                  characterLabel: "Un appel au caractère :",
+                  characterBefore: "Sachant que nous vivons en ce temps particulier — le « temps de la fin » — Dieu nous appelle à être « sages » et à comprendre Son plan (",
+                  characterMid: "). Il veut que nous reflétions Son caractère et que nous gardions Ses commandements (",
+                  characterAfter: ").",
+                  summaryHeading: "📖 Résumé de l'étude biblique",
+                  visionLabel: "La vision :",
+                  visionBefore: "« Jusqu'à deux mille trois cents soirs et matins ; puis le sanctuaire sera purifié » (",
+                  ruleLabel: "La règle :",
+                  ruleBefore: "« Chaque jour pour une année » (",
+                  purposeLabel: "Le but :",
+                  purposeBefore: "Révéler « l'heure de Son jugement » (",
+                  purposeMid: ") et l'œuvre de notre Souverain Sacrificateur dans le ciel (",
+                  invitationLabel: "L'invitation :",
+                  invitationBefore: "Jésus fait actuellement l'expiation pour nous. Il dit : « Je reprends et je châtie tous ceux que j'aime ; aie donc du zèle, et repens-toi » (",
+                  closing: "Jésus veut que tu fasses partie de Son royaume ! Il travaille en ce moment même pour s'assurer que tu sois prêt à vivre avec Lui pour toujours.",
+                  refs: { d814: "Daniel 8:14", ez46: "Ézéchiel 4:6", d924: "Daniel 9:24", d92627: "Daniel 9:26-27", d710: "Daniel 7:10", d1210: "Daniel 12:10", r1412: "Apocalypse 14:12", n1434: "Nombres 14:34", r147: "Apocalypse 14:7", h92324: "Hébreux 9:23-24", r319: "Apocalypse 3:19" },
+                  closeParen: ").",
+                },
+                es: {
+                  timelineTitle: "📅 Línea de tiempo de la profecía de 2300 años",
+                  heading: "Siguiendo la historia profética",
+                  intro: "A medida que creces, te das cuenta de que la historia no es solo una lista de eventos al azar; es un plan cuidadosamente diseñado. La profecía de los 2300 días es la profecía de tiempo más larga de la Biblia, y prueba que Dios tiene el control total.",
+                  yearDayLabel: "El principio día-año:",
+                  yearDayBefore: "Para entender ",
+                  yearDayMid: " aplicamos la clave encontrada en ",
+                  yearDayAfter: ': «Te he señalado cada día por un año». Esto convierte 2300 días literales en 2300 años de historia.',
+                  jesusLabel: "El vínculo con la muerte de Jesús:",
+                  jesusBefore: 'La primera parte de este largo período (70 semanas o 490 años) fue específicamente «cortada» para el pueblo judío (',
+                  jesusMid: "). Este período terminó perfectamente con el bautismo y la muerte de Jesús, demostrando que la cronología es exacta (",
+                  jesusAfter: "). ✝️",
+                  judgmentLabel: "El juicio investigador:",
+                  judgmentBefore: 'En 1844, al final de los 2300 años, la Biblia dice que «el Juez se sentó, y los libros fueron abiertos» (',
+                  judgmentAfter: "). ¡Esto no es algo que temer si amamos a Jesús! Es el momento en que nuestro Sumo Sacerdote, Jesús, se presenta ante el Padre para abogar por nosotros.",
+                  characterLabel: "Un llamado al carácter:",
+                  characterBefore: 'Sabiendo que vivimos en este tiempo especial —el «tiempo del fin»— Dios nos llama a ser «sabios» y a entender Su plan (',
+                  characterMid: "). Él quiere que reflejemos Su carácter y guardemos Sus mandamientos (",
+                  characterAfter: ").",
+                  summaryHeading: "📖 Resumen del estudio bíblico",
+                  visionLabel: "La visión:",
+                  visionBefore: '«Hasta dos mil trescientas tardes y mañanas; luego el santuario será purificado» (',
+                  ruleLabel: "La regla:",
+                  ruleBefore: '«Cada día por un año» (',
+                  purposeLabel: "El propósito:",
+                  purposeBefore: 'Revelar «la hora de su juicio» (',
+                  purposeMid: ") y la obra de nuestro Sumo Sacerdote en el cielo (",
+                  invitationLabel: "La invitación:",
+                  invitationBefore: 'Jesús está haciendo expiación por nosotros ahora mismo. Él dice: «Yo reprendo y castigo a todos los que amo; sé, pues, celoso, y arrepiéntete» (',
+                  closing: "¡Jesús quiere que seas parte de Su reino! Él está trabajando ahora mismo para asegurarse de que estés listo para vivir con Él para siempre.",
+                  refs: { d814: "Daniel 8:14", ez46: "Ezequiel 4:6", d924: "Daniel 9:24", d92627: "Daniel 9:26-27", d710: "Daniel 7:10", d1210: "Daniel 12:10", r1412: "Apocalipsis 14:12", n1434: "Números 14:34", r147: "Apocalipsis 14:7", h92324: "Hebreos 9:23-24", r319: "Apocalipsis 3:19" },
+                  closeParen: ").",
+                },
+                ht: {
+                  timelineTitle: "📅 Liy tan pwofesi 2300 ane a",
+                  heading: "Suiv istwa pwofetik la",
+                  intro: "Lè w ap grandi, ou reyalize istwa a pa jis yon lis evènman owaza; se yon plan ki byen kalkile. Pwofesi 2300 jou a se pi long pwofesi tan nan Bib la, e li pwouve Bondye gen kontwòl total.",
+                  yearDayLabel: "Prensip jou-ane a:",
+                  yearDayBefore: "Pou konprann ",
+                  yearDayMid: " nou aplike kle ki nan ",
+                  yearDayAfter: ' : « Mwen ba ou chak jou pou yon ane. » Sa transfòme 2300 jou literal an 2300 ane istwa.',
+                  jesusLabel: "Lyen ak lanmò Jezi a:",
+                  jesusBefore: 'Premye pati nan long peryòd sa a (70 semèn oswa 490 ane) te espesyalman « koupe » pou pèp Jwif la (',
+                  jesusMid: "). Peryòd sa a te fini pafètman ak batèm ak lanmò Jezi, sa pwouve liy tan an egzak (",
+                  jesusAfter: "). ✝️",
+                  judgmentLabel: "Jijman envestigatif la:",
+                  judgmentBefore: 'Nan 1844, nan fen 2300 ane yo, Bib la di « jijman an te kòmanse, e liv yo te louvri » (',
+                  judgmentAfter: "). Sa pa yon bagay pou nou pè si nou renmen Jezi! Se moman lè Gran Prèt nou an, Jezi, kanpe devan Papa a pou plede pou nou.",
+                  characterLabel: "Yon apèl pou karaktè:",
+                  characterBefore: 'Lè nou konnen nou ap viv nan tan espesyal sa a — « tan lafen » — Bondye rele nou pou nou « saj » e konprann plan Li (',
+                  characterMid: "). Li vle nou reflete karaktè Li epi kenbe kòmandman Li yo (",
+                  characterAfter: ").",
+                  summaryHeading: "📖 Rezime etid biblik",
+                  visionLabel: "Vizyon an:",
+                  visionBefore: '« Jouk 2300 swa ak maten; epi sanktyè a ap netwaye » (',
+                  ruleLabel: "Règ la:",
+                  ruleBefore: '« Chak jou pou yon ane » (',
+                  purposeLabel: "Bi a:",
+                  purposeBefore: 'Pou revele « lè jijman li » (',
+                  purposeMid: ") ak travay Gran Prèt nou an nan syèl la (",
+                  invitationLabel: "Envitasyon an:",
+                  invitationBefore: 'Jezi ap fè ekspyasyon pou nou kounye a. Li di: « Tout moun mwen renmen, mwen reprimande yo epi mwen disipline yo: se poutèt sa, gen zèl epi repanti » (',
+                  closing: "Jezi vle ou fè pati wayòm Li! L ap travay kounye a pou asire ou pare pou viv avè L pou tout tan.",
+                  refs: { d814: "Danyèl 8:14", ez46: "Ezekyèl 4:6", d924: "Danyèl 9:24", d92627: "Danyèl 9:26-27", d710: "Danyèl 7:10", d1210: "Danyèl 12:10", r1412: "Revelasyon 14:12", n1434: "Resansman 14:34", r147: "Revelasyon 14:7", h92324: "Ebre 9:23-24", r319: "Revelasyon 3:19" },
+                  closeParen: ").",
+                },
+              } as const;
+              const tph = tphAll[lang] || tphAll.en;
+              const link = (key: keyof typeof tph.refs, url: string) => (
+                <a href={url} target="_blank" rel="noopener noreferrer" className="text-secondary underline hover:text-primary">{tph.refs[key]}</a>
+              );
+              return (
               <motion.div
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 className="bg-card rounded-3xl p-6 md:p-8 shadow-card border border-border overflow-hidden"
               >
-                <h3 className="text-xl font-display font-bold mb-4 text-center">📅 2300 Year Prophecy Timeline</h3>
+                <h3 className="text-xl font-display font-bold mb-4 text-center">{tph.timelineTitle}</h3>
                 <img 
                   src={timelineImage} 
                   alt="2300 year prophecy timeline from 457 BC to 1844 AD" 
@@ -1048,69 +1188,67 @@ const TopicPage = () => {
                 />
 
                 <div className="mt-8 space-y-6 text-muted-foreground leading-relaxed">
-                  <h3 className="text-2xl font-display font-bold text-foreground">Tracking Prophetic History</h3>
+                  <h3 className="text-2xl font-display font-bold text-foreground">{tph.heading}</h3>
+                  <p>{tph.intro}</p>
                   <p>
-                    As you grow, you realize that history isn't just a list of random events; it is a carefully designed plan. The 2300-day prophecy is the longest time-prophecy in the Bible, and it proves that God is in total control.
+                    <span className="font-semibold text-foreground">{tph.yearDayLabel}</span> {tph.yearDayBefore}
+                    {link("d814", "https://www.biblegateway.com/passage/?search=Daniel+8%3A14&version=NKJV")}
+                    {tph.yearDayMid}
+                    {link("ez46", "https://www.biblegateway.com/passage/?search=Ezekiel+4%3A6&version=NKJV")}
+                    {tph.yearDayAfter}
                   </p>
                   <p>
-                    <span className="font-semibold text-foreground">The Year-Day Principle:</span> To understand{" "}
-                    <a href="https://www.biblegateway.com/passage/?search=Daniel+8%3A14&version=NKJV" target="_blank" rel="noopener noreferrer" className="text-secondary underline hover:text-primary">Daniel 8:14</a>{" "}
-                    we apply the key found in{" "}
-                    <a href="https://www.biblegateway.com/passage/?search=Ezekiel+4%3A6&version=NKJV" target="_blank" rel="noopener noreferrer" className="text-secondary underline hover:text-primary">Ezekiel 4:6</a>: "I have appointed thee each day for a year." This turns 2300 literal days into 2300 years of history.
+                    <span className="font-semibold text-foreground">{tph.jesusLabel}</span> {tph.jesusBefore}
+                    {link("d924", "https://www.biblegateway.com/passage/?search=Daniel+9%3A24&version=NKJV")}
+                    {tph.jesusMid}
+                    {link("d92627", "https://www.biblegateway.com/passage/?search=Daniel+9%3A26-27&version=NKJV")}
+                    {tph.jesusAfter}
                   </p>
                   <p>
-                    <span className="font-semibold text-foreground">The Link to Jesus' Death:</span> The first part of this long period (70 weeks or 490 years) was specifically "cut off" for the Jewish people (
-                    <a href="https://www.biblegateway.com/passage/?search=Daniel+9%3A24&version=NKJV" target="_blank" rel="noopener noreferrer" className="text-secondary underline hover:text-primary">Daniel 9:24</a>
-                    ). This period ended perfectly with the baptism and death of Jesus, proving the timeline is accurate (
-                    <a href="https://www.biblegateway.com/passage/?search=Daniel+9%3A26-27&version=NKJV" target="_blank" rel="noopener noreferrer" className="text-secondary underline hover:text-primary">Daniel 9:26-27</a>
-                    ). ✝️
+                    <span className="font-semibold text-foreground">{tph.judgmentLabel}</span> {tph.judgmentBefore}
+                    {link("d710", "https://www.biblegateway.com/passage/?search=Daniel+7%3A10&version=NKJV")}
+                    {tph.judgmentAfter}
                   </p>
                   <p>
-                    <span className="font-semibold text-foreground">The Investigative Judgment:</span> In 1844, at the end of the 2300 years, the Bible says the "judgment was set, and the books were opened" (
-                    <a href="https://www.biblegateway.com/passage/?search=Daniel+7%3A10&version=NKJV" target="_blank" rel="noopener noreferrer" className="text-secondary underline hover:text-primary">Daniel 7:10</a>
-                    ). This isn't something to be afraid of if we love Jesus! It is the time when our High Priest, Jesus, stands before the Father to advocate for us.
-                  </p>
-                  <p>
-                    <span className="font-semibold text-foreground">A Call to Character:</span> Knowing that we live in this special time—the "time of the end"—God calls us to be "wise" and understand His plan (
-                    <a href="https://www.biblegateway.com/passage/?search=Daniel+12%3A10&version=NKJV" target="_blank" rel="noopener noreferrer" className="text-secondary underline hover:text-primary">Daniel 12:10</a>
-                    ). He wants us to reflect His character and keep His commandments (
-                    <a href="https://www.biblegateway.com/passage/?search=Revelation+14%3A12&version=NKJV" target="_blank" rel="noopener noreferrer" className="text-secondary underline hover:text-primary">Revelation 14:12</a>
-                    ).
+                    <span className="font-semibold text-foreground">{tph.characterLabel}</span> {tph.characterBefore}
+                    {link("d1210", "https://www.biblegateway.com/passage/?search=Daniel+12%3A10&version=NKJV")}
+                    {tph.characterMid}
+                    {link("r1412", "https://www.biblegateway.com/passage/?search=Revelation+14%3A12&version=NKJV")}
+                    {tph.characterAfter}
                   </p>
 
                   <div className="pt-4 border-t border-border">
-                    <h4 className="text-xl font-display font-bold text-foreground mb-4">📖 Bible Study Summary</h4>
+                    <h4 className="text-xl font-display font-bold text-foreground mb-4">{tph.summaryHeading}</h4>
                     <ul className="space-y-3 list-disc list-inside">
                       <li>
-                        <span className="font-semibold text-foreground">The Vision:</span> "Unto two thousand and three hundred days; then shall the sanctuary be cleansed" (
-                        <a href="https://www.biblegateway.com/passage/?search=Daniel+8%3A14&version=NKJV" target="_blank" rel="noopener noreferrer" className="text-secondary underline hover:text-primary">Daniel 8:14</a>
-                        ).
+                        <span className="font-semibold text-foreground">{tph.visionLabel}</span> {tph.visionBefore}
+                        {link("d814", "https://www.biblegateway.com/passage/?search=Daniel+8%3A14&version=NKJV")}
+                        {tph.closeParen}
                       </li>
                       <li>
-                        <span className="font-semibold text-foreground">The Rule:</span> "Each day for a year" (
-                        <a href="https://www.biblegateway.com/passage/?search=Numbers+14%3A34&version=NKJV" target="_blank" rel="noopener noreferrer" className="text-secondary underline hover:text-primary">Numbers 14:34</a>
-                        ).
+                        <span className="font-semibold text-foreground">{tph.ruleLabel}</span> {tph.ruleBefore}
+                        {link("n1434", "https://www.biblegateway.com/passage/?search=Numbers+14%3A34&version=NKJV")}
+                        {tph.closeParen}
                       </li>
                       <li>
-                        <span className="font-semibold text-foreground">The Purpose:</span> To reveal the "hour of his judgment" (
-                        <a href="https://www.biblegateway.com/passage/?search=Revelation+14%3A7&version=NKJV" target="_blank" rel="noopener noreferrer" className="text-secondary underline hover:text-primary">Revelation 14:7</a>
-                        ) and the work of our High Priest in heaven (
-                        <a href="https://www.biblegateway.com/passage/?search=Hebrews+9%3A23-24&version=NKJV" target="_blank" rel="noopener noreferrer" className="text-secondary underline hover:text-primary">Hebrews 9:23-24</a>
-                        ).
+                        <span className="font-semibold text-foreground">{tph.purposeLabel}</span> {tph.purposeBefore}
+                        {link("r147", "https://www.biblegateway.com/passage/?search=Revelation+14%3A7&version=NKJV")}
+                        {tph.purposeMid}
+                        {link("h92324", "https://www.biblegateway.com/passage/?search=Hebrews+9%3A23-24&version=NKJV")}
+                        {tph.closeParen}
                       </li>
                       <li>
-                        <span className="font-semibold text-foreground">The Invitation:</span> Jesus is currently making atonement for us. He says, "As many as I love, I rebuke and chasten: be zealous therefore, and repent" (
-                        <a href="https://www.biblegateway.com/passage/?search=Revelation+3%3A19&version=NKJV" target="_blank" rel="noopener noreferrer" className="text-secondary underline hover:text-primary">Revelation 3:19</a>
-                        ).
+                        <span className="font-semibold text-foreground">{tph.invitationLabel}</span> {tph.invitationBefore}
+                        {link("r319", "https://www.biblegateway.com/passage/?search=Revelation+3%3A19&version=NKJV")}
+                        {tph.closeParen}
                       </li>
                     </ul>
-                    <p className="mt-4 italic">
-                      Jesus wants you to be part of His kingdom! He is working right now to make sure you are ready to live with Him forever.
-                    </p>
+                    <p className="mt-4 italic">{tph.closing}</p>
                   </div>
                 </div>
               </motion.div>
-            )}
+              );
+            })()}
             {topic.sections.map((section: any, index: number) => (
               <motion.div key={index} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }} transition={{ delay: index * 0.1 }}
