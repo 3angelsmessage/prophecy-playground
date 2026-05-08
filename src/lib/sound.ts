@@ -37,6 +37,12 @@ export const playCorrect = () => {
   if (_activity) recordCorrect(_activity.id, _activity.type, _activity.name);
 };
 
+export const playWrong = () => {
+  // Buzzer / wamp-wamp sound: two descending sawtooth tones
+  tone(220, 0, 0.18, "sawtooth", 0.18);
+  tone(160, 0.18, 0.32, "sawtooth", 0.2);
+};
+
 export const playWin = () => {
   tone(523.25, 0, 0.12);
   tone(659.25, 0.12, 0.12);

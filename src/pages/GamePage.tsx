@@ -14,7 +14,8 @@ import {
   getDaniel11Events, getRevelation10Elements, getJudgmentElements,
   getTimeOfEndElements, getSabbathElements, getGameContentMeta,
 } from "@/data/gameTranslations";
-import { playCorrect, setActivity } from "@/lib/sound";
+import { playCorrect, playWrong, setActivity } from "@/lib/sound";
+import { X as XIcon } from "lucide-react";
 
 // Helper hook for game UI strings
 const useGameUI = () => {
@@ -42,6 +43,8 @@ const MatchTheBeastsGame = () => {
     if (beast.empire === empire) {
       setMatches(prev => ({ ...prev, [beast.beast]: empire }));
       setScore(prev => prev + 20); playCorrect();
+    } else {
+      playWrong();
     }
     setSelectedBeast(null);
     if (Object.keys(matches).length + 1 === beasts.length) {
@@ -125,6 +128,7 @@ const KingdomBuilderGame = () => {
       if (placedPieces.length + 1 === 5) setTimeout(() => setShowResult(true), 800);
     } else {
       setWrongAttempt(nextPosition);
+      playWrong();
       setTimeout(() => setWrongAttempt(null), 500);
     }
   };
@@ -234,6 +238,7 @@ const ProphecyTimelineGame = () => {
       }, 500);
     } else {
       setWrongAttempt(nextPosition);
+      playWrong();
       setTimeout(() => setWrongAttempt(null), 500);
     }
   };
@@ -449,7 +454,7 @@ const VerseScrambleGame = () => {
   };
 
   const checkAnswer = () => {
-    if (selectedWords.join(" ") === verseData[currentVerse].verse) { setScore(prev => prev + 1); playCorrect(); }
+    if (selectedWords.join(" ") === verseData[currentVerse].verse) { setScore(prev => prev + 1); playCorrect(); } else { playWrong(); }
     if (currentVerse < verseData.length - 1) {
       setCurrentVerse(prev => prev + 1);
       setShuffledWords([...verseData[currentVerse + 1].words].sort(() => Math.random() - 0.5));
@@ -507,7 +512,7 @@ const ProphetQuizGame = () => {
 
   const handleAnswer = (answer: string) => {
     setSelected(answer);
-    if (answer === quizData[current].answer) { setScore(prev => prev + 1); playCorrect(); }
+    if (answer === quizData[current].answer) { setScore(prev => prev + 1); playCorrect(); } else { playWrong(); }
     setTimeout(() => {
       if (current < quizData.length - 1) { setCurrent(prev => prev + 1); setSelected(null); }
       else setShowResult(true);
@@ -534,12 +539,19 @@ const ProphetQuizGame = () => {
         <h3 className="text-xl font-bold mt-2">{quizData[current].question}</h3>
       </div>
       <div className="grid grid-cols-2 gap-3">
-        {quizData[current].options.map((option) => (
-          <motion.button key={option} whileHover={!selected ? { scale: 1.02 } : {}}
-            onClick={() => !selected && handleAnswer(option)}
-            className={`p-4 rounded-xl font-semibold transition-all ${selected === option ? option === quizData[current].answer ? "bg-accent text-accent-foreground" : "bg-destructive text-destructive-foreground" : "bg-card border-2 border-border hover:border-primary"}`}
-          >{option}</motion.button>
-        ))}
+        {quizData[current].options.map((option) => {
+          const isWrong = selected === option && option !== quizData[current].answer;
+          const isRight = selected === option && option === quizData[current].answer;
+          return (
+            <motion.button key={option} whileHover={!selected ? { scale: 1.02 } : {}}
+              onClick={() => !selected && handleAnswer(option)}
+              className={`p-4 rounded-xl font-semibold transition-all flex items-center justify-center gap-2 ${isRight ? "bg-accent text-accent-foreground" : isWrong ? "bg-destructive text-destructive-foreground border-2 border-destructive" : "bg-card border-2 border-border hover:border-primary"}`}
+            >
+              <span>{option}</span>
+              {isWrong && <XIcon className="w-5 h-5" />}
+            </motion.button>
+          );
+        })}
       </div>
       <p className="text-center font-bold">{ui.score}: {score}/{quizData.length}</p>
     </div>
@@ -562,6 +574,8 @@ const BibleBooksGame = () => {
     if (book && book.order === placed.length + 1) {
       setPlaced(prev => [...prev, selected]);
       if (placed.length + 1 === booksData.length) setTimeout(() => setShowResult(true), 500);
+    } else {
+      playWrong();
     }
     setSelected(null);
   };
@@ -896,6 +910,8 @@ const DanielsVisionsGame = () => {
     if (vision.meaning === meaning) {
       setMatches(prev => ({ ...prev, [vision.symbol]: meaning }));
       setScore(prev => prev + Math.round(100 / visions.length)); playCorrect();
+    } else {
+      playWrong();
     }
     setSelectedSymbol(null);
     if (Object.keys(matches).length + 1 === visions.length) setTimeout(() => setShowResult(true), 500);
@@ -969,6 +985,8 @@ const Daniel7BeastsGame = () => {
     if (beast.meaning === meaning) {
       setMatches(prev => ({ ...prev, [beast.beast]: meaning }));
       setScore(prev => prev + Math.round(100 / beasts.length)); playCorrect();
+    } else {
+      playWrong();
     }
     setSelectedBeast(null);
     if (Object.keys(matches).length + 1 === beasts.length) setTimeout(() => setShowResult(true), 500);
@@ -1056,6 +1074,7 @@ const GenericTimelineGame = ({ elements, buildLabel, chooseLabel, placeLabel, ma
       if (placedElements.length + 1 === elements.length) setTimeout(() => setShowResult(true), 800);
     } else {
       setWrongAttempt(nextPosition);
+      playWrong();
       setTimeout(() => setWrongAttempt(null), 500);
     }
   };
