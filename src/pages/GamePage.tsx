@@ -1,7 +1,7 @@
 import { useParams, useNavigate } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { ArrowLeft, RotateCcw, Trophy } from "lucide-react";
+import { ArrowLeft, RotateCcw, Trophy, Check } from "lucide-react";
 import React, { useState, useMemo, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import { useLanguagePrefix } from "@/hooks/useLanguagePrefix";
@@ -34,6 +34,7 @@ const MatchTheBeastsGame = () => {
   const [matches, setMatches] = useState<{ [key: string]: string }>({});
   const [score, setScore] = useState(0);
   const [showResult, setShowResult] = useState(false);
+  const [wrongEmpire, setWrongEmpire] = useState<string | null>(null);
 
   const handleBeastClick = (index: number) => setSelectedBeast(index);
 
@@ -43,12 +44,14 @@ const MatchTheBeastsGame = () => {
     if (beast.empire === empire) {
       setMatches(prev => ({ ...prev, [beast.beast]: empire }));
       setScore(prev => prev + 20); playCorrect();
+      setSelectedBeast(null);
+      if (Object.keys(matches).length + 1 === beasts.length) {
+        setTimeout(() => setShowResult(true), 500);
+      }
     } else {
       playWrong();
-    }
-    setSelectedBeast(null);
-    if (Object.keys(matches).length + 1 === beasts.length) {
-      setTimeout(() => setShowResult(true), 500);
+      setWrongEmpire(empire);
+      setTimeout(() => { setWrongEmpire(null); setSelectedBeast(null); }, 600);
     }
   };
 
@@ -87,13 +90,18 @@ const MatchTheBeastsGame = () => {
       <div>
         <h3 className="text-xl font-bold mb-4 text-center">{ui.matchEmpire}</h3>
         <div className="space-y-3">
-          {shuffledEmpires.map((item) => (
-            <motion.button key={item.id} whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}
-              onClick={() => handleEmpireClick(item.empire)}
-              disabled={Object.values(matches).includes(item.empire)}
-              className={`w-full p-4 rounded-xl text-left text-xl font-semibold transition-all ${Object.values(matches).includes(item.empire) ? "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400" : "bg-card border-2 border-border hover:border-secondary"}`}
-            >{item.empire} {Object.values(matches).includes(item.empire) && "✓"}</motion.button>
-          ))}
+          {shuffledEmpires.map((item) => {
+            const isWrong = wrongEmpire === item.empire;
+            const isMatched = Object.values(matches).includes(item.empire);
+            return (
+              <motion.button key={item.id} whileHover={{ scale: 1.02 }} whileTap={{ scale: 0.98 }}
+                animate={isWrong ? { x: [0, -10, 10, -10, 10, 0] } : {}}
+                onClick={() => handleEmpireClick(item.empire)}
+                disabled={isMatched}
+                className={`w-full p-4 rounded-xl text-left text-xl font-semibold transition-all flex items-center justify-between ${isMatched ? "bg-green-100 text-green-700 dark:bg-green-900/30 dark:text-green-400" : isWrong ? "bg-red-100 text-red-700 border-2 border-red-500 dark:bg-red-900/30 dark:text-red-400" : "bg-card border-2 border-border hover:border-secondary"}`}
+              ><span>{item.empire}</span> {isMatched ? <Check className="w-5 h-5" /> : isWrong ? <XIcon className="w-5 h-5" /> : null}</motion.button>
+            );
+          })}
         </div>
       </div>
       <div className="md:col-span-2 text-center"><p className="text-2xl font-bold">{ui.score}: {score}/100</p></div>
