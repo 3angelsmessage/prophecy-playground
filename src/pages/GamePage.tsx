@@ -14,7 +14,8 @@ import {
   getDaniel11Events, getRevelation10Elements, getJudgmentElements,
   getTimeOfEndElements, getSabbathElements, getGameContentMeta,
 } from "@/data/gameTranslations";
-import { playCorrect, setActivity } from "@/lib/sound";
+import { playCorrect, playWrong, setActivity } from "@/lib/sound";
+import { X as XIcon } from "lucide-react";
 
 // Helper hook for game UI strings
 const useGameUI = () => {
