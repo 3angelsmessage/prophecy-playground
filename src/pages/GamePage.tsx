@@ -34,6 +34,7 @@ const MatchTheBeastsGame = () => {
   const [matches, setMatches] = useState<{ [key: string]: string }>({});
   const [score, setScore] = useState(0);
   const [showResult, setShowResult] = useState(false);
+  const [wrongEmpire, setWrongEmpire] = useState<string | null>(null);
 
   const handleBeastClick = (index: number) => setSelectedBeast(index);
 
@@ -43,12 +44,14 @@ const MatchTheBeastsGame = () => {
     if (beast.empire === empire) {
       setMatches(prev => ({ ...prev, [beast.beast]: empire }));
       setScore(prev => prev + 20); playCorrect();
+      setSelectedBeast(null);
+      if (Object.keys(matches).length + 1 === beasts.length) {
+        setTimeout(() => setShowResult(true), 500);
+      }
     } else {
       playWrong();
-    }
-    setSelectedBeast(null);
-    if (Object.keys(matches).length + 1 === beasts.length) {
-      setTimeout(() => setShowResult(true), 500);
+      setWrongEmpire(empire);
+      setTimeout(() => { setWrongEmpire(null); setSelectedBeast(null); }, 600);
     }
   };
 
